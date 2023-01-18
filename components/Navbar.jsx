@@ -176,3 +176,13 @@ const Navbar=() =>
                                                     <Text><Link to="#">BB & CC Cream</Link></Text>
                                                     <Text><Link to="#">Face Palette</Link></Text>
                                                 </Box>
+                                                <Box className="column">
+                                                    <h3>Eyes</h3>
+                                                    <Text><Link to="#">Eye Shadow</Link></Text>
+                                                    <Text><Link to="#">Mascra</Link></Text>
+                                                    <Text><Link to="#">Eyliner & kajal</Link></Text>
+                                                    <Text><Link to="#">Brows</Link></Text>
+                                                    <Text><Link to="#">Eye Primer</Link></Text>
+                                                    <Text><Link to="#">Conclealer</Link></Text>
+                                                    <Text><Link to="#">Lashes</Link></Text>
+                                                </Box>
