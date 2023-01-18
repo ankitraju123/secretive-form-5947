@@ -433,4 +433,12 @@ const Navbar=() =>
 
 :
 <DrawerLogin verfiy={verfiy} handleClick={handleClick} offerPrice={offerPrice} quantity={quantity} Price={Price} price={price} discount={discount} shipping={shipping} />
-}
+                        }
+</Box>
+                </Box>
+
+            </Box>
+            <Box boxShadow='rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;' position={'relative'} className='z-10 bg-white' w='100%' top={'100px'}>
+                <Box w={'80%'} h={{lg: 38,md: "auto",s: "auto"}} m={'auto'} display={'flex'} justifyContent={'space-between'} fontWeight={100} fontSize={'14px'}>
+                    <Box display={{base: 'grid',lg: 'flex'}} justifyContent={'space-evenly'} alignItems='center' gap={10} textAlign={'start'}>
+                        <List display={{base: 'grid',md: 'flex',lg: 'flex'}}>
