@@ -292,3 +292,28 @@ const Navbar=() =>
                                                     <Text><Link to="#">RSVP By Nykaa Fashion</Link></Text>
                                                     <Text><Link to="#">Nykaa By Nykaa</Link></Text>
                                                 </Box>
+                                                <Box className="column">
+                                                    <Text><Link to="#">Pipa Bella</Link></Text>
+                                                    <Text><Link to="#">IYKYK By Nykaa Fashion</Link></Text>
+                                                    <Text><Link to="#">Kica</Link></Text>
+                                                    <Text><Link to="#">Twig And Twine</Link></Text>
+                                                    <Text><Link to="#">Likha By Nykaa Fashion</Link></Text>
+                                                    <Text><Link to="#">Gloot</Link></Text>
+                                                    <Text><Link to="#">Nyri</Link></Text>
+                                                    <Text><Link to="#">Azai By Nykaa Fashion</Link></Text>
+                                                    <br />
+                                                    <h3>Top Brands</h3>
+                                                    <Text><Link to="#">ONLY</Link></Text>
+                                                    <Text><Link to="#">W</Link></Text>
+                                                    <Text><Link to="#">Vero Moda</Link></Text>
+                                                    <Text><Link to="#">Fabindia</Link></Text>
+                                                    <Text><Link to="#">Na-Kd</Link></Text>
+                                                    <Text><Link to="#">AND</Link></Text>
+                                                    <Text><Link to="#">Revolve</Link></Text>
+                                                    <Text><Link to="#">Label Shaurya Sanadhya</Link></Text>
+                                                    <Text><Link to="#">Biba</Link></Text>
+                                                    <Text><Link to="#">Koton</Link></Text>
+                                                    <Text><Link to="#">I Saw It First</Link></Text>
+                                                    <Text><Link to="#">Swatantra</Link></Text>
+                                                    <Text><Link to="#">Forever New</Link></Text>
+                                                </Box>
