@@ -346,3 +346,9 @@ const Navbar=() =>
                                                 <h3>BEAUTY BUYING GUIDES</h3>
                                                 <Text>Tips To Explore While You Shop</Text>
                                             </Box>
+                                            </Box>
+                                    </Box>
+                                </Box>
+                            </Link></ListItem>
+                        </List>
+                    </Box>
