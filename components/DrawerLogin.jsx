@@ -13,7 +13,8 @@ import {FaArrowRight} from "react-icons/fa";
 import {IoIosInformationCircleOutline} from "react-icons/io"
 import { useDispatch, useSelector } from 'react-redux';
 import axios from 'axios';
-import { deleteProducts, getCartItem } from '../redux/products/actions';
+import {deleteProducts,getCartItem} from '../redux/products/actions';
+import Link from 'next/link';
 
 const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,shipping}) =>{
     const [data,setData]=useState([])
@@ -29,7 +30,7 @@ const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,
             setData(res.data);    
           })
           dispatch(getCartItem())
-    },[])
+    },[dispatch])
     // console.log("x",totalPrice)
     const sum = data.reduce((result, item)=> {
         return result + item.price;
@@ -76,7 +77,7 @@ const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,
                                             {data.map((e)=>(
 
                                             
-                                            <Box border={"1px solid lightgray"} w='100%' borderRadius={5} p='1px' mt={3} key={e.id}>
+                                            <Box border={"1px solid lightgray"} w='100%' borderRadius={5} p='1px' mt={3} key>
 
                                                 <Box display={'flex'} gap={2} w='100%' borderRadius={5} p='1px' mt={3}>
                                                     <Image w={20} src={e.image} alt='product_cart' />
