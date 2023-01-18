@@ -419,4 +419,11 @@ const Navbar=() =>
                                                 <Button ref={cancelRef} bgColor={'transparent'} _hover={{bgColor: "transparent"}} color='#d5418e' onClick={onClose}>
                                                     Cancel
                                                 </Button>
-                                            </AlertDialogBody>
+                                                </AlertDialogBody>
+                                                </AlertDialogContent>
+                                    </AlertDialogOverlay>
+                                </AlertDialog>
+                            </Box>
+                        )
+
+                        )}
