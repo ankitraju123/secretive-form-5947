@@ -242,3 +242,27 @@ const Navbar=() =>
                                                     <Text><Link to="#">Bottomwear</Link></Text>
                                                     <Text><Link to="#">Ethnicwear</Link></Text>
                                                 </Box>
+                                                <Box className="column">
+                                                    <Text><Link to="#">Topwear</Link></Text>
+                                                    <Text><Link to="#">Bottomwear</Link></Text>
+                                                    <Text><Link to="#">Ethnicwear</Link></Text>
+                                                    <Text><Link to="#">Footwear</Link></Text>
+                                                    <Text><Link to="#">Atheisure</Link></Text>
+                                                    <Text><Link to="#">Innerwear & Sleepwear</Link></Text>
+                                                    <Text><Link to="#">Watches</Link></Text>
+                                                    <Text><Link to="#">Accessories</Link></Text>
+                                                    <Text><Link to="#">Bags</Link></Text>
+                                                    <br />
+                                                    <h3>Style Guide</h3>
+                                                    <br />
+                                                    <h3>Tech</h3>
+                                                    <Text><Link to="#">Smart Wearables</Link></Text>
+                                                    <Text><Link to="#">Headphones</Link></Text>
+                                                    <Text><Link to="#">Speakers</Link></Text>
+                                                    <Text><Link to="#">Chargers & Cables</Link></Text>
+                                                    <Text><Link to="#">Power Bank</Link></Text>
+                                                    <br />
+                                                    <h3>Kids</h3>
+                                                    <Text><Link to="#">Westernwear</Link></Text>
+                                                    <Text><Link to="#">Indianwear</Link></Text>
+                                                </Box>
