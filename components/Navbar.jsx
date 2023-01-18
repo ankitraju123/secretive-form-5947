@@ -64,3 +64,16 @@ const Navbar=() =>
             icon: <IoIosHelpCircleOutline />
         }
     ]
+    const Price=249;
+    const discount=30;
+    const shipping=70;
+    //const totalprice=((shipping+Price)-discount);
+    const offerPrice=(Price-discount);
+    const {isOpen,onOpen,onClose}=useDisclosure();
+    const btnRef=React.useRef();
+    const [detial,setDetail]=useState([]);
+    const [verfiy,Setverfiy]=useState(false);
+    const [count,setCount]=useState(0);
+    const [price,setPrice]=useState(Price)
+    const [quantity,setQuantity]=useState(1);
+    const [data,setData]=useState([])    
