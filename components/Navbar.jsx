@@ -200,3 +200,10 @@ const Navbar=() =>
                                                     <Text><Link to="#">Nail Care</Link></Text>
                                                     <Text><Link to="#">Nail Polish Remover</Link></Text>
                                                 </Box>
+                                                <Box className="column">
+                                                    <h3>Tools & Brushes</h3>
+                                                    <Text><Link to="#">Face Brush</Link></Text>
+                                                    <Text><Link to="#">Eye Brush</Link></Text>
+                                                    <Text><Link to="#">Applicators</Link></Text>
+                                                    <Text><Link to="#">Lip Brush</Link></Text>
+                                                </Box>
