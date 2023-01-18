@@ -123,3 +123,13 @@ const Navbar=() =>
     <Box display={'flex'}> {
         Nav1List.map((e) =>
         {
+            return (<Box display={{base: 'none',md: 'none',lg: 'flex'}} fontSize={{base: '10px',md: '11px',lg: '15px'}} flexDirection={{base: 'none',s: "none",md: 'row'}} alignItems={'center'} fontWeight={{base: 100,lg: 500}} _hover={{color: 'white'}} color='white' m={{base: '0px',lg: '0rem 0.9rem'}}>
+            <Text fontSize={22}>{e.icon}</Text>
+            <Text>{e.name} |</Text>
+        </Box>
+        )
+    })
+}
+</Box>
+</Box>
+</Box>
