@@ -427,3 +427,10 @@ const Navbar=() =>
                         )
 
                         )}
+         {count===1?
+
+<Drawers />
+
+:
+<DrawerLogin verfiy={verfiy} handleClick={handleClick} offerPrice={offerPrice} quantity={quantity} Price={Price} price={price} discount={discount} shipping={shipping} />
+}
