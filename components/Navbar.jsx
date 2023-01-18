@@ -212,3 +212,33 @@ const Navbar=() =>
                                     </Box>
                                 </Link>
                             </ListItem>
+                            <ListItem>
+                                <Link to="#">
+                                    <Box className="d">
+                                        <Button className="d-btn"> Nykaa Fashion</Button>
+                                        <Box className="d-content">
+                                            <Box className="row" style={{display: 'flex'}}>
+                                                <Box className="column">
+                                                    <h3>What is new?</h3>
+                                                    <Text><Link to="#">Recently Added</Link></Text>
+                                                    <br />
+                                                    <h3>Women</h3>
+                                                    <Text><Link to="#">Indianwear</Link></Text>
+                                                    <Text><Link to="#">Westerwear</Link></Text>
+                                                    <Text><Link to="#">Footwear</Link></Text>
+                                                    <Text><Link to="#">Bags</Link></Text>
+                                                    <Text><Link to="#">Lingerie</Link></Text>
+                                                    <Text><Link to="#">Sportswear</Link></Text>
+                                                    <Text><Link to="#">Sleep & Lounge</Link></Text>
+                                                    <Text><Link to="#">Jewellery</Link></Text>
+                                                    <Text><Link to="#">Watches</Link></Text>
+                                                    <Text><Link to="#">Accessories</Link></Text>
+                                                    <br />
+                                                    <h3>Global Store</h3>
+                                                    <br />
+                                                    <h3>Men</h3>
+
+                                                    <Text><Link to="#">Topwear</Link></Text>
+                                                    <Text><Link to="#">Bottomwear</Link></Text>
+                                                    <Text><Link to="#">Ethnicwear</Link></Text>
+                                                </Box>
