@@ -406,4 +406,13 @@ const Navbar=() =>
                                                 Are you sure you want to logout?
                                             </AlertDialogHeader>
                                             <hr />
-                                            <AlertDialogBody display={'grid'} gap={2}></AlertDialogBody>
+                                                <AlertDialogBody display={'grid'} gap={2}>
+                                                <Button onClick={logout} bgColor={'transparent'} _hover={{bgColor: "transparent"}} color='#d5418e' ml={3}>
+                                                    Logout
+                                                </Button>
+                                                <hr />
+
+                                                <Button onClick={logout} bgColor={'transparent'} _hover={{bgColor: "transparent"}} color='#d5418e' ml={3}>
+                                                    Logout from all devices
+                                                </Button>
+                                                <hr />
