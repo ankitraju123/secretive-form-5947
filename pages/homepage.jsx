@@ -311,7 +311,205 @@ const homePage = () => {
       </div>
     </div>
 
+
+      <div className="top-brands">
+        <h1>Brands You Can't Miss</h1>
+        <p>Luxe</p>
+        <div className="Carosel"></div>
+        <div className="Carosel"></div>
+        <p>Skin</p>
+      <div className='featured'>
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/e7bb3d78-6d5e-4470-a4e6-a47abb2b8717/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Up To 20% off</h3>
+          <p>Free Lotion on ₹1299</p>
+          </div>
+        </div>
+
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/0287a22c-e104-4277-9f04-e1779889b785/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Dry Oil For</h3>
+          <p>Face,Body And Hair</p>
+          </div>
+        </div>
+
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/e5ab8782-f1b0-4732-a3a8-2f2f2e089fff/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Sheet Masks</h3>
+          <p>For A Radiant Glow</p>
+          </div>
+        </div>
+
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/59223706-6530-4ec3-8d88-2acd1899a97d/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Up To 53% off</h3>
+          <p>On Bestsellers & Combos</p>
+          </div>
+        </div>
       </div>
+
+
+      <p>More In Beauty</p>
+      <div className="featured">
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/c79a072e-3987-43f9-941a-a450eb31c6f5/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Healthy Hair</h3>
+          <p>Real Results</p>
+          </div>
+        </div>
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/2d8933d6-f17f-481c-83c4-d7bfc93e5230/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Upto 20% Off</h3>
+          <p>On Entire Range</p>
+          </div>
+        </div>
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/8dea939b-ddba-49b4-a88c-67f6ac31fc79/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Up To 30% </h3>
+          <p>Buy 2, Get Extra 5% off</p>
+          </div>
+        </div>
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/2dd6699a-67f5-4a64-ae8f-8fac8d0030df/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Trusted Brand</h3>
+          <p>Trusted Quality</p>
+          </div>
+        </div>
+        <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/4ccaf8ed-9ee1-4ccf-a477-3554814451c1/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Flat 15% Off</h3>
+          <p>On The Entire Range</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="Carosel"></div>
+      <p>House Of Nykaa</p>
+        <div className="featured">
+          <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/ed80b926-0604-4c82-8200-eb4220891283/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Up to 50% off</h3>
+          <p>As Good as Naked</p>
+          </div>
+          </div>
+          <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/7043f27c-a29f-433f-9f8f-199ca08c88ec/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Up to 70% off</h3>
+          <p>On Entire Range</p>
+          </div>
+          </div>
+          <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/dea1940b-569d-4038-82ff-87566ec3b85a/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Up to 70% off</h3>
+          <p>To match your outfit</p>
+          </div>
+          </div>
+          <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/2041158e-ea79-418b-900e-8342e00f9441/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Up to 70% off</h3>
+          <p>Ethnic motifs to glam up</p>
+          </div>
+          </div>
+          <div className="feat-sub-card">
+           <img src="https://images-static.nykaa.com/creatives/a663a593-7e25-4f86-89e2-22d9f4b18d1d/default.jpg?tr=w-240,cm-pad_resize" alt="img" />
+          <div>
+          <h3>Up to 70% off</h3>
+          <p>On Entire Range</p>
+          </div>
+          </div>
+
+         </div>
+    
+      <div className="Carosel"></div>
+
+    <img className='sdbanner' src="https://images-static.nykaa.com/uploads/f4c3f4d7-a236-4e7a-92f8-e5ba0417c05e.png?tr=w-1200,cm-pad_resize" alt="" />
+
+    <div className="Carosel"></div>
+      </div>
+
+
+      <div className="top-brands">
+        <h1>Game Zone</h1>
+        <p>Play & Win</p>
+        <img className="tp-img" src="https://images-static.nykaa.com/uploads/ea4f8daa-4cb5-484a-90f5-b0d3e2998353.png?tr=w-1200,cm-pad_resize" alt="" />
+      </div>
+
+      <div className="top-brands">
+        <h1>Gifting At Nykaa</h1>
+        <p>Give The Present of Beauty</p>
+        <div className='tp-subdiv'>
+          <img src="https://images-static.nykaa.com/uploads/a92dac26-400d-4158-af51-a7d247658835.jpg?tr=w-600,cm-pad_resize" alt="img" />
+          <img src="https://images-static.nykaa.com/uploads/fc68d953-2b29-42f9-8df6-5ee176ad8d01.jpg?tr=w-600,cm-pad_resize" alt="img" />
+        </div>
+      </div>
+
+      <div className="top-brands">
+        <h1>Discover More At Nykaa</h1>
+        <p>Special Offerings</p>
+        <div className="Carosel"></div>
+      </div>
+
+      <div className="top-brands">
+      <div className="discover-more">
+          <div className="home-subcard discover-card">
+            <img src="https://images-static.nykaa.com/uploads/25a2e412-b051-4c62-8c30-c573f911d305.jpg?tr=w-600,cm-pad_resize" alt="img" />
+            <div>
+              <h3>Up To 70% Off</h3>
+              <p>Lingere | Jwellery | Bags | Gadgets | Footwear | Watches | Home & Kitchen Wear</p>
+            </div>
+          </div>
+          <div className="home-subcard discover-card">
+            <img src="https://images-static.nykaa.com/uploads/6bd36536-ccf7-41e2-9d76-537dff3e2325.jpg?tr=w-600,cm-pad_resize" alt="img" />
+            <div>
+              <h3>Up To 50% Off</h3>
+              <p>Stunning Jewels to treat yourself!</p>
+            </div>
+          </div>
+         </div>
+        <div className="Carosel"></div> 
+      </div>
+
+      <div className="top-brands">
+      <div className="discover-more">
+          <div className="home-subcard discover-card">
+            <img src="https://images-static.nykaa.com/uploads/71c7558d-637c-40ee-b09b-7dfda35cf125.jpg?tr=w-600,cm-pad_resize" alt="img" />
+            <div>
+              
+              <p>Catch Up On Top Trends,Expert Advice,Fresh Launches & More</p>
+              <h3>Watch Now</h3>
+            </div>
+          </div>
+          <div className="home-subcard discover-card">
+            <img src="https://images-static.nykaa.com/uploads/a3720b61-fd58-40ff-90cd-72eb5b5ee3d4.jpg?tr=w-600,cm-pad_resize" alt="img" />
+            <div>
+              <p>Catch Up On Top Trends,Expert Advice,Fresh Launches & More</p>
+              <h3>Read More</h3>
+            </div>
+          </div>
+         </div>
+        <div className="Carosel"></div> 
+      </div>
+
+      
+    <div className="top-brands">
+      <img src="https://images-static.nykaa.com/uploads/49e43a50-37b5-405a-be2d-ab90055115ec.jpg?tr=w-1200,cm-pad_resize" alt="img" />
+    </div>
+
+
+    </div>
 
   )
 

@@ -7,7 +7,7 @@ export const Getproddata=()=>async(dispatch)=>{
     dispatch({type:LOADING})
 try{
     
-    let res=await axios.get("")
+    let res=await axios.get("http://localhost:8080/product")
     let data=res.data
     dispatch({
         type:GET_DATA,
@@ -22,7 +22,7 @@ catch(err){
 
 export const addToCart=(data)=>(dispatch)=>{
     try{
-        let res=axios.post("",data)
+        let res=axios.post("http://localhost:8080/cart",data)
         dispatch({type:CART_POST_DATA,
                     payload:res.data})
     }
@@ -33,9 +33,9 @@ export const addToCart=(data)=>(dispatch)=>{
 
 export const getCartData=()=>async(dispatch)=>{
 
-    let res=localStorage.getItem("Cartdata")
+    let res=axios.get("http://localhost:8080/cart")
     dispatch({type:CART_GET_DATA,
-              payload:res })
+              payload:res.data })
 }
 
 export const deleteCartData=(data)=>(dispatch)=>{
