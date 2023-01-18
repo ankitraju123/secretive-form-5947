@@ -44,3 +44,23 @@ import Logo from '../../public/loGo1.jpg';
 import Menus from './Menu';
 import DrawerLogin from './DrawerLogin';
 import Drawers from './DrawerNologin';
+const Navbar=() =>
+{
+
+    const cancelRef=React.useRef()
+
+    const Nav1List=[
+        {
+            name: "Get App",
+            icon: <AiOutlineMobile />
+        },{
+            name: "Store & Events",
+            icon: <GoLocation />
+        },{
+            name: "Gift Card",
+            icon: <AiOutlineGift />
+        },{
+            name: "Help",
+            icon: <IoIosHelpCircleOutline />
+        }
+    ]
