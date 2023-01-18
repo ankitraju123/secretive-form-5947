@@ -132,4 +132,11 @@ const Navbar=() =>
 }
 </Box>
 </Box>
-</Box>
+            </Box>
+
+            <Box boxShadow='rgba(0, 0, 0, 0.24) 0px 3px 8px' position={'fixed'} w='100%' top={10} bgColor={'white'} className="z-20 ">
+
+                <Box w={'80%'} h={{lg: 68,md: "auto",s: "auto"}} m={'auto'} display={'flex'} justifyContent={'space-between'} fontWeight={500} fontSize={'16px'}>
+                    <Box display={{base: 'grid',lg: 'flex'}} justifyContent={'space-evenly'} alignItems='center' gap={10} textAlign={'start'}>
+                        <List spacing={1} display={{base: 'grid',md: 'flex',lg: 'flex'}} >
+                            <Heading textAlign={'center'} ><Link to="/"><Image w={'83px'} src={Logo} /></Link></Heading>
