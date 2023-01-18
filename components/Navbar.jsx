@@ -365,3 +365,19 @@ const Navbar=() =>
                                 </InputLeftElement>
                             </InputGroup>
                         </Box>
+                        {detial.length==0? <Menu>
+                            <MenuButton as={Button} colorScheme='pink' fontSize={{base: 1,s: 5,md: 10}}>
+                                Sign in
+                            </MenuButton>
+                            <MenuList float={'left'} width={21} Text={2}>
+                                <MenuGroup p={2}>
+                                    <Heading fontSize={20} fontWeight={400} m={"8px"}>Login / Create Account</Heading>
+                                    <Text fontSize={10} p={2}>Register Now and get <b>2000 Nykaa reward point instantly!</b></Text>
+                                    <MenuItem>
+                                        <Button w={'100%'} fontSize={13}>
+                                            <Link to='/login'>
+                                                Sign in with Mobile/Email
+                                            </Link>
+                                        </Button>
+                                    </MenuItem>
+                                    <MenuItem>
