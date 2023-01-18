@@ -207,3 +207,8 @@ const Navbar=() =>
                                                     <Text><Link to="#">Applicators</Link></Text>
                                                     <Text><Link to="#">Lip Brush</Link></Text>
                                                 </Box>
+                                                </Box>
+                                        </Box>
+                                    </Box>
+                                </Link>
+                            </ListItem>
