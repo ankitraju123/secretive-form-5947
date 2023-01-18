@@ -352,3 +352,16 @@ const Navbar=() =>
                             </Link></ListItem>
                         </List>
                     </Box>
+                    <Box w={'30%'} display={{base: 'grid',lg: 'flex'}} justifyContent={'space-evenly'} alignItems='center'>
+                        <Box>
+                            <InputGroup size='md'>
+                                <Input
+                                    w={{base: 100,md: 150,lg: 200}}
+                                    type='text'
+                                    placeholder='Search on Nykaa'
+                                />
+                                <InputLeftElement display={{base: 'grid',md: "flex"}} >
+                                    <GoSearch />
+                                </InputLeftElement>
+                            </InputGroup>
+                        </Box>
