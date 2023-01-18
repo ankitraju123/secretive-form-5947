@@ -389,3 +389,14 @@ const Navbar=() =>
                                 </MenuGroup>
 
                             </MenuList>
+                            </Menu>:detial.map((e) => (
+                            <Box>
+                                <Menus text={e.name} logout={onOpen} />
+                                <AlertDialog
+                                    isOpen={isOpen}
+                                    leastDestructiveRef={cancelRef}
+                                    onClose={onClose}
+                                    size='xs'
+                                    isCentered
+                                    motionPreset='slideInBottom'
+                                >
