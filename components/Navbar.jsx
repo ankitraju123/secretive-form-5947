@@ -399,4 +399,11 @@ const Navbar=() =>
                                     size='xs'
                                     isCentered
                                     motionPreset='slideInBottom'
-                                >
+                                    >
+                                           <AlertDialogOverlay>
+                                        <AlertDialogContent w={'50%'}>
+                                            <AlertDialogHeader fontSize='lg' textAlign={'center'} fontWeight='bold'>
+                                                Are you sure you want to logout?
+                                            </AlertDialogHeader>
+                                            <hr />
+                                            <AlertDialogBody display={'grid'} gap={2}></AlertDialogBody>
