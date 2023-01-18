@@ -266,3 +266,29 @@ const Navbar=() =>
                                                     <Text><Link to="#">Westernwear</Link></Text>
                                                     <Text><Link to="#">Indianwear</Link></Text>
                                                 </Box>
+                                                <Box className="column">
+                                                    <Text><Link to="#">Winterwear</Link></Text>
+                                                    <Text><Link to="#">Footwear</Link></Text>
+                                                    <Text><Link to="#">Toys & Games</Link></Text>
+                                                    <Text><Link to="#">Feeding</Link></Text>
+                                                    <Text><Link to="#">Sportswear</Link></Text>
+                                                    <Text><Link to="#">Sleep & Lounge</Link></Text>
+                                                    <br />
+                                                    <h3>Home</h3>
+                                                    <br />
+                                                    <Text><Link to="#">Kitchen & Dining</Link></Text>
+                                                    <Text><Link to="#">Decor</Link></Text>
+                                                    <Text><Link to="#">Bedding</Link></Text>
+                                                    <Text><Link to="#">Bath</Link></Text>
+                                                    <Text><Link to="#">Storage</Link></Text>
+                                                    <Text><Link to="#">Floor Coverings</Link></Text>
+                                                    <Text><Link to="#">Kitchen Appliances</Link></Text>
+                                                    <br />
+                                                    <h3>House of Nykaa</h3>
+                                                    <br />
+                                                    <Text><Link to="#">Twenty Dresses By</Link></Text>
+                                                    <Text><Link to="#">Gajra Gang</Link></Text>
+                                                    <Text><Link to="#">Nykaa Feshion</Link></Text>
+                                                    <Text><Link to="#">RSVP By Nykaa Fashion</Link></Text>
+                                                    <Text><Link to="#">Nykaa By Nykaa</Link></Text>
+                                                </Box>
