@@ -106,3 +106,11 @@ const Navbar=() =>
 
         }
     });
+    const logout=() =>
+    {
+        setDetail([]);
+        Setverfiy(false)
+    }
+    console.log(detial,"done")
+    return (
+        <Box>
