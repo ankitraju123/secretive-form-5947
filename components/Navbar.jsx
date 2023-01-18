@@ -317,3 +317,11 @@ const Navbar=() =>
                                                     <Text><Link to="#">Swatantra</Link></Text>
                                                     <Text><Link to="#">Forever New</Link></Text>
                                                 </Box>
+                                                <Box className="column">
+                                                    <Image src='https://www.nykaa.com/media/wysiwyg/2022/NF-megamenua.jpg' alt='photo' />
+                                                </Box>
+                                            </Box>
+                                        </Box>
+                                    </Box>
+                                </Link>
+                            </ListItem>
