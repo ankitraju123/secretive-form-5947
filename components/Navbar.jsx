@@ -186,3 +186,17 @@ const Navbar=() =>
                                                     <Text><Link to="#">Conclealer</Link></Text>
                                                     <Text><Link to="#">Lashes</Link></Text>
                                                 </Box>
+                                                <Box className="column">
+                                                    <h3>Lips</h3>
+                                                    <Text><Link to="#">Lipstick</Link></Text>
+                                                    <Text><Link to="#">Liquid Lipstick</Link></Text>
+                                                    <Text><Link to="#">Lip Balm</Link></Text>
+                                                    <Text><Link to="#">Lip Plumper</Link></Text>
+                                                    <Text><Link to="#">Lip Liner</Link></Text>
+                                                    <Text><Link to="#">Lip Tint</Link></Text>
+                                                    <br />
+                                                    <h3>Nails</h3>
+                                                    <Text><Link to="#">Nail Polish</Link></Text>
+                                                    <Text><Link to="#">Nail Care</Link></Text>
+                                                    <Text><Link to="#">Nail Polish Remover</Link></Text>
+                                                </Box>
