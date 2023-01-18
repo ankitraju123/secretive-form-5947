@@ -140,3 +140,16 @@ const Navbar=() =>
                     <Box display={{base: 'grid',lg: 'flex'}} justifyContent={'space-evenly'} alignItems='center' gap={10} textAlign={'start'}>
                         <List spacing={1} display={{base: 'grid',md: 'flex',lg: 'flex'}} >
                             <Heading textAlign={'center'} ><Link to="/"><Image w={'83px'} src={Logo} /></Link></Heading>
+        
+                            <ListItem _hover={{color: 'white'}} textAlign={{base: "start",md: 'center',lg: 'center'}}>
+
+                                <li><Link to="/product" ><div className="d">
+                                    <Button className="d-btn">Categories</Button> </div> </Link> </li> </ListItem>
+
+                            <ListItem>
+                                <Link to="#">
+                                    <Box className="d">
+                                        <Button className="d-btn">Brands</Button>
+                                    </Box>
+                                </Link>
+                            </ListItem>
