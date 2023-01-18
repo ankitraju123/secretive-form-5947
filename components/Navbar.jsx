@@ -153,3 +153,26 @@ const Navbar=() =>
                                     </Box>
                                 </Link>
                             </ListItem>
+                            <ListItem>
+                                <Link to="#">
+                                    <Box className="d">
+                                        <Button className="d-btn">Luxe</Button>
+                                        <Box className="d-content">
+                                            <Box className="row">
+                                                <Box className="column">
+                                                    <h3>Makeup Collection Face</h3>
+                                                    <Text><Link to="#">Foundation</Link></Text>
+                                                    <Text><Link to="#">Compact</Link></Text>
+                                                    <Text><Link to="#">Highlighter</Link></Text>
+                                                    <Text><Link to="#">Setting Spray</Link></Text>
+                                                    <Text><Link to="#">Primer</Link></Text>
+                                                    <Text><Link to="#">Concealer</Link></Text>
+                                                    <Text><Link to="#">Blush</Link></Text>
+                                                    <Text><Link to="#">Loose Powder</Link></Text>
+                                                    <Text><Link to="#">Bronzer</Link></Text>
+                                                    <Text><Link to="#">Makeup Remover</Link></Text>
+                                                    <Text><Link to="#">Tinted Moisturizer</Link></Text>
+                                                    <Text><Link to="#">Contouring</Link></Text>
+                                                    <Text><Link to="#">BB & CC Cream</Link></Text>
+                                                    <Text><Link to="#">Face Palette</Link></Text>
+                                                </Box>
