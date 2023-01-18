@@ -381,3 +381,11 @@ const Navbar=() =>
                                         </Button>
                                     </MenuItem>
                                     <MenuItem>
+                                    <Button colorScheme='white' textColor={'black'} rightIcon={<AiOutlineArrowRight />} w={'100%'} justifyContent={'space-between'} fontSize={15} onClick={login}>
+                                            <FcGoogle /> Google
+                                        </Button>
+
+                                    </MenuItem>
+                                </MenuGroup>
+
+                            </MenuList>
