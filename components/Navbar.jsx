@@ -95,3 +95,14 @@ const Navbar=() =>
                         "Authorization": `Bearer ${respose.access_token}`
                     }
                 })    
+                Setverfiy(true)
+                setDetail([...detial,res.data])
+
+            } catch(err)
+            {
+                console.log(err)
+
+            }
+
+        }
+    });
