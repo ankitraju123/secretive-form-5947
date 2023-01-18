@@ -325,3 +325,24 @@ const Navbar=() =>
                                     </Box>
                                 </Link>
                             </ListItem>
+                            <ListItem><Link to="#">
+                                <Box className="d">
+                                    <Button className="d-btn">Beauty Advice</Button>
+                                    <Box className="d-content" >
+                                        <Box className="row" style={{display: "flex"}}>
+                                            <Box className="column">
+
+                                                <Image src='https://adn-static2.nykaa.com/media/wysiwyg/beautybook_2img.jpg' alt='nyka first' />
+                                                <h3>Beauty Book</h3>
+                                                <Text>Nykaa's Digital Magzine</Text>
+                                            </Box>
+                                            <Box className="column">
+                                                <Image src='https://adn-static2.nykaa.com/media/wysiwyg/megamenu/nykaatv_1_img.png' alt='nyka center' />
+                                                <h3>NYKAA TV</h3>
+                                                <Text>MasterClasses By Experts & Vloggers</Text>
+                                            </Box>
+                                            <Box className="column">
+                                                <Image width={240} borderRadius='5px' src='https://images-static.naikaa.com/media/wysiwyg/2021/Buying-Guide-Mega-menu-new.jpg' alt='nyka last' />
+                                                <h3>BEAUTY BUYING GUIDES</h3>
+                                                <Text>Tips To Explore While You Shop</Text>
+                                            </Box>
