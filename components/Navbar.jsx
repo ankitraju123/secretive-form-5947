@@ -77,3 +77,21 @@ const Navbar=() =>
     const [price,setPrice]=useState(Price)
     const [quantity,setQuantity]=useState(1);
     const [data,setData]=useState([])    
+
+
+    const handleClick=(e) =>
+    {
+        setQuantity(e.target.value)
+
+    }
+    console.log(price)
+    const login=useGoogleLogin({
+        onSuccess: async respose =>
+        {
+            try
+            {
+                const res=await axios.get("https://www.googleapis.com/oauth2/v3/userinfo",{
+                    headers: {
+                        "Authorization": `Bearer ${respose.access_token}`
+                    }
+                })    
