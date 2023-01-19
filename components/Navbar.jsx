@@ -113,14 +113,14 @@ const Navbar = () => {
                           <Button className="d-btn">Categories</Button> </div> </Link> </li> </ListItem>
 
                   <ListItem>
-                      <Link href="#">
+                      
                           <Box className="d">
                               <Button className="d-btn">Brands</Button>
                           </Box>
-                      </Link>
+                     
                   </ListItem>
                   <ListItem>
-                      <Link href="#">
+                     
                           <Box className="d">
                               <Button className="d-btn">Luxe</Button>
                               <Box className="d-content">
@@ -176,11 +176,11 @@ const Navbar = () => {
                                   </Box>
                               </Box>
                           </Box>
-                      </Link>
+                    
                   </ListItem>
 
                   <ListItem>
-                      <Link href="#">
+                      
                           <Box className="d">
                               <Button className="d-btn"> Nykaa Fashion</Button>
                               <Box className="d-content">
@@ -292,9 +292,9 @@ const Navbar = () => {
                                   </Box>
                               </Box>
                           </Box>
-                      </Link>
+                      
                   </ListItem>
-                  <ListItem><Link href="#">
+                  <ListItem>
                       <Box className="d">
                           <Button className="d-btn">Beauty Advice</Button>
                           <Box className="d-content" >
@@ -318,7 +318,7 @@ const Navbar = () => {
                               </Box>
                           </Box>
                       </Box>
-                  </Link></ListItem>
+              </ListItem>
               </List>
                     </Box>
                     </Box>
