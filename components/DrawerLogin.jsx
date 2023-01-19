@@ -59,8 +59,8 @@ const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,
                                             <Box border={"1px solid lightgray"} w='100%' borderRadius={5} p='1px' mt={3} >
 
                                                 <Box display={'flex'} gap={2} w='100%' borderRadius={5} p='1px' mt={3}>
-                                                    <Image w={20} src={e.image} alt='product_cart' />
-                                                    <Text fontSize={14}><Center>{e.title}</Center></Text>
+                                                    <Image w={20} src="" alt='product_cart' />
+                                                    <Text fontSize={14}><Center>hello</Center></Text>
                                                     <Text color={'#d5418e'} p={4} fontSize={25} className="cursor-pointer"><RiDeleteBin6Line /></Text>
                                                 </Box>
                                                 <hr />
@@ -76,8 +76,8 @@ const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,
 
                                                     </Select>*/}
                                                     <Box display={'flex'}>
-                                                        <Text p={'8px 8px'} fontWeight={500} textDecoration='line-through' color={'lightgray'}>{e.preprice}</Text>
-                                                        <Text p={'8px 8px'} fontWeight={500}>₹{e.price}</Text>
+                                                        <Text p={'8px 8px'} fontWeight={500} textDecoration='line-through' color={'lightgray'}>500</Text>
+                                                        <Text p={'8px 8px'} fontWeight={500}>₹500</Text>
                                                     </Box>
                                                 </Box>
                                             </Box>
