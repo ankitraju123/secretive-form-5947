@@ -27,7 +27,8 @@ export default function Home()
 {
     return (
         <Box>
-     <Navbar/>
+            <Navbar />
+            
         </Box>
     )
 }
