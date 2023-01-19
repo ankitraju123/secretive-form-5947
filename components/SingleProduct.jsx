@@ -19,7 +19,6 @@ import {
 import { Icon } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 
-export default function SingleProduct({ data }) {
 
 export default function SingleProduct({ data,onclick }) {
   return (
