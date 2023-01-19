@@ -11,37 +11,16 @@ import {BsArrowLeft} from "react-icons/bs";
 import {RiDeleteBin6Line,RiCoupon2Line} from "react-icons/ri";
 import {FaArrowRight} from "react-icons/fa";
 import {IoIosInformationCircleOutline} from "react-icons/io"
-import { useDispatch, useSelector } from 'react-redux';
-import axios from 'axios';
-import {deleteProducts,getCartItem} from '../redux/products/actions';
+
 import Link from 'next/link';
 
 const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,shipping}) =>{
-    const [data,setData]=useState([])
-    const cartItem=useSelector(store=>store.cart)
-    const dispatch=useDispatch()
-    const [totalPrice,setTotalPrice]=useState(0)
+    //const [data,setData]=useState([])
+    //const cartItem=useSelector(store=>store.cart)
+    //const dispatch=useDispatch()
+    //const [totalPrice,setTotalPrice]=useState(0)
 
-    // console.log('carttttt',cartItem)
-  
-    useEffect(()=>{
-    
-        axios.get('https://nykaa-data-base.vercel.app/cart').then((res)=>{
-            setData(res.data);    
-          })
-          dispatch(getCartItem())
-    },[dispatch])
-    // console.log("x",totalPrice)
-    const sum = data.reduce((result, item)=> {
-        return result + item.price;
-      }, 0);
-      const tp=sum 
-      console.log('total',tp);
-    
-    const handleDel=(id)=>{
-        dispatch(deleteProducts(id)).then(() => dispatch(getCartItem()));
-    }
-
+   
 
     const { isOpen, onOpen, onClose } = useDisclosure()
     const btnRef = React.useRef()
@@ -65,7 +44,7 @@ const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,
                                             <BsArrowLeft fontSize={20} fontWeight={500} onClick={onClose} />
                                         </Text>
                                             Bag <Text fontWeight={100} ml='10px' fontSize={10} mt='10px'>
-                                                {data.length} items
+                                                 items
                                             </Text>
                                         </DrawerHeader>
                                         <hr />
@@ -74,35 +53,35 @@ const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,
                                                 <Text fontSize={14}>2000 Reward Points on new registration</Text>
                                                 <Button w={'100%'} h={8} bg={'transparent'} border={'1px solid #d5418e'} color='#d5418e' m={'10px 0'} fontSize={15} _hover={{bg: "transparent"}}><Link to='/login'>Login/Register</Link> </Button>
                                             </Box>}
-                                            {data.map((e)=>(
+                                    
 
                                             
-                                            <Box border={"1px solid lightgray"} w='100%' borderRadius={5} p='1px' mt={3} key>
+                                            <Box border={"1px solid lightgray"} w='100%' borderRadius={5} p='1px' mt={3} >
 
                                                 <Box display={'flex'} gap={2} w='100%' borderRadius={5} p='1px' mt={3}>
                                                     <Image w={20} src={e.image} alt='product_cart' />
                                                     <Text fontSize={14}><Center>{e.title}</Center></Text>
-                                                    <Text onClick={()=>handleDel((e.id))} color={'#d5418e'} p={4} fontSize={25} className="cursor-pointer"><RiDeleteBin6Line /></Text>
+                                                    <Text color={'#d5418e'} p={4} fontSize={25} className="cursor-pointer"><RiDeleteBin6Line /></Text>
                                                 </Box>
                                                 <hr />
                                                 <Box display={'flex'} justifyContent={'space-between'}>
 
 
-                                                    <Select value={quantity} border='none' w={"140px"} onChange={handleClick}>
+                                                    {/*<Select value={quantity} border='none' w={"140px"} onChange={handleClick}>
                                                         <option value='1'>Quantity : 1</option>
                                                         <option value='2'>Quantity : 2</option>
                                                         <option value='3'>Quantity : 3</option>
                                                         <option value='4'>Quantity : 4</option>
                                                         <option value='5'>Quantity : 5</option>
 
-                                                    </Select>
+                                                    </Select>*/}
                                                     <Box display={'flex'}>
                                                         <Text p={'8px 8px'} fontWeight={500} textDecoration='line-through' color={'lightgray'}>{e.preprice}</Text>
                                                         <Text p={'8px 8px'} fontWeight={500}>₹{e.price}</Text>
                                                     </Box>
                                                 </Box>
                                             </Box>
-                                            ))}
+                                   
                                             <Box border={"1px solid lightgray"} w='100%' borderRadius={5} p='5px' gap={5} mt={3} display={'flex'} justifyContent={'space-between'}>
                                                 <Text m={'9px 1px 9px 12px'} fontSize={28}>
                                                     <RiCoupon2Line fill='#d5418e' />
@@ -121,12 +100,12 @@ const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,
                                                 </Text>
                                                 <Box p={5}>
                                                     <Box display={'flex'} justifyContent='space-between'>
-                                                        <Text>Bag MRP ({data.length} items)</Text>
-                                                        <Text>₹{ tp*Number(quantity)}</Text>
+                                                        <Text>Bag MRP </Text>
+                                                        <Text>₹500</Text>
                                                     </Box>
                                                     <Box display={'flex'} justifyContent='space-between' m={'10px 0'}>
                                                         <Text>Bag Dicount</Text>
-                                                        <Text className='line-through text-gray-500'>₹{discount*Number(quantity)}</Text>
+                                                        <Text className='line-through text-gray-500'>₹500</Text>
                                                     </Box>
                                                     <Box display={'flex'} justifyContent='space-between'>
                                                         <Text>Shipping</Text>
@@ -135,14 +114,14 @@ const DrawerLogin=({verfiy,quantity,handleClick,Price,offerPrice,price,discount,
                                                 </Box>
                                                 <Box display={'flex'} justifyContent='space-between'>
                                                     <Text fontWeight={700}>You Pay</Text>
-                                                    <Text fontWeight={700}>₹{tp}</Text>
+                                                    <Text fontWeight={700}>₹500</Text>
                                                 </Box>
                                             </Box>
                                         </DrawerBody>
                                         <hr />
                                         <DrawerFooter justifyContent={'space-between'}>
                                             <Box>
-                                                <Heading fontSize={17}>₹{tp}</Heading>
+                                                <Heading fontSize={17}>₹500</Heading>
                                                 <Box display={'flex'} gap={1}><Text fontSize={12} >Grand Total </Text> <IoIosInformationCircleOutline fontSize={15} color='#ff8fba' /></Box>
                                             </Box>
                                             <Button colorScheme='pink' variant='solid' rightIcon={<FaArrowRight />}>

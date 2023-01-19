@@ -25,6 +25,8 @@ import {useGoogleLogin} from '@react-oauth/google';
 import axios from "axios";
 import Menus from "./Menu";
 import {FcGoogle} from "react-icons/fc";
+import Drawers from "./DrawerNoLogin";
+import DrawerLogin from "./DrawerLogin";
 const Navbar=() =>
 {
     const logout=() =>
@@ -455,6 +457,13 @@ const login=useGoogleLogin({
                         )
 
                         )}
+                            {count===1?
+
+<Drawers />
+
+:
+<DrawerLogin verfiy={verfiy} handleClick={handleClick} offerPrice={offerPrice} quantity={quantity} Price={Price} price={price} discount={discount} shipping={shipping} />
+}
                     </Box>
 
             </Box>
