@@ -33,7 +33,8 @@ export const addToCart=(data)=>(dispatch)=>{
 
 export const getCartData=()=>async(dispatch)=>{
 
-    let res=axios.get("http://localhost:8080/cart")
+    let res= await axios.get("http://localhost:8080/cart")
+   
     dispatch({type:CART_GET_DATA,
               payload:res.data })
 }
@@ -42,7 +43,7 @@ export const deleteCartData=(data)=>(dispatch)=>{
     dispatch({type:LOADING})
     try{
        
-        let res=axios.delete(``)
+        let res= axios.delete(`http://localhost:8080/cart/${data.id}`)
         dispatch({type:CART_DELETE_DATA,
                     payload:data})
     }

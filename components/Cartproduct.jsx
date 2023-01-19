@@ -13,7 +13,7 @@ import {
   Box,
 } from "@chakra-ui/react";
 
-export default function SingleProduct({ data,onclick }) {
+export default function CartProduct({ data,onclick }) {
   return (
     <Card maxW="sm">
       <CardBody>
@@ -29,17 +29,18 @@ export default function SingleProduct({ data,onclick }) {
           </Text>
         </Box>
         <Text color="blue.600" fontSize="2xl">
-          $450
+          {data.price}
+        </Text>
+        <Text color="blue.600" fontSize="2xl">
+          {data.preprice}
         </Text>
       </CardBody>
       <Divider />
       <CardFooter>
         <ButtonGroup spacing="2">
-          <Button variant="solid" colorScheme="blue">
-            Buy now
-          </Button>
-          <Button onClick={onclick} variant="ghost" colorScheme="blue">
-            Add to cart
+          
+        <Button onClick={onclick} variant="ghost" colorScheme="red">
+            Remove
           </Button>
         </ButtonGroup>
       </CardFooter>
