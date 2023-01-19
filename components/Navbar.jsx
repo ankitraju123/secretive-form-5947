@@ -11,7 +11,7 @@ import {
   Container,
   Center,
     Menu,
-  List,ListItem, useDisclosure
+  List,ListItem, useDisclosure,MenuButton,MenuGroup,MenuList,MenuItem,AlertDialog,AlertDialogContent,AlertDialogHeader,AlertDialogBody,AlertDialogOverlay
 } from "@chakra-ui/react";
 import {
   AiOutlineMobile,
@@ -22,37 +22,40 @@ import { GoLocation, GoSearch } from "react-icons/go";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import Link from "next/link";
 import {useGoogleLogin} from '@react-oauth/google';
-
-const logout=() =>
-{
-    setDetail([]);
-    Setverfiy(false)
-}
-//console.log(detial,"done")
-const Nav1List = [
-    {
-      id:1,
-      name: "Get App",
-      icon: <AiOutlineMobile />,
-    },
-    {
-      id:2,
-      name: "Store & Events",
-      icon: <GoLocation />,
-    },
-    {
-      id:3,
-      name: "Gift Card",
-      icon: <AiOutlineGift />,
-    },
-    {
-      id:4,
-      name: "Help",
-      icon: <IoIosHelpCircleOutline />,
-    },
-  ];
+import axios from "axios";
+import Menus from "./Menu";
+import {FcGoogle} from "react-icons/fc";
 const Navbar=() =>
 {
+    const logout=() =>
+    {
+        setDetail([]);
+        Setverfiy(false)
+    }
+    //console.log(detial,"done")
+    const Nav1List = [
+        {
+          id:1,
+          name: "Get App",
+          icon: <AiOutlineMobile />,
+        },
+        {
+          id:2,
+          name: "Store & Events",
+          icon: <GoLocation />,
+        },
+        {
+          id:3,
+          name: "Gift Card",
+          icon: <AiOutlineGift />,
+        },
+        {
+          id:4,
+          name: "Help",
+          icon: <IoIosHelpCircleOutline />,
+        },
+      ];
+    const cancelRef=React.useRef()
     const Price=249;
 const discount=30;
 const shipping=70;
@@ -154,7 +157,7 @@ const login=useGoogleLogin({
       <Box w={'80%'} h={{lg: 68,md: "auto",s: "auto"}} m={'auto'} display={'flex'} justifyContent={'space-between'} fontWeight={500} fontSize={'16px'}>
           <Box display={{base: 'grid',lg: 'flex'}} justifyContent={'space-evenly'} alignItems='center' gap={10} textAlign={'start'}>
               <List spacing={1} display={{base: 'grid',md: 'flex',lg: 'flex'}} >
-                  <Heading textAlign={'center'} ><Link href="/"><Image w={'83px'} src="" alt='lgo'/></Link></Heading>
+                  <Heading textAlign={'center'} ><Link href="/"><Image w={'53px'} src="./logo.jpg" alt='lgo'/></Link></Heading>
 
                   <ListItem _hover={{color: 'white'}} textAlign={{base: "start",md: 'center',lg: 'center'}}>
 
@@ -383,6 +386,75 @@ const login=useGoogleLogin({
                                 </InputLeftElement>
                             </InputGroup>
                         </Box>
+                        
+                        {detial.length==0? <Menu>
+                            <MenuButton as={Button} colorScheme='pink' fontSize={{base: 1,s: 5,md: 10}}>
+                                Sign in
+                            </MenuButton>
+                            <MenuList float={'left'} width={21} Text={2}>
+                                <MenuGroup p={2}>
+                                    <Heading fontSize={20} fontWeight={400} m={"8px"}>Login / Create Account</Heading>
+                                    <Text fontSize={10} p={2}>Register Now and get <b>2000 Nykaa reward point instantly!</b></Text>
+                                    <MenuItem>
+                                        <Button w={'100%'} fontSize={13}>
+                                            <Link href='/login'>
+                                                Sign in with Mobile/Email
+                                            </Link>
+                                        </Button>
+                                    </MenuItem>
+                                    <MenuItem>
+
+                                        <Button colorScheme='white' textColor={'black'} rightIcon={<AiOutlineArrowRight />} w={'100%'} justifyContent={'space-between'} fontSize={15} onClick={login}>
+                                            <FcGoogle /> Google
+                                        </Button>
+
+                                    </MenuItem>
+                                </MenuGroup>
+
+                            </MenuList>
+                        </Menu>:detial.map((e) => (
+                            <Box key={e}>
+                                <Menus text={e.name} logout={onOpen} />
+                                <AlertDialog
+                                    isOpen={isOpen}
+                                    leastDestructiveRef={cancelRef}
+                                    onClose={onClose}
+                                    size='xs'
+                                    isCentered
+                                    motionPreset='slideInBottom'
+                                >
+                                    <AlertDialogOverlay>
+                                        <AlertDialogContent w={'50%'}>
+                                            <AlertDialogHeader fontSize='lg' textAlign={'center'} fontWeight='bold'>
+                                                Are you sure you want href logout?
+                                            </AlertDialogHeader>
+                                            <hr />
+                                            <AlertDialogBody display={'grid'} gap={2}>
+
+                                                <Button onClick={logout} bgColor={'transparent'} _hover={{bgColor: "transparent"}} color='#d5418e' ml={3}>
+                                                    Logout
+                                                </Button>
+                                                <hr />
+
+                                                <Button onClick={logout} bgColor={'transparent'} _hover={{bgColor: "transparent"}} color='#d5418e' ml={3}>
+                                                    Logout from all devices
+                                                </Button>
+                                                <hr />
+
+                                                <Button ref={cancelRef} bgColor={'transparent'} _hover={{bgColor: "transparent"}} color='#d5418e' onClick={onClose}>
+                                                    Cancel
+                                                </Button>
+                                            </AlertDialogBody>
+
+
+
+                                        </AlertDialogContent>
+                                    </AlertDialogOverlay>
+                                </AlertDialog>
+                            </Box>
+                        )
+
+                        )}
                     </Box>
 
             </Box>
