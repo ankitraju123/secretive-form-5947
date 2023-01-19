@@ -10,7 +10,6 @@
       "preprice": "₹325",
       "price": 244,
       "discount": "24% Off",
-      "discount": 25,
       "css-i6xqbh": "Enjoy Free Gift",
       "rating": 6932,
       "css-asphnc": "18 shades",
@@ -27,9 +26,6 @@
       "preprice": "₹244",
       "price": 195,
       "discount": "20% Off",
-      "preprice": "",
-      "price": 195,
-      "discount": "",
       "css-i6xqbh": "Get Free Product",
       "rating": 6894,
       "css-asphnc": "",
@@ -94,7 +90,6 @@
       "preprice": "₹999",
       "price": 749,
       "discount": "25% Off",
-      "discount": 25,
       "css-i6xqbh": "",
       "rating": 4412,
       "css-asphnc": "24 shades",
@@ -619,7 +614,7 @@
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-eyeconic-liquid-eyeliner-black/p/1037788?productId=1037788&pps=20",
-      "image": "",
+      "image": "https://images-static.nykaa.com/media/catalog/product/b/3/b394c92NYKAC00000441_1.jpg",
       "title": "Lakme Eyeconic Liquid Eyeliner - Black",
       "preprice": "₹260",
       "price": 208,
@@ -3606,6 +3601,5 @@
       "id": 379
     }
   ],
-  "cart": [
-  ]
+  "cart": []
 }
