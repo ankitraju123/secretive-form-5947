@@ -1,8 +1,13 @@
 import React from "react";
 import { Box, Grid, GridItem, Image, Heading } from "@chakra-ui/react";
 import SingleProduct from "../components/SingleProduct";
+import { addToCart } from "@/redux/actions";
+import { useDispatch } from "react-redux";
+
 
 const allProducts = ({ pro_data }) => {
+  const dispatch=useDispatch()
+
   //   console.log(pro_data);
   return (
     <>
@@ -28,6 +33,17 @@ const allProducts = ({ pro_data }) => {
         </Grid>
       </Box>
     </>
+    <Box w="70%" borderWidth="1px" borderRadius="lg" m="auto" p={5}>
+      <Grid templateColumns="repeat(3, 1fr)" gap={5}>
+        {pro_data.map((prod) => {
+          return (
+            <GridItem w="100%" key={prod.id}>
+              <SingleProduct data={prod} onclick={()=>{dispatch(addToCart(prod))}} />
+            </GridItem>
+          );
+        })}
+      </Grid>
+    </Box>
   );
 };
 

@@ -10,6 +10,7 @@
       "preprice": "₹325",
       "price": 244,
       "discount": "24% Off",
+      "discount": 25,
       "css-i6xqbh": "Enjoy Free Gift",
       "rating": 6932,
       "css-asphnc": "18 shades",
@@ -26,6 +27,9 @@
       "preprice": "₹244",
       "price": 195,
       "discount": "20% Off",
+      "preprice": "",
+      "price": 195,
+      "discount": "",
       "css-i6xqbh": "Get Free Product",
       "rating": 6894,
       "css-asphnc": "",
@@ -90,6 +94,7 @@
       "preprice": "₹999",
       "price": 749,
       "discount": "25% Off",
+      "discount": 25,
       "css-i6xqbh": "",
       "rating": 4412,
       "css-asphnc": "24 shades",
@@ -3601,6 +3606,6 @@
       "id": 379
     }
   ],
-
-  "cart": []
+  "cart": [
+  ]
 }

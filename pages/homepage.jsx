@@ -1,3 +1,4 @@
+import { useRouter } from 'next/router'
 import React from 'react'
 
 let Cards1 = [{ url: "https://images-static.nykaa.com/uploads/c4f533f4-d692-45df-8371-3b9ca763a59d.jpg?tr=w-1200,cm-pad_resize" },
@@ -10,6 +11,8 @@ let Cards1 = [{ url: "https://images-static.nykaa.com/uploads/c4f533f4-d692-45df
 
 
 const homePage = () => {
+  const router=useRouter()
+  
   return (
     <div>
 
@@ -31,7 +34,7 @@ const homePage = () => {
       {/* Top Brands */}
 
 
-      <div className='top-brands'>
+      <div className='top-brands' onClick={()=>router.push("/all_products")}>
         <h1>Top brands</h1>
         <div className="homepage-cards">
           <div className="home-subcard">
@@ -134,7 +137,7 @@ const homePage = () => {
 
 
       <div className='pink-back'>
-        <div className="top-brands">
+        <div className="top-brands" onClick={()=>router.push("/all_products")}>
         <h1>Only At Nykaa</h1>
         <div className="homepage-card last-sub">
           <div className="home-subcard last-card">
@@ -174,7 +177,7 @@ const homePage = () => {
       </div>
 
 
-      <div className="top-brands">
+      <div className="top-brands" onClick={()=>router.push("/all_products")}>
       <h1>Discover Our Favourites</h1>
       <img className='sdbanner' src="https://images-static.nykaa.com/uploads/82eed1ab-64b2-4cb9-818b-9b39cd9284ec.jpg?tr=w-1200,cm-pad_resize" alt="img" />
       <div className="carosel">
@@ -185,7 +188,7 @@ const homePage = () => {
 
     {/* Featured */}
 
-    <div className="top-brands">
+    <div className="top-brands" onClick={()=>router.push("/all_products")}>
       <h1>Featured Brands</h1>
       <div className="featured">
         <div className="feat-sub-card">
@@ -293,7 +296,7 @@ const homePage = () => {
    
 
    <div className="aquad">
-    <div className="top-brands">
+    <div className="top-brands" onClick={()=>router.push("/all_products")}>
       <h1>Everyday Essentials</h1>
       <img className='sdbanner' src="https://images-static.nykaa.com/uploads/2adda7a5-567a-4db1-b408-06c96be60287.jpg?tr=w-1200,cm-pad_resize" alt="img" />
     </div>
@@ -312,7 +315,7 @@ const homePage = () => {
     </div>
 
 
-      <div className="top-brands">
+      <div className="top-brands" onClick={()=>router.push("/all_products")}>
         <h1>Brands You Can't Miss</h1>
         <p>Luxe</p>
         <div className="Carosel"></div>
@@ -441,13 +444,13 @@ const homePage = () => {
       </div>
 
 
-      <div className="top-brands">
+      <div className="top-brands" onClick={()=>router.push("/all_products")}>
         <h1>Game Zone</h1>
         <p>Play & Win</p>
         <img className="tp-img" src="https://images-static.nykaa.com/uploads/ea4f8daa-4cb5-484a-90f5-b0d3e2998353.png?tr=w-1200,cm-pad_resize" alt="" />
       </div>
 
-      <div className="top-brands">
+      <div className="top-brands" onClick={()=>router.push("/all_products")}>
         <h1>Gifting At Nykaa</h1>
         <p>Give The Present of Beauty</p>
         <div className='tp-subdiv'>
@@ -456,13 +459,13 @@ const homePage = () => {
         </div>
       </div>
 
-      <div className="top-brands">
+      <div className="top-brands" onClick={()=>router.push("/all_products")}>
         <h1>Discover More At Nykaa</h1>
         <p>Special Offerings</p>
         <div className="Carosel"></div>
       </div>
 
-      <div className="top-brands">
+      <div className="top-brands" onClick={()=>router.push("/all_products")}>
       <div className="discover-more">
           <div className="home-subcard discover-card">
             <img src="https://images-static.nykaa.com/uploads/25a2e412-b051-4c62-8c30-c573f911d305.jpg?tr=w-600,cm-pad_resize" alt="img" />
@@ -482,7 +485,7 @@ const homePage = () => {
         <div className="Carosel"></div> 
       </div>
 
-      <div className="top-brands">
+      <div className="top-brands" onClick={()=>router.push("/all_products")}>
       <div className="discover-more">
           <div className="home-subcard discover-card">
             <img src="https://images-static.nykaa.com/uploads/71c7558d-637c-40ee-b09b-7dfda35cf125.jpg?tr=w-600,cm-pad_resize" alt="img" />
@@ -504,7 +507,7 @@ const homePage = () => {
       </div>
 
       
-    <div className="top-brands">
+    <div className="top-brands" onClick={()=>router.push("/all_products")}>
       <img src="https://images-static.nykaa.com/uploads/49e43a50-37b5-405a-be2d-ab90055115ec.jpg?tr=w-1200,cm-pad_resize" alt="img" />
     </div>
 

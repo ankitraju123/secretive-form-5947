@@ -15,10 +15,13 @@ import {
   HStack,
 } from "@chakra-ui/react";
 
+
 import { Icon } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 
 export default function SingleProduct({ data }) {
+
+export default function SingleProduct({ data,onclick }) {
   return (
     <Card size="md">
       <CardBody>
@@ -70,6 +73,7 @@ export default function SingleProduct({ data }) {
           </Flex>
         </Box>
       </CardBody>
+
       <Box w="100%" h="50px">
         <Flex gap={5}>
           <Button w="100%" backgroundColor="white">
@@ -89,6 +93,14 @@ export default function SingleProduct({ data }) {
             >
               <Text pt={2.5}>Add To Bag</Text>
             </Box>
+      <Divider />
+      <CardFooter>
+        <ButtonGroup spacing="2">
+          <Button variant="solid" colorScheme="blue">
+            Buy now
+          </Button>
+          <Button onClick={onclick} variant="ghost" colorScheme="blue">
+            Add to cart
           </Button>
         </Flex>
       </Box>
