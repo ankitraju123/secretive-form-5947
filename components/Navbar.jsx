@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import {
   Box,
   Heading,
@@ -8,11 +8,10 @@ import {
   InputGroup,
   InputLeftElement,
   Image,
-  useDisclosure,
   Container,
   Center,
     Menu,
-  List,ListItem
+  List,ListItem, useDisclosure
 } from "@chakra-ui/react";
 import {
   AiOutlineMobile,
@@ -22,29 +21,79 @@ import {
 import { GoLocation, GoSearch } from "react-icons/go";
 import { IoIosHelpCircleOutline } from "react-icons/io";
 import Link from "next/link";
+import {useGoogleLogin} from '@react-oauth/google';
+
+const logout=() =>
+{
+    setDetail([]);
+    Setverfiy(false)
+}
+//console.log(detial,"done")
 const Nav1List = [
-  {
-    id:1,
-    name: "Get App",
-    icon: <AiOutlineMobile />,
-  },
-  {
-    id:2,
-    name: "Store & Events",
-    icon: <GoLocation />,
-  },
-  {
-    id:3,
-    name: "Gift Card",
-    icon: <AiOutlineGift />,
-  },
-  {
-    id:4,
-    name: "Help",
-    icon: <IoIosHelpCircleOutline />,
-  },
-];
-const Navbar = () => {
+    {
+      id:1,
+      name: "Get App",
+      icon: <AiOutlineMobile />,
+    },
+    {
+      id:2,
+      name: "Store & Events",
+      icon: <GoLocation />,
+    },
+    {
+      id:3,
+      name: "Gift Card",
+      icon: <AiOutlineGift />,
+    },
+    {
+      id:4,
+      name: "Help",
+      icon: <IoIosHelpCircleOutline />,
+    },
+  ];
+const Navbar=() =>
+{
+    const Price=249;
+const discount=30;
+const shipping=70;
+//const totalprice=((shipping+Price)-discount);
+const offerPrice=(Price-discount);
+const {isOpen,onOpen,onClose}=useDisclosure();
+const btnRef=React.useRef();
+const [detial,setDetail]=useState([]);
+const [verfiy,Setverfiy]=useState(false);
+const [count,setCount]=useState(0);
+const [price,setPrice]=useState(Price)
+const [quantity,setQuantity]=useState(1);
+    const [data,setData]=useState([])
+    
+    const handleClick=(e) =>
+{
+    setQuantity(e.target.value)
+
+}
+console.log(price)
+const login=useGoogleLogin({
+    onSuccess: async respose =>
+    {
+        try
+        {
+            const res=await axios.get("https://www.googleapis.com/oauth2/v3/userinfo",{
+                headers: {
+                    "Authorization": `Bearer ${respose.access_token}`
+                }
+            })
+            Setverfiy(true)
+            setDetail([...detial,res.data])
+
+        } catch(err)
+        {
+            console.log(err)
+
+        }
+
+    }
+})
     return (
       <Box>
     <Box
