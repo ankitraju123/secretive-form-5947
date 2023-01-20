@@ -1,9 +1,5 @@
-import Carousel from "/components/carousel";
 import { useRouter } from "next/router";
 import React from "react";
-import { Box, IconButton, useBreakpointValue } from "@chakra-ui/react";
-import { BiLeftArrowAlt, BiRightArrowAlt } from "react-icons/bi";
-import Slider from "react-slick";
 
 let Cards1 = [
   {
