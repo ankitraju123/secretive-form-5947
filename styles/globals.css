@@ -106,11 +106,6 @@ a {
   }
 }
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-  }
   
   .d {
       float: right;
@@ -138,7 +133,7 @@ a {
   
       left: -0.5;
       /*right: 10;*/
-      margin: 4px auto;
+      margin:  auto;
       z-index: 10;
       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
       border-radius: 0 0 5px 5px;
@@ -147,7 +142,7 @@ a {
   
   .b-content {
       display: none;
-      position: absolute;
+      position: fixed;
       background: white;
       width: 65%;
       /*left: 1;*/
