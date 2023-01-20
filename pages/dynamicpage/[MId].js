@@ -23,7 +23,8 @@ const Pages = ({ data }) => {
 
 export async function getServerSideProps(context) {
   // console.log(context)
-  const { MId } = context.params;
+  // const { MId } = context.params;
+  console.log(`http://localhost:8080/product/${MId}`);
   const res = await axios.get(`http://localhost:8080/product/${MId}`);
   return {
     props: {

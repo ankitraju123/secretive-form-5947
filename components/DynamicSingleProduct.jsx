@@ -12,8 +12,11 @@ import {
   Box,
 } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
+import { useDispatch } from "react-redux";
+import { addToCart } from "@/redux/actions";
 
 export default function DynamicSingleProduct({ product_data }) {
+  const dispatch = useDispatch();
   //   console.log(product_data);
   return (
     <Card mt={10} mb={10}>
@@ -71,6 +74,9 @@ export default function DynamicSingleProduct({ product_data }) {
                 variant="solid"
                 color="white"
                 w="30%"
+                onClick={() => {
+                  dispatch(addToCart(product_data));
+                }}
               >
                 Add To Bag
               </Button>

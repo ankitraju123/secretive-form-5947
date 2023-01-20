@@ -11,15 +11,12 @@ import {
   Card,
 } from "@chakra-ui/react";
 import SingleProduct from "../../components/SingleProduct";
-import { addToCart } from "@/redux/actions";
-import { useDispatch } from "react-redux";
+
 import Link from "next/link";
-import { useRouter } from "next/router";
 
 const allProducts = ({ pro_data }) => {
   //   console.log(pro_data);
-  const dispatch = useDispatch();
-  const router = useRouter();
+
   return (
     <>
       <Box w="100%" m="auto" align="center" p={5}>
@@ -37,31 +34,9 @@ const allProducts = ({ pro_data }) => {
           {pro_data.map((prod) => {
             return (
               <Card key={prod.id}>
-                <GridItem onClick={() => router.push(`./${prod.id}`)} w="100%">
+                <GridItem w="100%">
                   <SingleProduct data={prod} />
-                  <Box w="100%" backgroundColor="white">
-                    <Flex gap={4}>
-                      <Box backgroundColor="white" mr={6}>
-                        <Image
-                          src="https://www.shareicon.net/data/2017/02/15/878857_pink_512x512.png"
-                          alt="wishlist"
-                          boxSize="35px"
-                        ></Image>
-                      </Box>
-                      <Button
-                        backgroundColor="#fc2779"
-                        w="90%"
-                        mr={0}
-                        color="white"
-                      >
-                        Add To Bag
-                      </Button>
-                    </Flex>
-                  </Box>
                 </GridItem>
-                {/* <Box w="100%" h="50px"> */}
-
-                {/* </Box> */}
               </Card>
             );
           })}
