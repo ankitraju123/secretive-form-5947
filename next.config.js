@@ -15,9 +15,5 @@ const nextConfig = {
 }
 
 module.exports = nextConfig
-// {
-//   protocol: 'https',
-//   hostname:'images-static.nykaa.com',
-//   port: '',
-//   pathname: '**',
-// }
+
+
