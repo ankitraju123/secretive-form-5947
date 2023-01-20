@@ -1,4 +1,6 @@
-
+body{
+    background-color: white;
+}
 .sndbanner{
     margin: 3rem 5%;
     border-radius: 10px;

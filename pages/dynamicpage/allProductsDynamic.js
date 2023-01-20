@@ -1,14 +1,15 @@
 import React from "react";
-import { Box, Grid, GridItem, Image, Heading } from "@chakra-ui/react";
+import { Box, Grid, GridItem, Image, Heading, Flex, Button, Text } from "@chakra-ui/react";
 import SingleProduct from "../../components/SingleProduct";
 import { addToCart } from "@/redux/actions";
 import { useDispatch } from "react-redux";
 import Link from "next/link";
+import { useRouter } from "next/router";
 
 const allProducts = ({ pro_data }) => {
   //   console.log(pro_data);
   const dispatch = useDispatch();
-
+  const router= useRouter()
   return (
     <>
       <Box w="100%" m="auto" align="center" p={5}>
@@ -25,19 +26,40 @@ const allProducts = ({ pro_data }) => {
         <Grid templateColumns="repeat(3, 1fr)" gap={5}>
           {pro_data.map((prod) => {
             return (
-              // <Link href={`./${prod.id}`} key={prod.id}>
-              <GridItem w="100%" key={prod.id}>
+              <div>
+              <GridItem onClick={()=>router.push(`./${prod.id}`)} w="100%" key={prod.id}>
                 <SingleProduct
                   data={prod}
-                  onclick={() => {
-                    dispatch(addToCart(prod));
-                  }}
                 />
               </GridItem>
-              // </Link>
+              <Box w="100%" h="50px">
+        <Flex gap={5}>
+          <Button w="100%" backgroundColor="white" onClick={()=>{dispatch(addToCart(prod))}}>
+            <Box backgroundColor="white" mr={6}>
+              <Image
+                src="https://www.shareicon.net/data/2017/02/15/878857_pink_512x512.png"
+                alt="wishlist"
+                boxSize="35px"
+              ></Image>
+            </Box>
+            <Box
+              backgroundColor="#fc2779"
+              h="100%"
+              w="90%"
+              mr={0}
+              color="white"
+            >
+              <Text pt={2.5}>Add To Bag</Text>
+            </Box>
+          </Button>
+        </Flex>
+      </Box>
+      </div>
+             
             );
           })}
         </Grid>
+        
       </Box>
     </>
   );

@@ -70,28 +70,7 @@ export default function SingleProduct({ data, onclick }) {
           </Flex>
         </Box>
       </CardBody>
-      <Box w="100%" h="50px">
-        <Flex gap={5}>
-          <Button w="100%" backgroundColor="white" onClick={onclick}>
-            <Box backgroundColor="white" mr={6}>
-              <Image
-                src="https://www.shareicon.net/data/2017/02/15/878857_pink_512x512.png"
-                alt="wishlist"
-                boxSize="35px"
-              ></Image>
-            </Box>
-            <Box
-              backgroundColor="#fc2779"
-              h="100%"
-              w="90%"
-              mr={0}
-              color="white"
-            >
-              <Text pt={2.5}>Add To Bag</Text>
-            </Box>
-          </Button>
-        </Flex>
-      </Box>
+      
     </Card>
   );
 }
