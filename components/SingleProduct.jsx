@@ -14,11 +14,15 @@ import {
   Flex,
   HStack,
 } from "@chakra-ui/react";
-
+import { useDispatch } from "react-redux";
 import { Icon } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
+import { useRouter } from "next/router";
+import { addToCart } from "@/redux/actions";
 
 export default function SingleProduct({ data, onclick }) {
+  const dispatch = useDispatch();
+  const router = useRouter();
   return (
     <Card size="md">
       <CardBody>
@@ -28,6 +32,7 @@ export default function SingleProduct({ data, onclick }) {
           borderRadius="sm"
           boxSize="170px"
           m="auto"
+          onClick={() => router.push(`./${data.id}`)}
         />
         <Box h={10} mt={5} align="center">
           <Text fontSize="sm" align="center" as="b">
@@ -69,8 +74,31 @@ export default function SingleProduct({ data, onclick }) {
             </Box>
           </Flex>
         </Box>
+        <Box w="100%" backgroundColor="white" mt={5}>
+          <Flex gap={4}>
+            <Box backgroundColor="white" mr={5} w="20%">
+              <Image
+                src="https://www.shareicon.net/data/2017/02/15/878857_pink_512x512.png"
+                alt="wishlist"
+                w="80%"
+              ></Image>
+            </Box>
+            <Box w="80%">
+              <Button
+                backgroundColor="#fc2779"
+                w="100%"
+                mr={0}
+                color="white"
+                onClick={() => {
+                  dispatch(addToCart(data));
+                }}
+              >
+                Add To Bag
+              </Button>
+            </Box>
+          </Flex>
+        </Box>
       </CardBody>
-      
     </Card>
   );
 }
