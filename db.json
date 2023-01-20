@@ -1,7 +1,8 @@
 {
   "product": [
     {
-      "quantity":0,"id": 1,
+      "quantity": 0,
+      "id": 1,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-so-creme-creamy-matte-lipstick/p/683166?productId=683166&pps=1",
@@ -17,7 +18,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 2,
+      "quantity": 0,
+      "id": 2,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/m-a-c-matte-lipstick/p/90344?productId=90344&skuId=90363&pps=2",
@@ -33,7 +35,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 3,
+      "quantity": 0,
+      "id": 3,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/maybelline-new-york-color-sensational-ultimattes-lipstick/p/4317050?productId=4317050&pps=3",
@@ -49,7 +52,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 4,
+      "quantity": 0,
+      "id": 4,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-absolute-matte-revolution-lip-color/p/531129?productId=531129&pps=4",
@@ -65,7 +69,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 5,
+      "quantity": 0,
+      "id": 5,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/renee-cosmetics-black-magic-madness-ph-stick/p/4869841?productId=4869841&pps=6",
@@ -81,7 +86,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 6,
+      "quantity": 0,
+      "id": 6,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/kay-beauty-matte-lipstick/p/1010793?productId=1010793&pps=7",
@@ -97,7 +103,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 7,
+      "quantity": 0,
+      "id": 7,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lovechild-masaba-for-the-kid-in-you-luxe-matte-lipstick/p/6805644?productId=6805644&pps=8",
@@ -113,7 +120,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 8,
+      "quantity": 0,
+      "id": 8,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/mamaearth-moisture-matte-longstay-lipstick-with-avocado-oil-vitamin-e/p/4657320?productId=4657320&pps=10",
@@ -129,7 +137,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 9,
+      "quantity": 0,
+      "id": 9,
       "custom-tag": "FEATURED",
       "custom-tag 2": "NEW",
       "css-qlopj4 href": "https://www.nykaa.com/rude-cosmetics-attitude-matte-lipstick/p/7144568?productId=7144568&pps=11",
@@ -145,7 +154,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 10,
+      "quantity": 0,
+      "id": 10,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/maybelline-new-york-color-sensational-creamy-matte-lipsticks/p/353926?productId=353926&pps=12",
@@ -161,7 +171,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 11,
+      "quantity": 0,
+      "id": 11,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-forever-matte-liquid-lip-colour/p/623306?productId=623306&pps=13",
@@ -177,7 +188,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 12,
+      "quantity": 0,
+      "id": 12,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-9-to-5-primer-matte-lipstick/p/1037767?productId=1037767&pps=14",
@@ -193,7 +205,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 13,
+      "quantity": 0,
+      "id": 13,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lipstick-little-m-a-c/p/331327?productId=331327&pps=16",
@@ -209,7 +222,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 14,
+      "quantity": 0,
+      "id": 14,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-ultra-matte-mini-lipstick/p/1318313?productId=1318313&pps=17",
@@ -225,7 +239,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 15,
+      "quantity": 0,
+      "id": 15,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/dot-key-gloss-boss-tinted-lip-balm-spf-30-vitamin-c-e/p/7107244?productId=7107244&pps=18",
@@ -241,7 +256,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 16,
+      "quantity": 0,
+      "id": 16,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/faces-ultime-pro-hd-intense-matte-lips-primer/p/370965?productId=370965&pps=19",
@@ -257,7 +273,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 17,
+      "quantity": 0,
+      "id": 17,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-lip-love-chapstick/p/363154?productId=363154&pps=20",
@@ -273,7 +290,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 18,
+      "quantity": 0,
+      "id": 18,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/elle-18-color-pop-matte-lip-color/p/2732715?productId=2732715&pps=21",
@@ -289,7 +307,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 19,
+      "quantity": 0,
+      "id": 19,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/sugar-matte-as-hell-crayon-lipstick/p/31362?productId=31362&pps=22",
@@ -305,7 +324,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 20,
+      "quantity": 0,
+      "id": 20,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-cushion-matte-lipstick/p/888634?productId=888634&pps=23",
@@ -321,7 +341,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 21,
+      "quantity": 0,
+      "id": 21,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-black-magic-liquid-eyeliner-super-black-01/p/81753?productId=81753&pps=1",
@@ -338,7 +359,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 22,
+      "quantity": 0,
+      "id": 22,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/maybelline-new-york-line-tattoo-high-impact-liner-black/p/648700?productId=648700&pps=2",
@@ -355,7 +377,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 23,
+      "quantity": 0,
+      "id": 23,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/kay-beauty-eye-stylist-liquid-eyeliner/p/692836?productId=692836&pps=3",
@@ -372,7 +395,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 24,
+      "quantity": 0,
+      "id": 24,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/swiss-beauty-2-in-1-eyebrow-gel-eyeliner/p/765233?productId=765233&pps=4",
@@ -389,7 +413,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 25,
+      "quantity": 0,
+      "id": 25,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/colorbar-precision-waterproof-liquid-eyeliner-with-shiny-silver-cap/p/4942?productId=4942&pps=5",
@@ -406,7 +431,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 26,
+      "quantity": 0,
+      "id": 26,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/nyx-professional-makeup-epic-smoke-angled-liner-blender/p/5595630?productId=5595630&pps=6",
@@ -423,7 +449,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 27,
+      "quantity": 0,
+      "id": 27,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/gush-beauty-eye-like-options-dual-ended-kohl-felt-tip-liner/p/6382729?productId=6382729&pps=7",
@@ -440,7 +467,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 28,
+      "quantity": 0,
+      "id": 28,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/e-l-f-cosmetics-eyeliner-pen/p/856743?productId=856743&pps=8",
@@ -457,7 +485,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 29,
+      "quantity": 0,
+      "id": 29,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-insta-eye-liner/p/453968?productId=453968&pps=10",
@@ -474,7 +503,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 30,
+      "quantity": 0,
+      "id": 30,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/maybelline-eye-studio-lasting-drama-gel-eyeliner-black/p/8997?productId=8997&pps=11",
@@ -491,7 +521,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 31,
+      "quantity": 0,
+      "id": 31,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/sugar-kohl-of-honour-intense-kajal/p/1330905?productId=1330905&pps=12",
@@ -508,7 +539,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 32,
+      "quantity": 0,
+      "id": 32,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/maybelline-new-york-colossal-bold-eyeliner-black/p/492633?productId=492633&pps=13",
@@ -525,7 +557,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 33,
+      "quantity": 0,
+      "id": 33,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/kay-kohlstar-kajal-spade/p/573594?productId=573594&pps=14",
@@ -542,7 +575,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 34,
+      "quantity": 0,
+      "id": 34,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/kay-beauty-gel-eye-pencil/p/6583638?productId=6583638&pps=15",
@@ -559,7 +593,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 35,
+      "quantity": 0,
+      "id": 35,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/swiss-beauty-glimmer-eye-liner/p/832597?productId=832597&pps=16",
@@ -576,7 +611,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 36,
+      "quantity": 0,
+      "id": 36,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/blue-heaven-sketch-eye-liner/p/27103?productId=27103&pps=17",
@@ -593,7 +629,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 37,
+      "quantity": 0,
+      "id": 37,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/m-a-c-in-extreme-dimension-24hr-kajal-eye-liner/p/1341508?productId=1341508&pps=19",
@@ -610,7 +647,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 38,
+      "quantity": 0,
+      "id": 38,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-eyeconic-liquid-eyeliner-black/p/1037788?productId=1037788&pps=20",
@@ -627,7 +665,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 39,
+      "quantity": 0,
+      "id": 39,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-glamoreyes-eye-pencil/p/158447?productId=158447&pps=21",
@@ -644,7 +683,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 40,
+      "quantity": 0,
+      "id": 40,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/faces-magneteyes-eyeliner-black-01/p/251722?productId=251722&pps=22",
@@ -661,7 +701,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 41,
+      "quantity": 0,
+      "id": 41,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-black-magic-kajal-set-of-2/p/3690634?productId=3690634&pps=1",
       "image": "https://images-static.nykaa.com/media/catalog/product/b/3/b394c92NYKAC00000441_1.jpg",
@@ -678,7 +719,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 42,
+      "quantity": 0,
+      "id": 42,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/m-a-c-in-extreme-dimension-24hr-kajal-eye-liner/p/1341508?productId=1341508&pps=2",
       "image": "https://images-static.nykaa.com/media/catalog/product/0/9/09d037emacxx00000225_0.jpg",
@@ -695,7 +737,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 43,
+      "quantity": 0,
+      "id": 43,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/maybelline-colossal-kajal-pack-of-3-32600/p/32600?productId=32600&pps=3",
       "image": "https://images-static.nykaa.com/media/catalog/product/p/k/pk3_2.jpg",
@@ -712,7 +755,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 44,
+      "quantity": 0,
+      "id": 44,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/kay-kohlstar-kajal-spade/p/573594?productId=573594&pps=4",
       "image": "https://images-static.nykaa.com/media/catalog/product/d/b/dbeb4e88904330900424_1.jpg",
@@ -729,7 +773,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 45,
+      "quantity": 0,
+      "id": 45,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/mamaearth-charcoal-black-long-stay-kohl-kajal-waterproof-11-hour-smudge-free-stay-free-sharpener/p/3434650?productId=3434650&pps=5",
       "image": "https://images-static.nykaa.com/media/catalog/product/d/b/db4c58a8906087776772__1_.jpg",
@@ -746,7 +791,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 46,
+      "quantity": 0,
+      "id": 46,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/faces-canada-fresh-eyes-kajal/p/6887850?productId=6887850&pps=6",
       "image": "https://images-static.nykaa.com/media/catalog/product/7/8/78b2401FACES00000441_1.jpg",
@@ -763,7 +809,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 47,
+      "quantity": 0,
+      "id": 47,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/colorbar-intensely-rich-kajal/p/880851?productId=880851&pps=7",
       "image": "https://images-static.nykaa.com/media/catalog/product/8/9/8904052435129_1.png",
@@ -780,7 +827,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 48,
+      "quantity": 0,
+      "id": 48,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/rimmel-london-soft-kohl-kajal-eye-liner-pencil/p/4203561?productId=4203561&pps=8",
       "image": "https://images-static.nykaa.com/media/catalog/product/6/d/6d1b516RIMME00000302_1.jpg",
@@ -797,7 +845,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 49,
+      "quantity": 0,
+      "id": 49,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-eyeconic-kajal-twin-pack/p/3982605?productId=3982605&pps=9",
       "image": "https://images-static.nykaa.com/media/catalog/product/0/1/015875cLAKME00000332_1.jpg",
@@ -814,7 +863,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 50,
+      "quantity": 0,
+      "id": 50,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/maybelline-the-colossal-kajal-12-hour-smudge-free/p/12153?productId=12153&pps=10",
       "image": "https://images-static.nykaa.com/media/catalog/product/f/4/f4aa71c6946537005757_1.jpg",
@@ -831,7 +881,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 51,
+      "quantity": 0,
+      "id": 51,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/sugar-kohl-of-honour-intense-kajal/p/1330905?productId=1330905&pps=11",
       "image": "https://images-static.nykaa.com/media/catalog/product/e/f/ef3c934SUGAR00000051_1.jpg",
@@ -848,7 +899,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 52,
+      "quantity": 0,
+      "id": 52,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/maybelline-the-colossal-kajal-12-hour-smudge-free/p/12153?productId=12153&skuId=12151&pps=12",
       "image": "https://images-static.nykaa.com/media/catalog/product/f/4/f4aa71c6946537005757_1.jpg",
@@ -865,7 +917,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 53,
+      "quantity": 0,
+      "id": 53,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/kay-beauty-gel-eye-pencil/p/6583638?productId=6583638&pps=13",
       "image": "https://images-static.nykaa.com/media/catalog/product/a/7/a72be57KAYBE00000046_1.jpg",
@@ -882,7 +935,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 54,
+      "quantity": 0,
+      "id": 54,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/faces-magneteyes-kajal-lasts-all-day-black/p/19750?productId=19750&pps=14",
       "image": "https://images-static.nykaa.com/media/catalog/product/f/6/f6fecc18903380157956_2.jpg",
@@ -899,7 +953,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 55,
+      "quantity": 0,
+      "id": 55,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-black-magic-kajal-black/p/1223433?productId=1223433&pps=15",
       "image": "https://images-static.nykaa.com/media/catalog/product/3/3/33ef0c5NYKAC00000132_0.jpg",
@@ -916,7 +971,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 56,
+      "quantity": 0,
+      "id": 56,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-glamoreyes-eye-pencil/p/158447?productId=158447&pps=16",
       "image": "https://images-static.nykaa.com/media/catalog/product/9/7/971a3858904207502386_1.jpg",
@@ -933,7 +989,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 57,
+      "quantity": 0,
+      "id": 57,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-eyeconic-kajal-0-35gm/p/18430?productId=18430&pps=17",
       "image": "https://images-static.nykaa.com/media/catalog/product/e/f/ef3c934SUGAR00000051_1.jpg",
@@ -950,7 +1007,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 58,
+      "quantity": 0,
+      "id": 58,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/mamaearth-charcoal-black-long-stay-kajal-black-waterproof-for-11-hour-smudge-free-stay/p/3434651?productId=3434651&pps=18",
       "image": "https://images-static.nykaa.com/media/catalog/product/8/9/8904245712938_1.jpg",
@@ -967,7 +1025,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 59,
+      "quantity": 0,
+      "id": 59,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/faces-ultime-pro-intense-gel-kajal-black-with-free-sharpener/p/68535?productId=68535&pps=19",
       "image": "https://images-static.nykaa.com/media/catalog/product/d/c/dccbe50MAYBE00000407.jpg",
@@ -984,7 +1043,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 60,
+      "quantity": 0,
+      "id": 60,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-rock-the-line-kajal/p/92040?productId=92040&pps=20",
       "image": "https://images-static.nykaa.com/media/catalog/product/9/9/994f7f68901030583612_1.jpg",
@@ -1001,7 +1061,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 61,
+      "quantity": 0,
+      "id": 61,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-insta-dry-fast-drying-nail-enamel-polish/p/3823158?productId=3823158&pps=1",
@@ -1017,7 +1078,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 62,
+      "quantity": 0,
+      "id": 62,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/kay-beauty-nail-nourish-nail-enamel-polish/p/626907?productId=626907&pps=2",
@@ -1033,7 +1095,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 63,
+      "quantity": 0,
+      "id": 63,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/sugar-pop-nail-lacquer/p/5389412?productId=5389412&pps=3",
@@ -1049,7 +1112,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 64,
+      "quantity": 0,
+      "id": 64,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/colorbar-vegan-nail-lacquer/p/5459124?productId=5459124&pps=4",
@@ -1065,7 +1129,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 65,
+      "quantity": 0,
+      "id": 65,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/neyah-the-nail-story-nail-paint/p/7243089?productId=7243089&pps=6",
@@ -1081,7 +1146,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 66,
+      "quantity": 0,
+      "id": 66,
       "custom-tag": "FEATURED",
       "custom-tag 2": "NEW",
       "css-qlopj4 href": "https://www.nykaa.com/myglamm-nykaa-pretty-pink-mini-nail-kit/p/7774426?productId=7774426&pps=7",
@@ -1097,7 +1163,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 67,
+      "quantity": 0,
+      "id": 67,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lovechild-masaba-the-classics-nail-enamel/p/6805645?productId=6805645&pps=8",
@@ -1113,7 +1180,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 68,
+      "quantity": 0,
+      "id": 68,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/sally-hansen-good-kind-pure-nail-polish/p/4809493?productId=4809493&pps=10",
@@ -1129,7 +1197,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 69,
+      "quantity": 0,
+      "id": 69,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-nail-enamel/p/28012?productId=28012&pps=11",
@@ -1145,7 +1214,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 70,
+      "quantity": 0,
+      "id": 70,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/masaba-by-nykaa-nail-enamel/p/513074?productId=513074&pps=12",
@@ -1161,7 +1231,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 71,
+      "quantity": 0,
+      "id": 71,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-matte-nail-enamel/p/61421?productId=61421&pps=13",
@@ -1177,7 +1248,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 72,
+      "quantity": 0,
+      "id": 72,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/elle-18-nail-pops-nail-polishcon/p/290177?productId=290177&pps=14",
@@ -1193,7 +1265,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 73,
+      "quantity": 0,
+      "id": 73,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-color-crush-nail-art/p/365231?productId=365231&pps=15",
@@ -1209,7 +1282,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 74,
+      "quantity": 0,
+      "id": 74,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-breathable-nail-enamel/p/1010834?productId=1010834&pps=16",
@@ -1225,7 +1299,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 75,
+      "quantity": 0,
+      "id": 75,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/faces-canada-ultime-pro-splash-nail-enamel/p/6880839?productId=6880839&pps=17",
@@ -1241,7 +1316,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 76,
+      "quantity": 0,
+      "id": 76,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/swiss-beauty-stunning-nail-lacquer/p/2638314?productId=2638314&pps=18",
@@ -1257,7 +1333,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 77,
+      "quantity": 0,
+      "id": 77,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/lakme-true-wear-nail-color/p/1139?productId=1139&pps=19",
@@ -1273,7 +1350,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 78,
+      "quantity": 0,
+      "id": 78,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/myglamm-popxo-makeup-collection-chillin-mini-nail-kit/p/3529813?productId=8415759&skuId=3529813&pps=20",
@@ -1289,7 +1367,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 79,
+      "quantity": 0,
+      "id": 79,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/insight-cosmetics-nail-polish-dh-145/p/2641091?productId=2641091&pps=21",
@@ -1305,7 +1384,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 80,
+      "quantity": 0,
+      "id": 80,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/myglamm-popxo-makeup-collection-mini-nail-kit-dreamin/p/4729172?productId=8415759&skuId=4729172&pps=22",
@@ -1321,7 +1401,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 81,
+      "quantity": 0,
+      "id": 81,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-skinrx-vitamin-c-illuminate-night-moisturizer-for-normal-to-dry-skin/p/4678533?productId=4678533&pps=1",
       "image": "https://images-static.nykaa.com/media/catalog/product/f/5/f530b74NYKAE00000035_1.jpg",
@@ -1338,7 +1419,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 82,
+      "quantity": 0,
+      "id": 82,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/dot-key-glow-night-reset-retinol-ceramide-cream/p/2680224?productId=2680224&pps=2",
       "image": "https://images-static.nykaa.com/media/catalog/product/3/a/3a8187fDOTKE00000023_1.jpg",
@@ -1355,7 +1437,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 83,
+      "quantity": 0,
+      "id": 83,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/plum-green-tea-renewed-clarity-night-gel/p/220111?productId=220111&pps=3",
       "image": "https://images-static.nykaa.com/media/catalog/product/1/b/1bbf16c737534800522.jpg",
@@ -1372,7 +1455,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 84,
+      "quantity": 0,
+      "id": 84,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/cetaphil-bhr-brightening-night-comfort-cream/p/1171878?productId=1171878&pps=4",
       "image": "https://images-static.nykaa.com/media/catalog/product/9/8/9842bd9CETAP00000004_1.jpg",
@@ -1389,7 +1473,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 85,
+      "quantity": 0,
+      "id": 85,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/olay-night-cream-regenerist-retinol-24-moisturiser-8gm/p/1112372?productId=1112372&pps=5",
       "image": "https://images-static.nykaa.com/media/catalog/product/a/9/a9eff5c4902430917964.jpg",
@@ -1406,7 +1491,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 86,
+      "quantity": 0,
+      "id": 86,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/o3-night-repair-cream/p/50993?productId=50993&pps=6",
       "image": "https://images-static.nykaa.com/media/catalog/product/9/2/922fdca8906060212365_1.jpg",
@@ -1423,7 +1509,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 87,
+      "quantity": 0,
+      "id": 87,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/mamaearth-retinol-night-cream-for-women/p/1168000?productId=1168000&pps=7",
       "image": "https://images-static.nykaa.com/media/catalog/product/7/5/75857bemamae00000027__1_.jpg",
@@ -1440,7 +1527,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 88,
+      "quantity": 0,
+      "id": 88,
       "custom-tag": "FEATURED",
       "css-qlopj4 href": "https://www.nykaa.com/aqualogica-glow-mousse-night-gel/p/5009757?productId=5009757&pps=8",
       "image": "https://images-static.nykaa.com/media/catalog/product/1/7/1732fc5AQUAA00000019_1.jpg",
@@ -1457,7 +1545,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 89,
+      "quantity": 0,
+      "id": 89,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/clinique-moisture-surge-100h-auto-replenishing-hydrator/p/1129289?productId=1129289&pps=10",
       "image": "https://images-static.nykaa.com/media/catalog/product/9/9/994f7f68901030583612_1.jpg",
@@ -1474,7 +1563,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 90,
+      "quantity": 0,
+      "id": 90,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/estee-lauder-advanced-night-repair-synchronized-multi-recovery-complex/p/833283?productId=833283&pps=11",
       "image": "https://images-static.nykaa.com/media/catalog/product/5/7/57214a3DOTKE00000179-1.jpg",
@@ -1491,7 +1581,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 91,
+      "quantity": 0,
+      "id": 91,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/neutrogena-bright-boost-gel-cream/p/5290326?productId=5290326&pps=12",
       "image": "https://images-static.nykaa.com/media/catalog/product/8/8/8806194022802.jpg",
@@ -1508,7 +1599,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 92,
+      "quantity": 0,
+      "id": 92,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/the-ordinary-natural-moisturizing-factors-ha/p/5003148?productId=5003148&pps=13",
       "image": "https://images-static.nykaa.com/media/catalog/product/8/9/8904245710583_1.jpg",
@@ -1525,7 +1617,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 93,
+      "quantity": 0,
+      "id": 93,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/dot-key-cica-niacinamide-night-gel-with-tea-tree-oil-fights-dark-spots-acne-for-all-skin/p/6752054?productId=6752054&pps=14",
       "image": "https://images-static.nykaa.com/media/catalog/product/8/1/81fedc4MINIM00000019.jpeg",
@@ -1542,7 +1635,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 94,
+      "quantity": 0,
+      "id": 94,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/kama-ayurveda-kumkumadi-miraculous-beauty-fluid-ayurvedic-night-serum/p/1262946?productId=1262946&pps=16",
       "image": "https://images-static.nykaa.com/media/catalog/product/c/3/c300f398901030713941_0.jpg",
@@ -1559,7 +1653,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 95,
+      "quantity": 0,
+      "id": 95,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/kama-ayurveda-rejuvenating-brightening-ayurvedic-night-cream-config/p/371826?productId=371826&pps=17",
       "image": "https://images-static.nykaa.com/media/catalog/product/c/1/c1f2d128901526529322_1_.jpg",
@@ -1576,7 +1671,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 96,
+      "quantity": 0,
+      "id": 96,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-skin-secrets-sleeping-mask/p/1362164?productId=1362164&pps=18",
       "image": "https://images-static.nykaa.com/media/catalog/product/f/8/f8176746923492584206_1.jpg",
@@ -1593,7 +1689,8 @@
       "css-mjdt85": "Preview Shades"
     },
     {
-      "quantity":0,"id": 97,
+      "quantity": 0,
+      "id": 97,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/estee-lauder-revitalizing-supreme-youth-power-creme/p/4521780?productId=4521780&pps=19",
       "image": "https://images-static.nykaa.com/media/catalog/product/2/7/270816c4005808679829.jpg",
@@ -1610,7 +1707,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 98,
+      "quantity": 0,
+      "id": 98,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/plum-green-tea-day-night-c-t-m-kit-slash-save-hp-2021/p/2643253?productId=2643253&pps=20",
       "image": "https://images-static.nykaa.com/media/catalog/product/2/7/27a171cLOREA00000368_1.jpg",
@@ -1627,7 +1725,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 99,
+      "quantity": 0,
+      "id": 99,
       "custom-tag": "https://images-static.nykaa.com/media/catalog/product/c/2/c2e46ee8901526403356.jpg",
       "css-qlopj4 href": "https://www.nykaa.com/the-ordinary-azelaic-acid-suspension-10percent/p/5003158?productId=5003158&pps=21",
       "image": "https://images-static.nykaa.com/media/catalog/product/b/3/b3b441bRENEE00000018_1.jpg",
@@ -1644,7 +1743,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 100,
+      "quantity": 0,
+      "id": 100,
       "custom-tag": "",
       "css-qlopj4 href": "https://www.nykaa.com/mcaffeine-naked-detox-green-tea-face-serum/p/551170?productId=551170&pps=22",
       "image": "https://images-static.nykaa.com/media/catalog/product/4/c/4c892108904245700447_1.jpg",
@@ -1661,7 +1761,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 101,
+      "quantity": 0,
+      "id": 101,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-absolut-repair-lipidium-shampoo/p/18402?productId=18402&pps=1",
@@ -1678,7 +1779,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 102,
+      "quantity": 0,
+      "id": 102,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-with-hyaluronic-acid/p/6671067?productId=6671067&pps=2",
@@ -1695,7 +1797,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 103,
+      "quantity": 0,
+      "id": 103,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/love-beauty-planet-anti-frizz-combo-pink-friday-nov2020-slash-save/p/820566?productId=820566&pps=3",
@@ -1712,7 +1815,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 104,
+      "quantity": 0,
+      "id": 104,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-naturals-hair-growth-shampoo-onion-fenugreek/p/5506340?productId=5506340&skuId=959831&pps=4",
@@ -1729,7 +1833,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 105,
+      "quantity": 0,
+      "id": 105,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/herbal-essences-argan-oil-shampoo-conditioner-for-frizz-no-parabens-no-colourants-slash-save-hp2021/p/456559?productId=456559&pps=5",
@@ -1746,7 +1851,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 106,
+      "quantity": 0,
+      "id": 106,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/matrix-opti-smooth-straight-professional-ultra-smoothing-shampoo-shea-butter-350ml/p/158919?productId=158920&skuId=158919&pps=6",
@@ -1763,7 +1869,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 107,
+      "quantity": 0,
+      "id": 107,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/anomaly-hydrating-shampoo/p/5597747?productId=5597747&pps=7",
@@ -1780,7 +1887,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 108,
+      "quantity": 0,
+      "id": 108,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/brillare-science-shampoo-hair-fall-control/p/248451?productId=248451&pps=8",
@@ -1797,7 +1905,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 109,
+      "quantity": 0,
+      "id": 109,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/sebastian-professional-penetraitt-shampoo-for-enhanced-shine/p/422984?productId=422984&pps=10",
@@ -1814,7 +1923,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 110,
+      "quantity": 0,
+      "id": 110,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/biotique-bio-kelp-protein-shampoo-for-falling-hair-intensive-hair-growth-treatment-conf/p/357142?productId=357142&skuId=598163&pps=11",
@@ -1831,7 +1941,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 111,
+      "quantity": 0,
+      "id": 111,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-x-tenso-care-shampoo-sulfate-free-250ml/p/874067?productId=874067&pps=12",
@@ -1848,7 +1959,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 112,
+      "quantity": 0,
+      "id": 112,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-x-tenso-care-shampoo/p/10500?productId=10500&pps=13",
@@ -1865,7 +1977,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 113,
+      "quantity": 0,
+      "id": 113,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/matrix-opti-smooth-straight-professional-ultra-smoothing-shampoo-shea-butter-123/p/158920?productId=158920&pps=14",
@@ -1882,7 +1995,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 114,
+      "quantity": 0,
+      "id": 114,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/mamaearth-onion-shampoo-for-hair-growth-hair-fall-control-with-onion-plant-keratin/p/3985404?productId=3985404&pps=15",
@@ -1899,7 +2013,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 115,
+      "quantity": 0,
+      "id": 115,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/tresemme-keratin-smooth-with-argan-oil-shampoo/p/208997?productId=208997&pps=16",
@@ -1916,7 +2031,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 116,
+      "quantity": 0,
+      "id": 116,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-absolut-repair-lipidium-shampoo-masque/p/72139?productId=72139&pps=17",
@@ -1933,7 +2049,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 117,
+      "quantity": 0,
+      "id": 117,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-serie-expert-b6-biotin-inforcer-shampoo-masque/p/1323563?productId=1323563&pps=19",
@@ -1950,7 +2067,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 118,
+      "quantity": 0,
+      "id": 118,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/anomaly-clarifying-shampoo/p/5597748?productId=5597748&pps=20",
@@ -1967,7 +2085,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 119,
+      "quantity": 0,
+      "id": 119,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-serie-expert-absolut-repair-shampoo-masque-serum/p/1328949?productId=1328949&pps=21",
@@ -1984,7 +2103,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 120,
+      "quantity": 0,
+      "id": 120,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/love-beauty-planet-argan-oil-and-lavender-sulfate-free-smooth-and-serene-shampoo/p/4243575?productId=4243575&pps=22",
@@ -2001,7 +2121,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 121,
+      "quantity": 0,
+      "id": 121,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-absolut-repair-lipidium-shampoo/p/18402?productId=18402&pps=1",
@@ -2018,7 +2139,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 122,
+      "quantity": 0,
+      "id": 122,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-paris-hyaluron-moisture-72h-moisture-filling-shampoo-with-hyaluronic-acid/p/6671067?productId=6671067&pps=2",
@@ -2035,7 +2157,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 123,
+      "quantity": 0,
+      "id": 123,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/love-beauty-planet-anti-frizz-combo-pink-friday-nov2020-slash-save/p/820566?productId=820566&pps=3",
@@ -2052,7 +2175,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 124,
+      "quantity": 0,
+      "id": 124,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/nykaa-naturals-hair-growth-shampoo-onion-fenugreek/p/5506340?productId=5506340&skuId=959831&pps=4",
@@ -2069,7 +2193,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 125,
+      "quantity": 0,
+      "id": 125,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/herbal-essences-argan-shampoo-shampoo-conditioner-for-frizz-no-parabens-no-colourants-slash-save-hp2021/p/456559?productId=456559&pps=5",
@@ -2086,7 +2211,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 126,
+      "quantity": 0,
+      "id": 126,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/matrix-opti-smooth-straight-professional-ultra-smoothing-shampoo-shea-butter-350ml/p/158919?productId=158920&skuId=158919&pps=6",
@@ -2103,7 +2229,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 127,
+      "quantity": 0,
+      "id": 127,
       "custom-tag": "FEATURED",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/anomaly-hydrating-shampoo/p/5597747?productId=5597747&pps=7",
@@ -2120,7 +2247,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 128,
+      "quantity": 0,
+      "id": 128,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/brillare-science-shampoo-hair-fall-control/p/248451?productId=248451&pps=8",
@@ -2137,7 +2265,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 129,
+      "quantity": 0,
+      "id": 129,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/sebastian-professional-penetraitt-shampoo-for-enhanced-shine/p/422984?productId=422984&pps=10",
@@ -2154,7 +2283,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 130,
+      "quantity": 0,
+      "id": 130,
       "custom-tag": "FEATURED",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/biotique-bio-kelp-protein-shampoo-for-falling-hair-intensive-hair-growth-treatment-conf/p/357142?productId=357142&skuId=598163&pps=11",
@@ -2171,7 +2301,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 131,
+      "quantity": 0,
+      "id": 131,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-x-tenso-care-shampoo-sulfate-free-250ml/p/874067?productId=874067&pps=12",
@@ -2188,7 +2319,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 132,
+      "quantity": 0,
+      "id": 132,
       "custom-tag": "",
       "custom-tag 2": "BESTSELLER",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-x-tenso-care-shampoo/p/10500?productId=10500&pps=13",
@@ -2205,7 +2337,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 133,
+      "quantity": 0,
+      "id": 133,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/matrix-opti-smooth-straight-professional-ultra-smoothing-shampoo-shea-butter-123/p/158920?productId=158920&pps=14",
@@ -2222,7 +2355,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 134,
+      "quantity": 0,
+      "id": 134,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/mamaearth-onion-shampoo-for-hair-growth-hair-fall-control-with-onion-plant-keratin/p/3985404?productId=3985404&pps=15",
@@ -2239,7 +2373,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 135,
+      "quantity": 0,
+      "id": 135,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/tresemme-keratin-smooth-with-argan-shampoo-shampoo/p/208997?productId=208997&pps=16",
@@ -2256,7 +2391,8 @@
       "css-mjdt85": "Preview Size"
     },
     {
-      "quantity":0,"id": 136,
+      "quantity": 0,
+      "id": 136,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-absolut-repair-lipidium-shampoo-masque/p/72139?productId=72139&pps=17",
@@ -2273,7 +2409,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 137,
+      "quantity": 0,
+      "id": 137,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-serie-expert-b6-biotin-inforcer-shampoo-masque/p/1323563?productId=1323563&pps=19",
@@ -2290,7 +2427,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 138,
+      "quantity": 0,
+      "id": 138,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/anomaly-clarifying-shampoo/p/5597748?productId=5597748&pps=20",
@@ -2307,7 +2445,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 139,
+      "quantity": 0,
+      "id": 139,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/l-oreal-professionnel-serie-expert-absolut-repair-shampoo-masque-serum/p/1328949?productId=1328949&pps=21",
@@ -2324,7 +2463,8 @@
       "css-mjdt85": ""
     },
     {
-      "quantity":0,"id": 140,
+      "quantity": 0,
+      "id": 140,
       "custom-tag": "",
       "custom-tag 2": "",
       "css-qlopj4 href": "https://www.nykaa.com/love-beauty-planet-argan-shampoo-and-lavender-sulfate-free-smooth-and-serene-shampoo/p/4243575?productId=4243575&pps=22",
@@ -2355,7 +2495,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 300
+      "quantity": 0,
+      "id": 300
     },
     {
       "custom-tag": "FEATURED",
@@ -2372,7 +2513,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 301
+      "quantity": 0,
+      "id": 301
     },
     {
       "custom-tag": "FEATURED",
@@ -2389,7 +2531,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 302
+      "quantity": 0,
+      "id": 302
     },
     {
       "custom-tag": "FEATURED",
@@ -2406,7 +2549,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 303
+      "quantity": 0,
+      "id": 303
     },
     {
       "custom-tag": "FEATURED",
@@ -2423,7 +2567,8 @@
       "category": "haircolor",
       "css-mjdt85": "",
       "btn-text": "Add to Bag",
-      "quantity":0,"id": 304
+      "quantity": 0,
+      "id": 304
     },
     {
       "custom-tag": "",
@@ -2440,7 +2585,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 305
+      "quantity": 0,
+      "id": 305
     },
     {
       "custom-tag": "",
@@ -2457,7 +2603,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 306
+      "quantity": 0,
+      "id": 306
     },
     {
       "custom-tag": "",
@@ -2474,7 +2621,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 307
+      "quantity": 0,
+      "id": 307
     },
     {
       "custom-tag": "",
@@ -2491,7 +2639,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 308
+      "quantity": 0,
+      "id": 308
     },
     {
       "custom-tag": "",
@@ -2508,7 +2657,8 @@
       "category": "haircolor",
       "css-mjdt85": "",
       "btn-text": "Add to Bag",
-      "quantity":0,"id": 309
+      "quantity": 0,
+      "id": 309
     },
     {
       "custom-tag": "",
@@ -2525,7 +2675,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 310
+      "quantity": 0,
+      "id": 310
     },
     {
       "custom-tag": "",
@@ -2542,7 +2693,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 311
+      "quantity": 0,
+      "id": 311
     },
     {
       "custom-tag": "",
@@ -2559,7 +2711,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 312
+      "quantity": 0,
+      "id": 312
     },
     {
       "custom-tag": "",
@@ -2576,7 +2729,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Shades",
       "btn-text": "",
-      "quantity":0,"id": 313
+      "quantity": 0,
+      "id": 313
     },
     {
       "custom-tag": "",
@@ -2593,7 +2747,8 @@
       "category": "haircolor",
       "css-mjdt85": "",
       "btn-text": "Add to Bag",
-      "quantity":0,"id": 314
+      "quantity": 0,
+      "id": 314
     },
     {
       "custom-tag": "",
@@ -2610,7 +2765,8 @@
       "category": "haircolor",
       "css-mjdt85": "",
       "btn-text": "Add to Bag",
-      "quantity":0,"id": 315
+      "quantity": 0,
+      "id": 315
     },
     {
       "custom-tag": "",
@@ -2627,7 +2783,8 @@
       "category": "haircolor",
       "css-mjdt85": "",
       "btn-text": "Add to Bag",
-      "quantity":0,"id": 316
+      "quantity": 0,
+      "id": 316
     },
     {
       "custom-tag": "",
@@ -2644,7 +2801,8 @@
       "category": "haircolor",
       "css-mjdt85": "",
       "btn-text": "Add to Bag",
-      "quantity":0,"id": 317
+      "quantity": 0,
+      "id": 317
     },
     {
       "custom-tag": "",
@@ -2661,7 +2819,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Size",
       "btn-text": "",
-      "quantity":0,"id": 318
+      "quantity": 0,
+      "id": 318
     },
     {
       "custom-tag": "",
@@ -2678,7 +2837,8 @@
       "category": "haircolor",
       "css-mjdt85": "Preview Size",
       "btn-text": "",
-      "quantity":0,"id": 319
+      "quantity": 0,
+      "id": 319
     },
     {
       "custom-tag": "FEATURED",
@@ -2695,7 +2855,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 320
+      "quantity": 0,
+      "id": 320
     },
     {
       "custom-tag": "FEATURED",
@@ -2712,7 +2873,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 321
+      "quantity": 0,
+      "id": 321
     },
     {
       "custom-tag": "FEATURED",
@@ -2729,7 +2891,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 322
+      "quantity": 0,
+      "id": 322
     },
     {
       "custom-tag": "FEATURED",
@@ -2742,7 +2905,8 @@
       "css-i6xqbh": "Enjoy Free Gift",
       "rating": 940,
       "btn-text": "",
-      "quantity":0,"id": 323,
+      "quantity": 0,
+      "id": 323,
       "custom-tag 2": "BESTSELLER",
       "css-asphnc": "2 sizes",
       "category": "cream",
@@ -2759,7 +2923,8 @@
       "css-i6xqbh": "Enjoy Free Gift",
       "rating": 2129,
       "btn-text": "",
-      "quantity":0,"id": 324,
+      "quantity": 0,
+      "id": 324,
       "custom-tag 2": "BESTSELLER",
       "css-asphnc": "5 sizes",
       "category": "cream",
@@ -2776,7 +2941,8 @@
       "css-i6xqbh": "Extra 5% Off",
       "rating": 8278,
       "btn-text": "",
-      "quantity":0,"id": 325,
+      "quantity": 0,
+      "id": 325,
       "custom-tag 2": "BESTSELLER",
       "css-asphnc": "3 sizes",
       "category": "cream",
@@ -2797,7 +2963,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 326
+      "quantity": 0,
+      "id": 326
     },
     {
       "custom-tag": "FEATURED",
@@ -2814,7 +2981,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 327
+      "quantity": 0,
+      "id": 327
     },
     {
       "custom-tag": "FEATURED",
@@ -2831,7 +2999,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 328
+      "quantity": 0,
+      "id": 328
     },
     {
       "custom-tag": "",
@@ -2844,7 +3013,8 @@
       "css-i6xqbh": "",
       "rating": 8771,
       "btn-text": "",
-      "quantity":0,"id": 329,
+      "quantity": 0,
+      "id": 329,
       "custom-tag 2": "BESTSELLER",
       "css-asphnc": "6 sizes",
       "category": "cream",
@@ -2861,7 +3031,8 @@
       "css-i6xqbh": "",
       "rating": 2756,
       "btn-text": "",
-      "quantity":0,"id": 330,
+      "quantity": 0,
+      "id": 330,
       "custom-tag 2": "BESTSELLER",
       "css-asphnc": "2 sizes",
       "category": "cream",
@@ -2878,7 +3049,8 @@
       "css-i6xqbh": "Extra 5% Off",
       "rating": 3886,
       "btn-text": "",
-      "quantity":0,"id": 331,
+      "quantity": 0,
+      "id": 331,
       "custom-tag 2": "",
       "css-asphnc": "2 sizes",
       "category": "cream",
@@ -2899,7 +3071,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 332
+      "quantity": 0,
+      "id": 332
     },
     {
       "custom-tag": "",
@@ -2912,7 +3085,8 @@
       "css-i6xqbh": "",
       "rating": 2449,
       "btn-text": "",
-      "quantity":0,"id": 333,
+      "quantity": 0,
+      "id": 333,
       "custom-tag 2": "",
       "css-asphnc": "2 sizes",
       "category": "cream",
@@ -2933,7 +3107,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 334
+      "quantity": 0,
+      "id": 334
     },
     {
       "custom-tag": "",
@@ -2950,7 +3125,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 335
+      "quantity": 0,
+      "id": 335
     },
     {
       "custom-tag": "",
@@ -2963,7 +3139,8 @@
       "css-i6xqbh": "",
       "rating": 2426,
       "btn-text": "",
-      "quantity":0,"id": 336,
+      "quantity": 0,
+      "id": 336,
       "custom-tag 2": "",
       "css-asphnc": "6 sizes",
       "category": "cream",
@@ -2980,7 +3157,8 @@
       "css-i6xqbh": "",
       "rating": 3854,
       "btn-text": "",
-      "quantity":0,"id": 337,
+      "quantity": 0,
+      "id": 337,
       "custom-tag 2": "",
       "css-asphnc": "2 sizes",
       "category": "cream",
@@ -3001,7 +3179,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 338
+      "quantity": 0,
+      "id": 338
     },
     {
       "custom-tag": "",
@@ -3018,7 +3197,8 @@
       "css-asphnc": "",
       "category": "cream",
       "css-mjdt85": "",
-      "quantity":0,"id": 339
+      "quantity": 0,
+      "id": 339
     },
     {
       "custom-tag 2": "BESTSELLER",
@@ -3033,7 +3213,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 340
+      "quantity": 0,
+      "id": 340
     },
     {
       "custom-tag 2": "BESTSELLER",
@@ -3048,7 +3229,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 341
+      "quantity": 0,
+      "id": 341
     },
     {
       "custom-tag 2": "BESTSELLER",
@@ -3063,7 +3245,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 342
+      "quantity": 0,
+      "id": 342
     },
     {
       "custom-tag 2": "BESTSELLER",
@@ -3078,7 +3261,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 343
+      "quantity": 0,
+      "id": 343
     },
     {
       "custom-tag 2": "BESTSELLER",
@@ -3093,7 +3277,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 344
+      "quantity": 0,
+      "id": 344
     },
     {
       "custom-tag 2": "BESTSELLER",
@@ -3108,7 +3293,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 345
+      "quantity": 0,
+      "id": 345
     },
     {
       "custom-tag 2": "",
@@ -3123,7 +3309,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 346
+      "quantity": 0,
+      "id": 346
     },
     {
       "custom-tag 2": "",
@@ -3138,7 +3325,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 347
+      "quantity": 0,
+      "id": 347
     },
     {
       "custom-tag 2": "",
@@ -3153,7 +3341,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 348
+      "quantity": 0,
+      "id": 348
     },
     {
       "custom-tag 2": "",
@@ -3168,7 +3357,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 349
+      "quantity": 0,
+      "id": 349
     },
     {
       "custom-tag 2": "",
@@ -3183,7 +3373,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 350
+      "quantity": 0,
+      "id": 350
     },
     {
       "custom-tag 2": "",
@@ -3198,7 +3389,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 351
+      "quantity": 0,
+      "id": 351
     },
     {
       "custom-tag 2": "",
@@ -3213,7 +3405,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 352
+      "quantity": 0,
+      "id": 352
     },
     {
       "custom-tag 2": "",
@@ -3228,7 +3421,8 @@
       "btn-text": "Add to Bag",
       "css-1irxz4e": "",
       "fill-bg": "",
-      "quantity":0,"id": 353
+      "quantity": 0,
+      "id": 353
     },
     {
       "custom-tag 2": "",
@@ -3241,7 +3435,8 @@
       "category": "mirror",
       "rating": 4,
       "btn-text": "",
-      "quantity":0,"id": 354,
+      "quantity": 0,
+      "id": 354,
       "css-1irxz4e": "Out Of Stock",
       "fill-bg": "Notify Me"
     },
@@ -3256,7 +3451,8 @@
       "category": "mirror",
       "rating": 16,
       "btn-text": "",
-      "quantity":0,"id": 355,
+      "quantity": 0,
+      "id": 355,
       "css-1irxz4e": "Out Of Stock",
       "fill-bg": "Notify Me"
     },
@@ -3271,7 +3467,8 @@
       "category": "mirror",
       "rating": 20,
       "btn-text": "",
-      "quantity":0,"id": 356,
+      "quantity": 0,
+      "id": 356,
       "css-1irxz4e": "Out Of Stock",
       "fill-bg": "Notify Me"
     },
@@ -3286,7 +3483,8 @@
       "category": "mirror",
       "rating": 80,
       "btn-text": "",
-      "quantity":0,"id": 357,
+      "quantity": 0,
+      "id": 357,
       "css-1irxz4e": "Out Of Stock",
       "fill-bg": "Notify Me"
     },
@@ -3301,7 +3499,8 @@
       "category": "mirror",
       "rating": 200,
       "btn-text": "",
-      "quantity":0,"id": 358,
+      "quantity": 0,
+      "id": 358,
       "css-1irxz4e": "Out Of Stock",
       "fill-bg": "Notify Me"
     },
@@ -3316,7 +3515,8 @@
       "category": "mirror",
       "rating": 6,
       "btn-text": "",
-      "quantity":0,"id": 359,
+      "quantity": 0,
+      "id": 359,
       "css-1irxz4e": "Out Of Stock",
       "fill-bg": "Notify Me"
     },
@@ -3330,7 +3530,8 @@
       "category": "kit",
       "rating": 14,
       "btn-text": "",
-      "quantity":0,"id": 360,
+      "quantity": 0,
+      "id": 360,
       "preprice": "",
       "discount": ""
     },
@@ -3346,7 +3547,8 @@
       "btn-text": "Add to Bag",
       "preprice": "",
       "discount": "",
-      "quantity":0,"id": 361
+      "quantity": 0,
+      "id": 361
     },
     {
       "custom-tag": "BESTSELLER",
@@ -3358,7 +3560,8 @@
       "category": "kit",
       "rating": 1095,
       "btn-text": "",
-      "quantity":0,"id": 362,
+      "quantity": 0,
+      "id": 362,
       "preprice": "₹799",
       "discount": "15% Off"
     },
@@ -3374,7 +3577,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹1999",
       "discount": "50% Off",
-      "quantity":0,"id": 363
+      "quantity": 0,
+      "id": 363
     },
     {
       "custom-tag": "BESTSELLER",
@@ -3388,7 +3592,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹2999",
       "discount": "12% Off",
-      "quantity":0,"id": 364
+      "quantity": 0,
+      "id": 364
     },
     {
       "custom-tag": "BESTSELLER",
@@ -3402,7 +3607,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹999",
       "discount": "20% Off",
-      "quantity":0,"id": 365
+      "quantity": 0,
+      "id": 365
     },
     {
       "custom-tag": "BESTSELLER",
@@ -3416,7 +3622,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹2900",
       "discount": "50% Off",
-      "quantity":0,"id": 366
+      "quantity": 0,
+      "id": 366
     },
     {
       "custom-tag": "BESTSELLER",
@@ -3430,7 +3637,8 @@
       "btn-text": "Add to Bag",
       "preprice": "",
       "discount": "",
-      "quantity":0,"id": 367
+      "quantity": 0,
+      "id": 367
     },
     {
       "custom-tag": "",
@@ -3444,7 +3652,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹438",
       "discount": "26% Off",
-      "quantity":0,"id": 368
+      "quantity": 0,
+      "id": 368
     },
     {
       "custom-tag": "",
@@ -3458,7 +3667,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹5516",
       "discount": "35% Off",
-      "quantity":0,"id": 369
+      "quantity": 0,
+      "id": 369
     },
     {
       "custom-tag": "",
@@ -3470,7 +3680,8 @@
       "category": "kit",
       "rating": 1503,
       "btn-text": "",
-      "quantity":0,"id": 370,
+      "quantity": 0,
+      "id": 370,
       "preprice": "₹849",
       "discount": "12% Off"
     },
@@ -3486,7 +3697,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹436",
       "discount": "",
-      "quantity":0,"id": 371
+      "quantity": 0,
+      "id": 371
     },
     {
       "custom-tag": "",
@@ -3500,7 +3712,8 @@
       "btn-text": "Add to Bag",
       "preprice": "",
       "discount": "",
-      "quantity":0,"id": 372
+      "quantity": 0,
+      "id": 372
     },
     {
       "custom-tag": "",
@@ -3514,7 +3727,8 @@
       "btn-text": "Add to Bag",
       "preprice": "",
       "discount": "",
-      "quantity":0,"id": 373
+      "quantity": 0,
+      "id": 373
     },
     {
       "custom-tag": "",
@@ -3528,7 +3742,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹1500",
       "discount": "40% Off",
-      "quantity":0,"id": 374
+      "quantity": 0,
+      "id": 374
     },
     {
       "custom-tag": "",
@@ -3542,7 +3757,8 @@
       "btn-text": "Add to Bag",
       "preprice": "",
       "discount": "",
-      "quantity":0,"id": 375
+      "quantity": 0,
+      "id": 375
     },
     {
       "custom-tag": "",
@@ -3556,7 +3772,8 @@
       "btn-text": "Add to Bag",
       "preprice": "",
       "discount": "",
-      "quantity":0,"id": 376
+      "quantity": 0,
+      "id": 376
     },
     {
       "custom-tag": "",
@@ -3570,7 +3787,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹997",
       "discount": "20% Off",
-      "quantity":0,"id": 377
+      "quantity": 0,
+      "id": 377
     },
     {
       "custom-tag": "",
@@ -3584,7 +3802,8 @@
       "btn-text": "Add to Bag",
       "preprice": "₹2100",
       "discount": "55% Off",
-      "quantity":0,"id": 378
+      "quantity": 0,
+      "id": 378
     },
     {
       "custom-tag": "",
@@ -3598,9 +3817,27 @@
       "btn-text": "Add to Bag",
       "preprice": "",
       "discount": "",
-      "quantity":0,"id": 379
+      "quantity": 0,
+      "id": 379
     }
   ],
   "cart": [
+    {
+      "quantity": 0,
+      "id": 2,
+      "custom-tag": "FEATURED",
+      "custom-tag 2": "",
+      "css-qlopj4 href": "https://www.nykaa.com/m-a-c-matte-lipstick/p/90344?productId=90344&skuId=90363&pps=2",
+      "image": "https://images-static.nykaa.com/media/catalog/product/3/8/38e529a773602284580_rv__1.jpg",
+      "title": "M.A.C Matte Lipstick - Mehr",
+      "preprice": "₹244",
+      "price": 195,
+      "discount": "20% Off",
+      "css-i6xqbh": "Get Free Product",
+      "rating": 6894,
+      "css-asphnc": "",
+      "category": "lipstick",
+      "css-mjdt85": ""
+    }
   ]
 }
