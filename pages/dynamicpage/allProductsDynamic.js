@@ -1,5 +1,15 @@
 import React from "react";
-import { Box, Grid, GridItem, Image, Heading, Flex, Button, Text } from "@chakra-ui/react";
+import {
+  Box,
+  Grid,
+  GridItem,
+  Image,
+  Heading,
+  Flex,
+  Button,
+  Text,
+  Card,
+} from "@chakra-ui/react";
 import SingleProduct from "../../components/SingleProduct";
 import { addToCart } from "@/redux/actions";
 import { useDispatch } from "react-redux";
@@ -9,7 +19,7 @@ import { useRouter } from "next/router";
 const allProducts = ({ pro_data }) => {
   //   console.log(pro_data);
   const dispatch = useDispatch();
-  const router= useRouter()
+  const router = useRouter();
   return (
     <>
       <Box w="100%" m="auto" align="center" p={5}>
@@ -26,40 +36,36 @@ const allProducts = ({ pro_data }) => {
         <Grid templateColumns="repeat(3, 1fr)" gap={5}>
           {pro_data.map((prod) => {
             return (
-              <div>
-              <GridItem onClick={()=>router.push(`./${prod.id}`)} w="100%" key={prod.id}>
-                <SingleProduct
-                  data={prod}
-                />
-              </GridItem>
-              <Box w="100%" h="50px">
-        <Flex gap={5}>
-          <Button w="100%" backgroundColor="white" onClick={()=>{dispatch(addToCart(prod))}}>
-            <Box backgroundColor="white" mr={6}>
-              <Image
-                src="https://www.shareicon.net/data/2017/02/15/878857_pink_512x512.png"
-                alt="wishlist"
-                boxSize="35px"
-              ></Image>
-            </Box>
-            <Box
-              backgroundColor="#fc2779"
-              h="100%"
-              w="90%"
-              mr={0}
-              color="white"
-            >
-              <Text pt={2.5}>Add To Bag</Text>
-            </Box>
-          </Button>
-        </Flex>
-      </Box>
-      </div>
-             
+              <Card key={prod.id}>
+                <GridItem onClick={() => router.push(`./${prod.id}`)} w="100%">
+                  <SingleProduct data={prod} />
+                  <Box w="100%" backgroundColor="white">
+                    <Flex gap={4}>
+                      <Box backgroundColor="white" mr={6}>
+                        <Image
+                          src="https://www.shareicon.net/data/2017/02/15/878857_pink_512x512.png"
+                          alt="wishlist"
+                          boxSize="35px"
+                        ></Image>
+                      </Box>
+                      <Button
+                        backgroundColor="#fc2779"
+                        w="90%"
+                        mr={0}
+                        color="white"
+                      >
+                        Add To Bag
+                      </Button>
+                    </Flex>
+                  </Box>
+                </GridItem>
+                {/* <Box w="100%" h="50px"> */}
+
+                {/* </Box> */}
+              </Card>
             );
           })}
         </Grid>
-        
       </Box>
     </>
   );
