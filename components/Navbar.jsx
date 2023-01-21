@@ -100,7 +100,7 @@ const Navbar = () => {
         setDetail([...detial, res.data]);
         if (typeof window !== "undefined") {
           // Perform localStorage action
-          const dta = localStorage.setItem("dta",JSON.stringify(res.data));
+          const dta = localStorage.setItem("dta", JSON.stringify(res.data));
           console.log(dta);
         }
       } catch (err) {
@@ -121,7 +121,7 @@ const Navbar = () => {
         backgroundImage={`url(https://adn-static1.nykaa.com/media/wysiwyg/2022/cms/banner/top_strip_16dec22.jpg)`}
         position={"fixed"}
         top="0"
-        className="z-20"
+        zIndex={999}
       >
         <Box
           display={"flex"}
@@ -174,7 +174,8 @@ const Navbar = () => {
         w="100%"
         top={10}
         bgColor={"white"}
-        className="z-20"
+        //className="z-20"
+        zIndex={999}
       >
         <Box
           w={"80%"}
@@ -775,7 +776,6 @@ const Navbar = () => {
       <Box
         boxShadow="rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;"
         //position={"fixed"}
-        className="z-10 bg-white"
         w="100%"
         mt={"96px"}
         bgColor={"white"}
