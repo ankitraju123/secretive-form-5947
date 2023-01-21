@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Grid, Heading, Input, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, Heading, Input, Text, useToast } from '@chakra-ui/react'
 import Image from 'next/image'
 import React from 'react'
 import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIcon,
@@ -6,8 +6,18 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
   import { ChevronRightIcon } from '@chakra-ui/icons'
 
  const Payment = () => {
+   const toast = useToast()
+  const paymentSuccess=()=>{
+    toast({
+      title: 'Payment  Successful.',
+      position: 'top',
+      status: 'success',
+      duration: 2000,
+      isClosable: true,
+    })
+  }
   return (
-    <Box w={"80%"} margin='auto'>
+    <Box w={"80%"} margin='auto' >
         <Flex justifyContent={'space-between'}>
         <Box>
     <Heading>Choose payment method</Heading>
@@ -132,7 +142,7 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
                <Input  placeholder='CV' htmlSize={4} width='auto' type={'number'} />
                 </Flex>
                </Box>
-<Button marginTop={'10px'} size='md' height='48px' width='100%'  borderColor='pink' bgColor='#e80071'>
+<Button onClick={paymentSuccess} marginTop={'10px'} size='md' height='48px' width='100%'  borderColor='pink' bgColor='#e80071'>
   Pay ₹ 2000 </Button>
    </Box>
 
@@ -192,5 +202,5 @@ product-------
   )
 }
 
-
 export default Payment
+
