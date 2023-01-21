@@ -1,23 +1,37 @@
-import { Box, Button, Flex, Grid, Heading, Input, Text } from '@chakra-ui/react'
+import { Box, Button, Flex, Grid, Heading, Input, Text, useToast } from '@chakra-ui/react'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIcon,
   } from '@chakra-ui/react'
   import { ChevronRightIcon } from '@chakra-ui/icons'
-  import { useToast } from '@chakra-ui/react'
+import { useSelector } from 'react-redux'
+
  const Payment = () => {
-  const toast = useToast()
+  const [payment,setPayment]=useState(1)
+  const state=useSelector((store)=>store.cart)
+console.log(state)
+
+   const toast = useToast()
   const paymentSuccess=()=>{
     toast({
       title: 'Payment  Successful.',
+      description: 'Your Order is Confirmed',
       position: 'top',
-
-      // description: "We've created your account for you.",
       status: 'success',
-      duration: 2000,
+      duration: 3000,
       isClosable: true,
     })
   }
+
+    const gray = {
+      backgroundColor: '#f3f4f5',
+    }
+     const white = {
+      backgroundColor: 'white',
+      borderLeft:'3px solid #e80071'
+
+    };
+  
   return (
     <Box w={"80%"} margin='auto' >
         <Flex justifyContent={'space-between'}>
@@ -28,33 +42,40 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
         <Image width={350}height={300} alt='pay' src={'https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/payment-icon.svg'}/>
         </Flex>
         {/* ----------------------- */}
-        <Box w='100%' marginTop={"10px"}>
+        <Box  w='100%' marginTop={"10px"}>
             <Heading size={'md'} >Payment Method Options</Heading>
     <Flex justify={'space-between'}>
+      {/* ----------paylef */}
         <Box  w='55%'>
             <Flex>
-            <Box   w='50%'>
+            <Box   w='50%' cursor='pointer'  >
 <Grid>
-            <Box marginTop={"10px"}  >
+            <Box onClick={()=>setPayment(1)} cursor='pointer' h={'70px'} marginTop={"10px"} style={payment==1?white:gray} >
             <Flex   alignItems='center' gap={'10px'} >
                 <Image width={20}height={20} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/Credit_Debit_Card.svg' alt='left'></Image>
                 <Box>
                 <Text fontWeight={'medium'} >Credit/Debit Card</Text>
                 <Text fontSize='sm' >Visa, Mastercard, Rupay & more</Text>
                 </Box>
-                {/* <Image width={20}height={20} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/desktop-icons/dropdown-right-arrow.png' alt='rigt'></Image> */}
-          <ChevronRightIcon color={'gray'} />
+                {
+                  payment==1?
+                  <ChevronRightIcon  marginLeft='auto' color='gray' />:""
+                }
+  
             </Flex>
             </Box>
 
-            <Box  h={'70px'}  bgColor={'#f3f4f5'} >
+            <Box onClick={()=>setPayment(3)} cursor='pointer' h={'70px'} style={payment==3?white:gray}  >
             <Flex gap={'10px'} alignItems='center'>
                 <Image width={20}height={20} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/UPI.svg' alt='left'></Image>
                 <Box>
                 <Text fontWeight={'medium'}>UPI</Text>
                 <Text fontSize='sm' >Google Pay, PhonePe, Paytm & more</Text>
                 </Box>
-          <ChevronRightIcon color={'#f3f4f5'} />
+                {
+                  payment==3?
+                  <ChevronRightIcon  marginLeft='auto' color='gray' />:""
+                }
             </Flex>
             </Box>
 
@@ -65,7 +86,6 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
                 <Text fontWeight={'medium'}>NetBanking</Text>
                 <Text fontSize='sm' >Pay through your favourite bank</Text>
                 </Box>
-          <ChevronRightIcon color={'#f3f4f5'}/>
             </Flex>
             </Box>
 
@@ -76,18 +96,20 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
                 <Text fontWeight={'medium'}>Shop now & Pay later</Text>
                 <Text fontSize='sm' >Zest money, Simpl & more</Text>
                 </Box>
-          <ChevronRightIcon color={'#f3f4f5'} />
             </Flex>
             </Box>
 
-            <Box h={'70px'}  bgColor={'#f3f4f5'} >
+            <Box h={'70px'} onClick={()=>setPayment(2)}cursor='pointer' style={payment==2?white:gray}  >
             <Flex gap={'10px'} alignItems='center'>
                 <Image width={20}height={20} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/COD.svg' alt='left'></Image>
-                <Box>
+                <Box  >
                 <Text fontWeight={'medium'}>Cash on delivery</Text>
                 <Text fontSize='sm' >Pay at your doorstep</Text>
                 </Box>
-          <ChevronRightIcon color={'#f3f4f5'} />
+                {
+                  payment==2?
+                  <ChevronRightIcon marginLeft='auto' color='gray' />:""
+                }
             </Flex>
             </Box>
 
@@ -98,7 +120,6 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
                 <Text fontWeight={'medium'}>Paytm Wallet</Text>
                 <Text fontSize='sm' >Link your Paytm wallet and pay</Text>
                 </Box>
-          <ChevronRightIcon color={'#f3f4f5'} />
             </Flex>
             </Box>
 
@@ -109,7 +130,6 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
                 <Text fontWeight={'medium'}>Gift card</Text>
                 <Text fontSize='sm' >One card for all Nykaa apps</Text>
                 </Box>
-          <ChevronRightIcon color={'#f3f4f5'} />
             </Flex>
             </Box>
             <Box h={'70px'}  bgColor={'#f3f4f5'} >
@@ -119,14 +139,16 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
                 <Text fontWeight={'medium'}>EMI</Text>
                 <Text fontSize='sm' >Easy installments</Text>
                 </Box>
-          <ChevronRightIcon color={'#f3f4f5'} />
             </Flex>
             </Box>
             </Grid>
             </Box>
-            {/* ======= rig */}
+            {/* ========================= rig */}
             <Box w='40%' >
-                <Box h={'60%'} >
+              {
+                payment==1?
+            
+                <Box h={'60%'}id='cardpay'  >
                <Heading paddingTop={'10px'} boxShadow='md' p='6' rounded='md' bg='white' size={'md'}>Credit/Debit Card</Heading>
                <Box paddingTop={'10px'}>
                 <Flex gap={'7px'}>
@@ -146,8 +168,44 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
                </Box>
 <Button onClick={paymentSuccess} marginTop={'10px'} size='md' height='48px' width='100%'  borderColor='pink' bgColor='#e80071'>
   Pay ₹ 2000 </Button>
-   </Box>
+   </Box>:""
+     }
 
+{
+  payment==2? <Box  >
+  <Heading paddingTop={'10px'} boxShadow='md' p='6' rounded='md' bg='white' size={'md'}>Cash On Delivery</Heading>
+
+<Button onClick={()=>toast({
+      title: 'Order  Successful.',
+      description: 'Your Order is Confirmed',
+      position: 'top',
+      status: 'success',
+      duration: 3000,
+      isClosable: true,
+    })} marginTop={'10px'} size='md' height='48px' width='100%'  borderColor='pink' bgColor='#e80071'>Place order</Button>
+   
+  </Box>:""
+}
+{
+  payment==3? <Box  >
+  <Heading paddingTop={'10px'} boxShadow='md' p='6' rounded='md' bg='white' size={'md'}>UPI</Heading>
+    <Text>1. Select UPI App</Text>
+    <Box>
+      <Flex justifyContent={'space-around'}>
+      <Image width={50}height={50} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/fashion_icons/googlePay.svg'alt='goopay'/>
+      <Image width={50}height={50} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/UPImWeb/PhonePe.svg'alt='phone'/>
+      <Image width={60}height={60} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/UPImWeb/Paytm.svg'alt='paytm'/>
+      <Image width={60}height={60} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/UPImWeb/UPI-Logo-vector%201.svg'alt='upi'/>
+      </Flex>
+    </Box>
+    <Text>2. Enter UPI/VPA Id</Text>
+    <Input  placeholder='Enter UPI ID'  width='auto' type={'number'} />
+
+<Button onClick={paymentSuccess} marginTop={'10px'} size='md' height='48px' width='100%'  borderColor='pink' bgColor='#e80071'>Verify & Pay ₹ 2000</Button>
+   
+  </Box>:""
+}
+{/* == */}
             </Box>
             </Flex></Box>
 
@@ -205,5 +263,4 @@ product-------
 }
 
 export default Payment
-
 
