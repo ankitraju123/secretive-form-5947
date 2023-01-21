@@ -3821,25 +3821,10 @@
       "id": 379
     }
   ],
+
   "cart": [],
   "admindata": [
-    {
-      "id": 1674297671636,
-      "quantity": 0,
-      "title": "T-shirt",
-      "price": 455,
-      "image": "",
-      "rating": 0,
-      "preprice": "500"
-    },
-    {
-      "id": 1674298119854,
-      "quantity": 0,
-      "title": "plane",
-      "price": -1000,
-      "image": "anythi",
-      "rating": "45",
-      "preprice": "1000"
-    }
+
   ]
+
 }
