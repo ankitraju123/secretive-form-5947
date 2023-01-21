@@ -1,49 +1,29 @@
 import React from "react";
-import {
-  Card,
-  CardBody,
-  Image,
-  Stack,
-  Heading,
-  Text,
-  Divider,
-  CardFooter,
-  ButtonGroup,
-  Button,
-  Box,
-} from "@chakra-ui/react";
 
-export default function CartProduct({ data,onclick }) {
+import { Button, Icon } from "@chakra-ui/react";
+import { StarIcon } from "@chakra-ui/icons";
+import { deleteCartData } from "@/redux/actions";
+import { useDispatch } from "react-redux";
+
+export default function CartProduct({ data, onclick,INC,DEC }) {
+  const dispatch=useDispatch()
+  
   return (
-    <Card maxW="sm">
-      <CardBody>
-        <Image
-          src={data.image}
-          alt="productImage"
-          borderRadius="lg"
-          boxSize="250px"
-        />
-        <Box h={10} mt={5} align="center">
-          <Text fontSize="sm" align="center" as="b">
-            {data.title}
-          </Text>
-        </Box>
-        <Text color="blue.600" fontSize="2xl">
-          {data.price}
-        </Text>
-        <Text color="blue.600" fontSize="2xl">
-          {data.preprice}
-        </Text>
-      </CardBody>
-      <Divider />
-      <CardFooter>
-        <ButtonGroup spacing="2">
+      <>
+        <div className="cart-main">
+        <div className="cart-img">
+        <img src={data.image} alt="img" />
+        </div>
+        <div className="cart-details">
+          <h2>{data.title}</h2>
+          <h2>Rs-{data.price}</h2>
+          <span className="quant">Quantity <button className="quant-btn" onClick={DEC}>-</button><span style={{color:"white"}}>{data.quantity}</span><button className="quant-btn" onClick={INC}>+</button></span>
+          <h2 className="rating">Ratings- <span>{data.rating}</span></h2>
           
-        <Button onClick={onclick} variant="ghost" colorScheme="red">
-            Remove
-          </Button>
-        </ButtonGroup>
-      </CardFooter>
-    </Card>
+        </div>
+        <div style={{marginTop:"8%"}}><Button onClick={()=>dispatch(deleteCartData(data))}   w="100px">Remove</Button></div>
+        </div>
+      </>
+    
   );
 }
