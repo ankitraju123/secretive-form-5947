@@ -1,15 +1,19 @@
-import React,{useState} from 'react';
+import React,{useEffect, useState} from 'react';
 import { useToast } from '@chakra-ui/react'
 import
 {
     Box,Heading,Input,Button,Text
 } from '@chakra-ui/react';
-//import {CloseIcon} from '@chakra-ui/icons';
 import Link from 'next/link';
-var data=JSON.parse(localStorage.getItem("userData"));
-
+import { useRouter } from 'next/router';
 const Loginpage=() =>
 {
+    const router=useRouter()
+    if (typeof window !== 'undefined') {
+        // Perform localStorage action
+        var data=JSON.parse(localStorage.getItem('userData'))
+
+      }
     const [verfiy,setVerfiy]=useState(false);
     const [input,setInput]=useState({
         email: "",
@@ -31,9 +35,11 @@ const Loginpage=() =>
             {
                 localStorage.setItem("SiginData",JSON.stringify(logindata))
                 localStorage.setItem("login",true)
+                router.push('/')
             } else if(el.email!==login.email||el.password!==login.password)
             {
                 localStorage.setItem("login",false)
+                console.log("false condition")
             }
         })
 
@@ -55,7 +61,7 @@ const Loginpage=() =>
 
     const Equal=() =>
     {
-        data.map((e) =>
+       data && data.map((e) =>
         {
             if(e.email===input1)
             {
@@ -74,9 +80,6 @@ const Loginpage=() =>
         setInput1(e.target.value)
     }
     const toast=useToast();
-    console.log(input1)
-    console.log(input,sign)
-    console.log(verfiy)
     return (
         <Box   bgColor={'#f3f3f3'} p={10}>
 
@@ -95,7 +98,7 @@ const Loginpage=() =>
                         <Input type="email" bgColor={'#f3f3f3'} placeholder='Enter Email Address' value={input1} onChange={checkData} />
                         <Button onClick={Equal} bgColor="#d5418e" color={'white'} w='100%' m={'3rem 0'}>proceed</Button>
                         <br />
-                        <Text>If dont have Account with us  <Link to='/register' style={{color:'#d5418e' }}>Click Here</Link></Text>
+                        <Text>If dont have Account with us  <Link href='/signup' style={{color:'#d5418e' }}>Click Here</Link></Text>
                     </Box>
                     }
 

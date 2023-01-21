@@ -75,7 +75,7 @@ const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const btnRef = React.useRef();
   const [detial, setDetail] = useState([]);
-  const [verfiy, Setverfiy] = useState(false);
+  const [verfiy, Setverfiy] = useState();
   const [count, setCount] = useState(0);
   const [price, setPrice] = useState(Price);
   const [quantity, setQuantity] = useState(1);
@@ -84,7 +84,6 @@ const Navbar = () => {
   const handleClick = (e) => {
     setQuantity(e.target.value);
   };
-  console.log(price);
   const login = useGoogleLogin({
     onSuccess: async (respose) => {
       try {
@@ -96,13 +95,24 @@ const Navbar = () => {
             },
           }
         );
+        console.log(respose.access_token);
         Setverfiy(true);
         setDetail([...detial, res.data]);
+        if (typeof window !== "undefined") {
+          // Perform localStorage action
+          const dta = localStorage.setItem("dta",JSON.stringify(res.data));
+          console.log(dta);
+        }
       } catch (err) {
         console.log(err);
+        if (typeof window !== "undefined") {
+          const verifiy = localStorage.setItem("verifiy", false);
+          console.log(verifiy);
+        }
       }
     },
   });
+
   return (
     <Box>
       <Box
@@ -133,7 +143,7 @@ const Navbar = () => {
               BEAUTY BONANZA Get Your Daily Dose Of Amazing Deals
             </Text>
           </Link>
-          {/*<Menus />*/}
+          <Menus />
           <Box display={"flex"}>
             {" "}
             {Nav1List.map((e) => {
@@ -703,7 +713,7 @@ const Navbar = () => {
                           textAlign={"center"}
                           fontWeight="bold"
                         >
-                          Are you sure you want href logout?
+                          Are you sure you want logout?
                         </AlertDialogHeader>
                         <hr />
                         <AlertDialogBody display={"grid"} gap={2}>
@@ -783,7 +793,6 @@ const Navbar = () => {
             display={{ base: "grid", lg: "flex" }}
             justifyContent={"space-evenly"}
             alignItems="center"
-            //gap={10}
             textAlign={"start"}
           >
             <List display={{ base: "grid", md: "flex", lg: "flex" }}>
@@ -858,25 +867,26 @@ const Navbar = () => {
                         <Link href="#">Mirrors</Link>
                         <Link href="#">Makeup Pouches</Link>
                       </Box>
-                    </Box>
-                    <Box className="column">
-                      <h3 style={{ fontWeight: 500 }}>Top Brands</h3>
-                      <Link href="#">Kay Beauty</Link>
-                      <Link href="#">Huda Beauty</Link>
-                      <Link href="#">Charlotte Tilbury</Link>
-                      <Link href="#">Maybelline New York</Link>
-                      <Link href="#">LOreal Paris</Link>
-                      <Link href="#">Lakme</Link>
-                      <Link href="#">Nykaa Cosmetics</Link>
-                      <Link href="#">Nyx Pro.Makeup</Link>
-                    </Box>
-                    <Box className="column">
-                      <h3 style={{ fontWeight: 500 }}>Quicj Links</h3>
-                      <Link href="#">Combos @ Nykaa</Link>
-                      <Link href="#">New Launches</Link>
-                      <Link href="#">NFBA Nominees 2022</Link>
-                      <Link href="#">Gifts @ Nykaa</Link>
-                      <Link href="#">The Gift Store</Link>
+
+                      <Box className="column">
+                        <h3 style={{ fontWeight: 500 }}>Top Brands</h3>
+                        <Link href="#">Kay Beauty</Link>
+                        <Link href="#">Huda Beauty</Link>
+                        <Link href="#">Charlotte Tilbury</Link>
+                        <Link href="#">Maybelline New York</Link>
+                        <Link href="#">LOreal Paris</Link>
+                        <Link href="#">Lakme</Link>
+                        <Link href="#">Nykaa Cosmetics</Link>
+                        <Link href="#">Nyx Pro.Makeup</Link>
+                      </Box>
+                      <Box className="column">
+                        <h3 style={{ fontWeight: 500 }}>Quicj Links</h3>
+                        <Link href="#">Combos @ Nykaa</Link>
+                        <Link href="#">New Launches</Link>
+                        <Link href="#">NFBA Nominees 2022</Link>
+                        <Link href="#">Gifts @ Nykaa</Link>
+                        <Link href="#">The Gift Store</Link>
+                      </Box>
                     </Box>
                   </Box>
                 </Box>
@@ -1979,14 +1989,6 @@ const Navbar = () => {
                 </Box>
               </ListItem>
             </List>
-          </Box>
-          <Box
-            w={"30%"}
-            display={{ base: "grid", lg: "flex" }}
-            justifyContent={"space-evenly"}
-            alignItems="center"
-          >
-            <Box></Box>
           </Box>
         </Box>
       </Box>
