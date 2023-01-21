@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Admin = () => {
+ const Admin = () => {
   return (<>
     <div>Admin</div>
  <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label=".form-control-lg example"/>
@@ -9,3 +9,5 @@ export const Admin = () => {
   </>
   )
 }
+
+export default Admin
