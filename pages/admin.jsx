@@ -48,6 +48,7 @@ export default function admin() {
     preprice,
   };
 
+
   const post = async () => {
     let res = await axios.post("http://localhost:8080/admindata", handlechange);
     setTitle("");
