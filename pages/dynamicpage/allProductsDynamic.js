@@ -98,7 +98,7 @@ const allProducts = ({ pro_data }) => {
 };
 
 export async function getServerSideProps() {
-  const res = await fetch(`http://localhost:8080/product`);
+  const res = await fetch(`https://nykaa-mock-api-6or1.onrender.com/product`);
   const data = await res.json();
   //   console.log(data);
 

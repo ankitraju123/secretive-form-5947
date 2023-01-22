@@ -24,8 +24,7 @@ const Pages = ({ data }) => {
 export async function getServerSideProps(context) {
   // console.log(context)
   const { MId } = context.params;
-  console.log(`http://localhost:8080/product/${MId}`);
-  const res = await axios.get(`http://localhost:8080/product/${MId}`);
+  const res = await axios.get(`https://nykaa-mock-api-6or1.onrender.com/product/${MId}`);
   return {
     props: {
       data: res.data,
