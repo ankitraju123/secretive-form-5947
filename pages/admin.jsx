@@ -2,18 +2,6 @@ import axios from 'axios'
 import React from 'react'
 import { useState } from 'react'
 
-const initData={
-    quantity: 0,
-      id: Date.now(),
-      image: "",
-      title: "",
-      preprice: "",
-      price: 0,
-      discount: "",
-      category: "lipstick",
-     
-}
-
 const Admin = () => {
 
     const [title,setTitle]=useState("")
@@ -62,5 +50,3 @@ const Admin = () => {
     </div>
   )
 }
-
-export default Admin
