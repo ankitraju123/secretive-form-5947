@@ -3,9 +3,12 @@ import {
   CART_DELETE_DATA,
   CART_GET_DATA,
   CART_POST_DATA,
+  DEC,
   ERROR,
   GET_DATA,
+  INC,
   LOADING,
+  TOTAL_AMOUNT,
 } from "./actionTypes";
 
 export const Getproddata = () => async (dispatch) => {
@@ -47,3 +50,14 @@ export const deleteCartData = (data) => (dispatch) => {
     dispatch({ type: ERROR });
   }
 };
+
+export const increment=(id)=>(dispatch)=>{
+  dispatch({type:INC,
+            payload:id},)
+}
+export const decrement=(id)=>(dispatch)=>{
+  dispatch({type:DEC,payload:id})
+}
+export const totalAmount=()=>(dispatch)=>{
+  dispatch({type:TOTAL_AMOUNT})
+}

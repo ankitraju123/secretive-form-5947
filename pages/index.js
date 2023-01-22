@@ -243,7 +243,7 @@ export default function Home()
               alt="img"
             />
             <div>
-              <h3>NEW! Charlotte's Magic Gifting Universe</h3>
+              <h3>NEW! Charlotte`s Magic Gifting Universe</h3>
               <p>For EVERYONE, EVERYWHERE!</p>
             </div>
           </div>
@@ -316,7 +316,7 @@ export default function Home()
           src="https://images-static.nykaa.com/uploads/82eed1ab-64b2-4cb9-818b-9b39cd9284ec.jpg?tr=w-1200,cm-pad_resize"
           alt="img"
         />
-        <div className="carosel"></div>
+        <div className="carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
       </div>
 
       {/* Featured */}
@@ -496,17 +496,17 @@ export default function Home()
         <h1>Brands You Can`t Miss</h1>
         <p>Luxe</p>
 
-        <div className="Carosel">
+        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
             <Carouseltwo passed={Cards5}/>
         </div>
-        <div className='Carosel'>
+        <div className='Carosel' onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
           <Carouseltwo passed={Cards7}/>
 
         </div>
-        <div className="Carosel">
+        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
           <Carouseltwo passed={Cards8}/>
         </div>
-        <div className="Carosel">
+        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
           <Carouseltwo passed={Cards9}/>
         </div>
         <p>Skin</p>
@@ -667,7 +667,7 @@ export default function Home()
           </div>
         </div>
 
-        <div className="Carosel">
+        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
           <Carouseltwo passed={Cards3}/>
         </div>
 
@@ -677,7 +677,7 @@ export default function Home()
           alt=""
         />
 
-        <div className="Carosel"></div>
+        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
       </div>
 
       <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
@@ -708,7 +708,7 @@ export default function Home()
       <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
         <h1>Discover More At Nykaa</h1>
         <p>Special Offerings</p>
-        <div className="Carosel"></div>
+        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
       </div>
 
       <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
@@ -737,7 +737,7 @@ export default function Home()
             </div>
           </div>
         </div>
-        <div className="Carosel"></div>
+        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
       </div>
 
       <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
@@ -763,7 +763,7 @@ export default function Home()
             </div>
           </div>
         </div>
-        <div className="Carosel"></div>
+        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
       </div>
 
     </div>

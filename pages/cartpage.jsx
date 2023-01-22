@@ -1,5 +1,5 @@
 import CartProduct from '@/components/Cartproduct'
-import { deleteCartData, getCartData } from '@/redux/actions'
+import { deleteCartData, getCartData, totalAmount } from '@/redux/actions'
 import { Box, Button, Text } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
@@ -13,20 +13,18 @@ const Cartpage = () => {
     const state=useSelector((store)=>store.cart)
     const dispatch=useDispatch()
     const [total,setTotal]=useState(0)
-    
+    console.log(state);
     //console.log(state[0]);
     const getTotal=()=>{
         let sum=0
-        for(let i=0;i<state.length;i++){
-            sum+=(state[i].price*state[i].quantity)
-            console.log(sum);
-        }
-        console.log(sum,state[0]);
+        state.map((ele)=>sum=Number(ele.price)+sum)
+        console.log(sum);
         setTotal(sum)
     }
     
     useEffect(()=>{
         dispatch(getCartData())
+       dispatch ( totalAmount() )
         getTotal()
     },[])
   return (
@@ -42,8 +40,10 @@ const Cartpage = () => {
                 )
             })
         }
-        <Box>
+        <Box margin={"auto"} width="50%" textAlign={"center"}>
+
         <Text fontSize={30} color="brown">Total <span>{total}</span></Text>
+
         <Button onClick={()=>router.push("/payment")}>Checkout</Button>
         </Box>
         
