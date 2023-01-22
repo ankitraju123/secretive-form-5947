@@ -4,9 +4,9 @@ import '@/styles/globals.css'
 import { ChakraProvider } from '@chakra-ui/react'
 import {GoogleOAuthProvider} from "@react-oauth/google"
 import "../styles/homepage.css"
-
+import "../styles/Carouselscard.css"
 import "../styles/cartproduct.css"  
-
+import "../styles/Carouseltwo.css"
 
 import {Provider} from 'react-redux'
 

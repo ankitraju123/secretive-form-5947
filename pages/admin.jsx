@@ -18,6 +18,9 @@ import {
 import { useState } from "react";
 import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
+
+
+const Admin = () => {
 const initData = {
   quantity: 0,
   id: Date.now(),
@@ -28,6 +31,7 @@ const initData = {
   discount: "",
   category: "lipstick",
 };
+
 
 export default function admin() {
   const [title, setTitle] = useState("");
@@ -186,4 +190,7 @@ export default function admin() {
     </Flex>
   );
 }
+
+
+export default Admin
 
