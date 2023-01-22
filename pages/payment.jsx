@@ -227,12 +227,7 @@ const toast = useToast()
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-  {
- state.map((to)=><Box>
- <Image width={80}height={80} src={to.image}alt='imag'/>
-  <Text>{to.title}</Text>
- </Box>)
-}
+product------
     </AccordionPanel>
   </AccordionItem>
   <AccordionItem>
