@@ -20,20 +20,8 @@ import { ViewIcon, ViewOffIcon } from "@chakra-ui/icons";
 
 
 
-const Admin = () => {
-const initData = {
-  quantity: 0,
-  id: Date.now(),
-  image: "",
-  title: "",
-  preprice: "",
-  price: 0,
-  discount: "",
-  category: "lipstick",
-};
 
-
-export default function admin() {
+export default function Admin() {
   const [title, setTitle] = useState("");
 
   const [image, setImage] = useState("");
@@ -192,5 +180,5 @@ export default function admin() {
 }
 
 
-export default Admin
+
 
