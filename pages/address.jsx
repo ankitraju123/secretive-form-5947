@@ -38,7 +38,7 @@ const handleClick=(id)=>{
   }
   addata.push(newItem)
   setAdaddress([...addaress,newItem])
-  localStorage.setItem("address",JSON.stringify(addata))
+  localStorage.setItem("address",JSON.stringify(newItem))
 }
 
 console.log(addaress)
