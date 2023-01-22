@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
-const cartpage = () => {
+const Cartpage = () => {
     const router=useRouter()
     const state=useSelector((store)=>store.cart)
     const dispatch=useDispatch()
@@ -53,4 +53,4 @@ const cartpage = () => {
   )
 }
 
-export default cartpage
+export default Cartpage

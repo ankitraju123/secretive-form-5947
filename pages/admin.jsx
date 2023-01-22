@@ -13,7 +13,8 @@ const initData={
       category: "lipstick",
      
 }
-const admin = () => {
+
+const Admin = () => {
 
     const [title,setTitle]=useState("")
     
@@ -44,7 +45,7 @@ const admin = () => {
     }
 
 
-    console.log(title,price)
+    
   return (
     <div>
         <input placeholder='Name of Product' style={{width:"500px",margin:"auto",backgroundColor:"red"}} type="text" value={title} onChange={(e)=>{setTitle(e.target.value)}} />
@@ -62,4 +63,4 @@ const admin = () => {
   )
 }
 
-export default admin
+export default Admin
