@@ -1,8 +1,10 @@
-import {CART_DELETE_DATA,CART_GET_DATA,CART_POST_DATA,ERROR,GET_DATA,LOADING} from "./actionTypes"
+import { Action } from "@remix-run/router"
+import {CART_DELETE_DATA,CART_GET_DATA,CART_POST_DATA,DEC,ERROR,GET_DATA,INC,LOADING, TOTAL_AMOUNT} from "./actionTypes"
 
 let initialData={
     data:[],
     cart:[],
+    total:0,
     isLoading:false,
     isError:false
 }
@@ -51,6 +53,49 @@ export const Globalreducer=(state=initialData,{type,payload})=>{
                 cart:filtered
             }
         }
+        case INC:{
+            let updated=state.cart.map((ele)=>{
+                if(ele.id===payload){
+                    return{
+                        ...ele,
+                        quantity:ele.quantity+1
+                    }
+                }
+                return ele
+            })
+            return{
+                ...state,
+                cart:updated
+            }
+        }
+        case DEC:{
+            let updated=state.cart.map((ele)=>{
+                if(ele.id===payload){
+                    return{
+                        ...ele,
+                        quantity:ele.quantity-1
+                    }
+                }
+                return ele
+            }).filter((ele)=>{return ele.quantity!=0})
+            return{
+                ...state,
+                cart:updated
+            }
+        }
+        case TOTAL_AMOUNT:{
+            let {total}=state.cart.reduce((accum,curVal)=>{
+                let {price,quantity}=curVal
+                accum.total+=quantity*price
+                console.log(accum)
+                return accum
+            },{total:0})
+            return{
+                ...state,
+                total:total
+            }
+        }
+
         default:return state
     }
 }
