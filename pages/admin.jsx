@@ -34,7 +34,7 @@ const admin = () => {
     }
 
     const post=async()=>{
-        let res=await axios.post("http://localhost:8080/admindata",handlechange)
+        let res=await axios.post("https://nykaa-mock-api-6or1.onrender.com/product",handlechange)
         setTitle(""); setPrice(0); setImage(""); setPreprice(null)
     }
 
