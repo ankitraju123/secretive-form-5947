@@ -59,7 +59,7 @@ function Carouseltwo({passed}) {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
     responsive: [
-      {
+      { 
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
