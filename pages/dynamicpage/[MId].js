@@ -21,7 +21,19 @@ const Pages = ({ data }) => {
   );
 };
 
-export async function getServerSideProps(context) {
+
+export async function getStaticPaths() {
+  let r = await fetch(`https://nykaa-mock-api-6or1.onrender.com/product`);
+  let d = await r.json();
+
+  return {
+    paths: d.map((el) => ({ params: { MId: String(el.MId) } })),
+    fallback: false,
+  };
+}
+
+
+export async function getStaticProps(context) {
   // console.log(context)
   const { MId } = context.params;
   const res = await axios.get(`https://nykaa-mock-api-6or1.onrender.com/product/${MId}`);
@@ -31,4 +43,5 @@ export async function getServerSideProps(context) {
     },
   };
 }
+
 export default Pages;

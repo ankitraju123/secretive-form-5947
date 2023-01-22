@@ -5,13 +5,19 @@ import { Accordion,  AccordionItem, AccordionButton, AccordionPanel, AccordionIc
   } from '@chakra-ui/react'
   import { ChevronRightIcon } from '@chakra-ui/icons'
 import { useSelector } from 'react-redux'
+import { useEffect } from 'react'
 
- const Payment = () => {
-  const [payment,setPayment]=useState(1)
+const Payment = () => {
+  const [adss,setadds]=useState({})
+console.log(adss)
+const [payment,setPayment]=useState(1)
   const state=useSelector((store)=>store.cart)
 console.log(state)
-
-   const toast = useToast()
+useEffect(() => setadds(JSON.parse(localStorage.getItem('address'))), [])
+ let sum=0
+state.map((to)=>sum=Number(to.price)+sum)
+console.log(sum)
+const toast = useToast()
   const paymentSuccess=()=>{
     toast({
       title: 'Payment  Successful.',
@@ -22,16 +28,15 @@ console.log(state)
       isClosable: true,
     })
   }
-
-    const gray = {
-      backgroundColor: '#f3f4f5',
-    }
-     const white = {
-      backgroundColor: 'white',
-      borderLeft:'3px solid #e80071'
-
-    };
   
+  const gray = {
+    backgroundColor: '#f3f4f5',
+  }
+  const white = {
+    backgroundColor: 'white',
+    borderLeft:'3px solid #e80071'
+    
+  };
   return (
     <Box w={"80%"} margin='auto' >
         <Flex justifyContent={'space-between'}>
@@ -64,7 +69,6 @@ console.log(state)
   
             </Flex>
             </Box>
-
             <Box onClick={()=>setPayment(3)} cursor='pointer' h={'70px'} style={payment==3?white:gray}  >
             <Flex gap={'10px'} alignItems='center'>
                 <Image width={20}height={20} src='https://adn-static1.nykaa.com/media/wysiwyg/Payments/UPI.svg' alt='left'></Image>
@@ -167,7 +171,7 @@ console.log(state)
                 </Flex>
                </Box>
 <Button onClick={paymentSuccess} marginTop={'10px'} size='md' height='48px' width='100%'  borderColor='pink' bgColor='#e80071'>
-  Pay ₹ 2000 </Button>
+  Pay ₹ {sum} </Button>
    </Box>:""
      }
 
@@ -201,7 +205,7 @@ console.log(state)
     <Text>2. Enter UPI/VPA Id</Text>
     <Input  placeholder='Enter UPI ID'  width='auto' type={'number'} />
 
-<Button onClick={paymentSuccess} marginTop={'10px'} size='md' height='48px' width='100%'  borderColor='pink' bgColor='#e80071'>Verify & Pay ₹ 2000</Button>
+<Button onClick={paymentSuccess} marginTop={'10px'} size='md' height='48px' width='100%'  borderColor='pink' bgColor='#e80071'>Verify & Pay ₹ {sum}</Button>
    
   </Box>:""
 }
@@ -223,8 +227,7 @@ console.log(state)
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-  
-product-------
+product------
     </AccordionPanel>
   </AccordionItem>
   <AccordionItem>
@@ -237,7 +240,16 @@ product-------
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
- alanallur kerala
+      {
+        // adss.map((ad)=>
+        <Box><Heading size={'md'}>{adss.name}</Heading>
+        <Text>{adss.house}</Text>
+        <Text>{adss.area}</Text>
+        <Text>{adss.pincode}</Text>
+        </Box>
+        
+        // )
+      }
     </AccordionPanel>
   </AccordionItem>
 
@@ -251,7 +263,7 @@ product-------
       </AccordionButton>
     </h2>
     <AccordionPanel pb={4}>
-    Total Amount  ₹ 2200
+    Total Amount  ₹ {sum}
     </AccordionPanel>
   </AccordionItem>
 </Accordion>
