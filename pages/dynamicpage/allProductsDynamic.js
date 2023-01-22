@@ -18,12 +18,28 @@ import { FcNext } from "react-icons/fc";
 import Link from "next/link";
 
 const allProducts = ({ pro_data }) => {
-  //   console.log(pro_data);
-  let limit = 10;
+  let limit = 12;
   const [page, setPage] = useState(1);
   const [numPages, setNumPages] = useState(0);
   const [perPageProds, setPerPageProds] = useState([]);
-  let buttons = "";
+  const [showBtns, setShowBtns] = useState([]);
+  const [startBtn, setStartBtn] = useState(1);
+  const [endBtn, setEndBtn] = useState(5);
+  const [newProducts, setNewProducts] = useState([]);
+  const [isSorted, setIsSorted] = useState();
+  const [selectedSort, setSelectedSort] = useState("");
+
+  const makeListFunc = () => {
+    let lis = [];
+    for (let i = startBtn; i <= endBtn; i++) {
+      lis.push(i);
+    }
+    setShowBtns(lis);
+  };
+
+  useEffect(() => {
+    makeListFunc();
+  }, [numPages, startBtn]);
 
   useEffect(() => {
     let end = limit * page;
@@ -33,17 +49,56 @@ const allProducts = ({ pro_data }) => {
   }, [page]);
 
   useEffect(() => {
-    setNumPages(pro_data.length / limit);
+    setNumPages(Math.ceil(pro_data.length / limit));
   }, []);
 
-  useEffect(() => {
-    for (let i = 1; i <= numPages; i++) {}
-  }, [numPages]);
-
   const pageHandler = (value) => {
-    console.log(value);
     setPage(value);
   };
+
+  const nextHandler = () => {
+    setPage(page + 1);
+    if (page >= 5) {
+      setStartBtn(startBtn + 1);
+      setEndBtn(endBtn + 1);
+    }
+  };
+
+  const prevHandler = () => {
+    setPage(page - 1);
+    if (page > 5) {
+      setStartBtn(startBtn - 1);
+      setEndBtn(endBtn - 1);
+    }
+  };
+
+  const filterHandler = (value) => {};
+
+  const selectHandler = (e) => {
+    setSelectedSort(e.target.value);
+  };
+
+  useEffect(() => {
+    console.log(selectedSort);
+    if (selectedSort == "highToLow") {
+      setNewProducts(
+        perPageProds.sort((a, b) => {
+          return b.price - a.price;
+        })
+      );
+      // console.log(perPageProds);
+    } else {
+      setNewProducts(
+        perPageProds.sort((a, b) => {
+          return a.price - b.price;
+        })
+      );
+    }
+  }, [selectedSort]);
+
+  // useEffect(() => {
+  //   !!newProducts.length && setPerPageProds(newProducts);
+  // }, [newProducts, isSorted]);
 
   return (
     <>
@@ -58,16 +113,33 @@ const allProducts = ({ pro_data }) => {
         </Heading>
       </Box>
       <Box w="100%">
-        <Box w="20%" borderWidth="1px" borderRadius="lg" m="auto">
-          <Select placeholder="Select option">
-            <option value="option1">Option 1</option>
-            <option value="option2">Option 2</option>
-            <option value="option3">Option 3</option>
-          </Select>
+        <Box pb={20}>
+          <Flex>
+            <Box w="20%" borderWidth="1px" borderRadius="lg" m="auto">
+              <Select
+                placeholder="Select a Category to Filter"
+                onChange={(e) => filterHandler(e.target.value)}
+              >
+                <option value="lipstick">Lipstick</option>
+                <option value="eyeliner">Eye Liner</option>
+                <option value="nailpant">Nail Paint</option>
+              </Select>
+            </Box>
+            <Box w="20%" borderWidth="1px" borderRadius="lg" m="auto">
+              <Select
+                placeholder="Sort By Price"
+                value={selectedSort}
+                onChange={selectHandler}
+              >
+                <option value="highToLow">High To Low</option>
+                <option value="lowToHigh">Low To High</option>
+              </Select>
+            </Box>
+          </Flex>
         </Box>
         <Box w="70%" borderWidth="1px" borderRadius="lg" m="auto" p={5}>
           <Grid templateColumns="repeat(3, 1fr)" gap={5}>
-            {pro_data.map((prod) => {
+            {perPageProds.map((prod) => {
               return (
                 <Card key={prod.id}>
                   <GridItem w="100%">
@@ -82,12 +154,36 @@ const allProducts = ({ pro_data }) => {
       <Box width="50%" m="auto" pt={10} pb={10}>
         <Box ml={30}>
           <Flex gap={5}>
-            <Button colorScheme="teal" variant="outline">
+            <Button
+              colorScheme="teal"
+              variant="outline"
+              onClick={prevHandler}
+              isDisabled={page == 1}
+            >
               <FcPrevious color="#fc2779" />
             </Button>
-            {buttons}
+            {showBtns.map((el) => {
+              return (
+                <Button
+                  backgroundColor={page == el ? "#fc2779" : "gray"}
+                  borderRadius="50%"
+                  color="white"
+                  key={el}
+                  onClick={() => {
+                    pageHandler(el);
+                  }}
+                >
+                  {el}
+                </Button>
+              );
+            })}
 
-            <Button colorScheme="teal" variant="outline">
+            <Button
+              colorScheme="teal"
+              variant="outline"
+              onClick={nextHandler}
+              isDisabled={endBtn == numPages}
+            >
               <FcNext color="#fc2779" />
             </Button>
           </Flex>
