@@ -19,7 +19,7 @@ Nyka is Buy cosmetics & beauty products online from Nykaa, the online shopping b
 - Cart 
 - Payment
 - Admin can add,
-## More info the Project (Nyka)
+## More info this Project (Nyka)
 ![Nyka_LandingPage](https://www.legalraasta.com/blog/wp-content/uploads/2019/04/nykaa-e1555654063220-800x386.jpg)
 ***********************************************************************************************************************************************************************
 ![Nyka_Login_Signup](./image/login-nyka.png)
