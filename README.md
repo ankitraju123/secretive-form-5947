@@ -9,7 +9,7 @@
 <h4 align="center">Frontend:</h4>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Nextjs" />
+  <img src="https://img.shields.io/badge/Nextjs-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="Nextjs" />
   <img src="https://img.shields.io/badge/Chakra%20UI-3bc7bd?style=for-the-badge&logo=chakraui&logoColor=white" alt="chakra-ui" />
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="javascript" />
   <img src="https://img.shields.io/badge/Rest_API-02303A?style=for-the-badge&logo=react-router&logoColor=white" alt="restAPI" />
@@ -110,11 +110,11 @@ This project was built using Nextjs, Chakra UI, HTML, CSS, JavaScript, Rest API,
 ## Contact Us
 
 If you want to contact us, you can reach me through below handles. <br />
-[![linkedin](https://img.shields.io/badge/Aditya_Anand-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-chauhan-8a1b13232/)
-[![GitHub](https://img.shields.io/badge/Aditya_Anand-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/ankitraju123)
+[![linkedin](https://img.shields.io/badge/Ankit_Chauhan-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-chauhan-8a1b13232/)
+[![GitHub](https://img.shields.io/badge/Ankit_Chauhan-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/ankitraju123)
 
-[![linkedin](https://img.shields.io/badge/Aditya_Anand-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/giri-reddy-geralt/)
-[![GitHub](https://img.shields.io/badge/Aditya_Anand-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/geraltyen)
+[![linkedin](https://img.shields.io/badge/Giri_Reddy-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/giri-reddy-geralt/)
+[![GitHub](https://img.shields.io/badge/Giri_Reddy-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/geraltyen)
 
 [![linkedin](https://img.shields.io/badge/Pujarini_Sahu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pujarini-sahoo/)
 [![GitHub](https://img.shields.io/badge/Pujarini_Sahu-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/puja2795)
@@ -122,8 +122,8 @@ If you want to contact us, you can reach me through below handles. <br />
 [![linkedin](https://img.shields.io/badge/varinder-brar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/varinder-brar/)
 [![GitHub](https://img.shields.io/badge/varinder-brar-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Brar21)
 
-[![linkedin](https://img.shields.io/badge/Santosh-Sharma-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammed-sadique-064385230/)
-[![GitHub](https://img.shields.io/badge/Santosh-Sharma-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/mhdsadique)
+[![linkedin](https://img.shields.io/badge/Muhammed-Sadique-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammed-sadique-064385230/)
+[![GitHub](https://img.shields.io/badge/Muhammed-Sadique-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/mhdsadique)
 
 
 
