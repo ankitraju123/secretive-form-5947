@@ -1,7 +1,7 @@
 
 <h1 align="center">Nykaa.com Clone</h1>
 <br />
-<strong>Nykaa.com Clone is ReactJS e-commerce web application that allows you to buy cosmetics products online with effortable prices. It has a variety of categories, just visit the product listing page and you will see all the products, apply filters as per your need and in just a few clicks you can buy any products from the website. This project is just for educational purpose.</strong>
+<strong>Nykaa.com Clone is NextJS e-commerce web application that allows you to buy cosmetics products online with effortable prices. It has a variety of categories, just visit the product listing page and you will see all the products, apply filters as per your need and in just a few clicks you can buy any products from the website. This project is just for educational purpose.</strong>
 
 <h2 align="center">🖥️ Tech Stack</h2>
 
@@ -49,7 +49,7 @@ We made this project within the 4 days
 - Product Description Page
 - Cart Management Page
 - Login / Logout Page
-- Single Product Page
+- Payment Page
 
 
 ## 🚀 Features
@@ -58,6 +58,7 @@ We made this project within the 4 days
 - My Orders Section for details of all ordered item
 - Cart Add and Remove Items 
 - Cart Update Quantities 
+- Payment Page
 <br />
 
 
@@ -101,7 +102,7 @@ We made this project within the 4 days
 
 ## Getting Started
 
-This project was built using React, Chakra UI, HTML, CSS, JavaScript, Rest API,Redux,tailwind . It is an e-commerce web application and for running on your local environment you should follow these guidelines.
+This project was built using Nextjs, Chakra UI, HTML, CSS, JavaScript, Rest API,Redux,tailwind . It is an e-commerce web application and for running on your local environment you should follow these guidelines.
 
 
 <br />
