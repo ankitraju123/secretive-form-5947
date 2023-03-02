@@ -21,7 +21,6 @@
 <h4 align="center">Deployed On:</h4>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white" alt="vercel" />
   <img src="https://img.shields.io/badge/vercel-430098?style=for-the-badge&logo=vercel&logoColor=white" alt="heroku" />
 </p>
 
@@ -79,15 +78,6 @@ We made this project within the 5 days
    <tr>
     <td><img src="https://i.ibb.co/JChmGKf/nykaa4.png"   alt="" /></td>
   </tr>
-  <br/>
-  <tr>
-    <td><img src="https://i.ibb.co/ZWjjmL0/nykaa5.png"  alt="" /></td>
-  </tr>
-  <br/>
-   <tr>
-    <td><img src="https://i.ibb.co/RPbBcVp/nykaa6.png"   alt="" /></td>
-  </tr>
-  <br/>
   <br/>
    <tr>
     <td><img src="https://i.ibb.co/WK7FsMF/nykaa7.png"   alt="" /></td>
