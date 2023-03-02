@@ -116,8 +116,8 @@ If you want to contact us, you can reach me through below handles. <br />
 [![linkedin](https://img.shields.io/badge/Aditya_Anand-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/giri-reddy-geralt/)
 [![GitHub](https://img.shields.io/badge/Aditya_Anand-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/geraltyen)
 
-[![linkedin](https://img.shields.io/badge/Rashmi_Gautam-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pujarini-sahoo/)
-[![GitHub](https://img.shields.io/badge/Rashmi_Gautam-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/puja2795)
+[![linkedin](https://img.shields.io/badge/Pujarini_Sahu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pujarini-sahoo/)
+[![GitHub](https://img.shields.io/badge/Pujarini_Sahu-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/puja2795)
 
 [![linkedin](https://img.shields.io/badge/varinder-brar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/varinder-brar/)
 [![GitHub](https://img.shields.io/badge/varinder-brar-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Brar21)
