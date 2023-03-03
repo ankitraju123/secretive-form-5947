@@ -26,8 +26,8 @@ body{
     justify-content: space-evenly;
 }
 .top-brands{
-    width: 85%;
-    margin: 3rem auto;
+    width: 95%;
+    margin: 2rem auto;
     
 }
 .top-brands img{
@@ -38,8 +38,10 @@ body{
     font-size: 30px;
 }
 .home-subcard{
+    background-color: red;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 15px;
+    width: 500px;
 }
 .home-subcard img{
     width: 100%;
@@ -81,7 +83,7 @@ body{
     justify-content: space-around;
 }
 .last-card{
-    width: 30%;
+    width: auto;
     margin-bottom: 3%;
     
 }
@@ -167,5 +169,6 @@ body{
     justify-content: space-between;
 }
 .discover-card{
-    width: 49%;
+    width: 95%;
+    margin: auto;
 }
