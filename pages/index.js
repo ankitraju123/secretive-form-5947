@@ -143,7 +143,7 @@ export default function Home()
 
 
       <Box className="top-brands">
-                <Heading>Top brands</Heading>
+                <Heading fontSize={{base: 'md',md: '35px'}}>Top brands</Heading>
                 <br />
         <Box  display={{base:"grid",md:'flex'}} gap={5} flexDirection={{base:'column',md:'row'}}  overflowX={'scroll'}>
           <Box className="home-subcard" >
@@ -151,7 +151,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/de60c862-c495-4488-af69-d3abdcd71652.jpg?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>UP To 40% Off</h3>
               <p>Ace Your base With Lakme</p>
             </Box>
@@ -162,7 +162,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/81924016-df75-48bf-a2c3-494db075ce47.jpg?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>UP To 40% Off</h3>
               <p>Face Makeup That Fits Me As I Am!</p>
             </Box>
@@ -173,7 +173,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/e53f1ac5-0e2a-4e6c-8d30-cc30f3631aca.jpg?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>UP To 25% Off</h3>
               <p>On Entire Range</p>
             </Box>
@@ -184,7 +184,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/4adea525-7177-4d9b-91aa-4cb076224957.jpg?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>UP To 40% Off + Free Gifts</h3>
               <p>Worth ₹399 on Orders above 449 </p>
             </Box>
@@ -195,7 +195,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/72ca6afd-b426-4519-8603-eaa9a99ecfb0.jpg?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>4 Exciting Gifts on ₹4500</h3>
               <p>Makeup For A Flawless Base</p>
             </Box>
@@ -206,7 +206,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/6e703e63-ac79-466f-aba1-a3ee19efa1b3.png?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Up To 25% Off</h3>
               <p>Kay Beauty Wedding Superstars 2023</p>
             </Box>
@@ -217,7 +217,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/dec69649-bf21-4fcb-bf41-1765936f39f7.jpg?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Up To 50% Off + Free Serum</h3>
               <p>Worth ₹799 On ₹999</p>
             </Box>
@@ -228,7 +228,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/a960cfc1-0c8f-4a64-81e6-3b5d55514e23.jpg?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>On Rs. 3000: 3 Piece Kit</h3>
               <p>On Rs. 5000: 4 Piece Kit</p>
             </Box>
@@ -239,7 +239,7 @@ export default function Home()
               src="https://images-static.nykaa.com/uploads/70efffa9-d871-4fc5-8715-34f00f1480bd.jpg?tr=w-400,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>NEW! Charlotte`s Magic Gifting Universe</h3>
               <p>For EVERYONE, EVERYWHERE!</p>
             </Box>
@@ -251,12 +251,10 @@ export default function Home()
       <Box>
         <Carouseltwo passed={Cards2}/>
       </Box>
-      {/* Carousel */}
-
-      <Box className="pink-back">
+      <Box className="pink-back" mb={10}>
                 <Box>
                     <br />
-                    <Heading>Only At Nykaa</Heading>
+                    <Heading fontSize={{base: 'md',md: '35px'}}>Only At Nykaa</Heading>
                     <br />
           <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}}>
             <Box className="home-subcard last-card">
@@ -305,28 +303,29 @@ export default function Home()
           </Box>
         </Box>
       </Box>
-
-      <Box className="top-brands">
-        <Heading>Discover Our Favourites</Heading>
+            <br />
+            <br />
+      <Box>
+                <Heading fontSize={{base: 'md',md: '35px'}}>Discover Our Favourites</Heading>
+                <br />
+                <br />
         <Image
-          className="sdbanner"
           src="https://images-static.nykaa.com/uploads/82eed1ab-64b2-4cb9-818b-9b39cd9284ec.jpg?tr=w-1200,cm-pad_resize"
           alt="Image"
         />
-        <Box className="carosel"></Box>
       </Box>
-
-      {/* Featured */}
-
+            <br />
+            <br />
       <Box className="top-brands">
-        <Heading>Featured Brands</Heading>
-        <Box className="featured">
+                <Heading fontSize={{base: 'md',md: '35px'}}>Featured Brands</Heading>
+                <br />
+                <Box display={{base: "grid",md: 'flex'}} gap={5} flexDirection={{base: 'column',md: 'row'}} overflowX={'scroll'}>
           <Box className="feat-sub-card">
             <Image
               src="https://images-static.nykaa.com/creatives/533cddc6-1f27-4cb6-881d-2473bc89d5ac/default.jpg?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Flast 10% off + </h3>
               <p>2 Gifts on ₹3000</p>
             </Box>
@@ -337,7 +336,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/890005b6-74b6-45f2-bafc-fd5c53807a6f/default.jpg?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Flast 10% off + </h3>
               <p>On The Entire Range </p>
             </Box>
@@ -348,7 +347,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/17376df9-ac03-42df-a7ad-25b7fa58a34d/default.png?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Min 20% Off</h3>
               <p>Serum of 799 on 799 </p>
             </Box>
@@ -359,7 +358,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/9ece2199-1993-4f3d-b85d-8924e7494f60/default.jpg?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Upto 25% Off </h3>
               <p>On Entire Range</p>
             </Box>
@@ -370,7 +369,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/b1c1a423-1eca-4d0e-ab9f-12c0619a48cc/default.jpg?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Upto 25% Off</h3>
               <p>Free ini On ₹899</p>
             </Box>
@@ -381,7 +380,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/f1e07044-14a3-4de4-a23e-57307a7d8941/default.jpg?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Upto 35% Off</h3>
               <p>onEntire Range </p>
             </Box>
@@ -392,7 +391,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/266995e4-c1a0-45c1-9c10-a43082db3f8c/default.jpg?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Upto 25% Off</h3>
               <p>Get Sunblock On ₹899 </p>
             </Box>
@@ -403,7 +402,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/d439ba1f-48a3-493f-ab9d-420ac82220af/default.jpg?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Min 20% Off</h3>
               <p>Free Eyeliner on 699</p>
             </Box>
@@ -414,7 +413,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/18888525-a188-4003-af9d-e778eb1e5d63/default.jpg?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>on $1100 </h3>
               <p>Gifts Worth ₹1050 </p>
             </Box>
@@ -425,7 +424,7 @@ export default function Home()
               src="https://images-static.nykaa.com/creatives/b281fd98-075d-415f-b28b-148ba6184324/default.png?tr=w-240,cm-pad_resize"
               alt="Image"
             />
-            <Box>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3> 25% Off Combos</h3>
               <p>Haircare Bestsellers </p>
             </Box>
@@ -461,9 +460,10 @@ export default function Home()
       <Box className="aquad">
         <Box
           className="top-brands"
-         
-        >
-          <Heading>Everyday Essentials</Heading>
+                >
+                    <br />
+                    <Heading fontSize={{base: 'md',md: '35px'}}>Everyday Essentials</Heading>
+                    <br />
           <Image
             className="sdbanner"
             src="https://images-static.nykaa.com/uploads/2adda7a5-567a-4db1-b408-06c96be60287.jpg?tr=w-1200,cm-pad_resize"
@@ -476,7 +476,7 @@ export default function Home()
       </Box>
 
       <Box className="extra-brands">
-        <Heading>Categories In Focus</Heading>
+        <Heading fontSize={{base: 'md',md: '35px'}}>Categories In Focus</Heading>
         <Box className="extra-cards">
           <Image
             src="https://images-static.nykaa.com/uploads/b6e3595f-34bd-4b39-8873-4900fbce8504.gif?tr=w-600,cm-pad_resize"
@@ -490,7 +490,7 @@ export default function Home()
       </Box>
 
       <Box className="top-brands">
-        <Heading>Brands You Can`t Miss</Heading>
+        <Heading fontSize={{base: 'md',md: '35px'}}>Brands You Can`t Miss</Heading>
         <p>Luxe</p>
 
         <Box className="Carosel">
@@ -507,7 +507,7 @@ export default function Home()
           <Carouseltwo passed={Cards9}/>
         </Box>
         <br />
-                <Heading>Skin</Heading>
+                <Heading fontSize={{base: 'md',md: '35px'}}>Skin</Heading>
                 <br />
         <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} w='100%'>
           <Box className="feat-sub-card">
@@ -557,7 +557,7 @@ export default function Home()
                 <br />
 <br />
                 
-                <Heading>More In Beauty</Heading>
+                <Heading fontSize={{base: 'md',md: '35px'}}>More In Beauty</Heading>
                 <br />
         <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} w='100%'>
           <Box className="feat-sub-card">
@@ -617,7 +617,7 @@ export default function Home()
                 </Box>
                 <br />
                 <br />
-                <Heading>House Of Nykaa</Heading>
+                <Heading fontSize={{base: 'md',md: '35px'}}>House Of Nykaa</Heading>
                 <br />
         <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} w='100%'>
           <Box className="feat-sub-card">
@@ -684,7 +684,7 @@ export default function Home()
       </Box>
 
       <Box className="top-brands">
-        <Heading>Game Zone</Heading>
+        <Heading fontSize={{base: 'md',md: '35px'}}>Game Zone</Heading>
         <p>Play & Win</p>
         <Image
           className="tp-Image"
@@ -694,7 +694,7 @@ export default function Home()
       </Box>
 
       <Box className="top-brands">
-        <Heading>Gifting At Nykaa</Heading>
+        <Heading fontSize={{base: 'md',md: '35px'}}>Gifting At Nykaa</Heading>
         <p>Give The Present of Beauty</p>
         <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} w='100%'>
           <Image
@@ -709,7 +709,7 @@ export default function Home()
       </Box>
 
       <Box w={"95%"} m='auto' textAlign={'center'}>
-        <Heading>Discover More At Nykaa</Heading>
+        <Heading fontSize={{base: 'md',md: '35px'}}>Discover More At Nykaa</Heading>
         <p>Special Offerings</p>
       </Box>
 <br />
