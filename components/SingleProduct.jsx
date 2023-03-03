@@ -24,7 +24,7 @@ export default function SingleProduct({ data, onclick }) {
   const dispatch = useDispatch();
   const router = useRouter();
   return (
-    <Card size="md">
+    <Card size="md" display={{base:'grid',md:"flex"}}>
       <CardBody>
         <Image
           src={data.image}

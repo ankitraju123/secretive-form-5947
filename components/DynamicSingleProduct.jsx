@@ -21,8 +21,8 @@ export default function DynamicSingleProduct({ product_data }) {
   return (
     <Card mt={10} mb={10}>
       <Box w="100%">
-        <Flex gap={20}>
-          <Box w="30%">
+        <Flex gap={20} display={{base:'grid',md:"flex"}}>
+          <Box w={{base:'auto',md:"30%"}}>
             <Image w="100%" src={product_data.image} alt="single-product" />
           </Box>
 
@@ -73,7 +73,7 @@ export default function DynamicSingleProduct({ product_data }) {
                 backgroundColor="#fc2779"
                 variant="solid"
                 color="white"
-                w="30%"
+                w="auto"
                 onClick={() => {
                   dispatch(addToCart(product_data));
                 }}

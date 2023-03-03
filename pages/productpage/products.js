@@ -9,13 +9,15 @@ import {
   Button,
   Text,
   Card,
-  Select,
+    Select,
+  SimpleGrid,Stack,Container
 } from "@chakra-ui/react";
 import SingleProduct from "../../components/SingleProduct";
 import { FcPrevious } from "react-icons/fc";
 import { FcNext } from "react-icons/fc";
 
 import Link from "next/link";
+//import {Container} from "postcss";
 
 const allProducts = ({ pro_data }) => {
   let limit = 12;
@@ -86,7 +88,6 @@ const allProducts = ({ pro_data }) => {
           return b.price - a.price;
         })
       );
-      // console.log(perPageProds);
     } else {
       setNewProducts(
         perPageProds.sort((a, b) => {
@@ -96,13 +97,10 @@ const allProducts = ({ pro_data }) => {
     }
   }, [selectedSort]);
 
-  // useEffect(() => {
-  //   !!newProducts.length && setPerPageProds(newProducts);
-  // }, [newProducts, isSorted]);
 
   return (
     <>
-      <Box w="100%" m="auto" align="center" p={5}>
+      <Box w="100%" m="auto" align="center" >
         <Image
           src="https://images-static.nykaa.com/uploads/d470e061-8d08-455c-8651-7de67ff104f0.gif"
           alt="cover image"
@@ -137,8 +135,8 @@ const allProducts = ({ pro_data }) => {
             </Box>
           </Flex>
         </Box>
-        <Box w="70%" borderWidth="1px" borderRadius="lg" m="auto" p={5}>
-          <Grid templateColumns="repeat(3, 1fr)" gap={5}>
+        <Box w="80%" borderWidth="1px" borderRadius="lg" m="auto" p={5}>
+          <SimpleGrid columns={[1, 1, 2, 3]} spacing={4}>
             {perPageProds.map((prod) => {
               return (
                 <Card key={prod.id}>
@@ -148,12 +146,9 @@ const allProducts = ({ pro_data }) => {
                 </Card>
               );
             })}
-          </Grid>
+          </SimpleGrid>
         </Box>
-      </Box>
-      <Box width="50%" m="auto" pt={10} pb={10}>
-        <Box ml={30}>
-          <Flex gap={5}>
+          <Container maxW={"5xl"} gap={5} m={{base:'1rem 11%',md:"2rem 35%"}}>
             <Button
               colorScheme="teal"
               variant="outline"
@@ -186,9 +181,10 @@ const allProducts = ({ pro_data }) => {
             >
               <FcNext color="#fc2779" />
             </Button>
-          </Flex>
-        </Box>
+          </Container>
       </Box>
+      
+        
     </>
   );
 };
@@ -196,8 +192,6 @@ const allProducts = ({ pro_data }) => {
 export async function getServerSideProps() {
   const res = await fetch(`https://nykaa-mock-api-6or1.onrender.com/product`);
   const data = await res.json();
-  //   console.log(data);
-
   return {
     props: {
       pro_data: data,
