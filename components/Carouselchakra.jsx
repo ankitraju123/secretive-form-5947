@@ -19,22 +19,8 @@ const settings = {
 };
 
 export default function Carouselchakra({cards}) {
-  // As we have used custom buttons, we need a reference variable to
-  // change the state
   const [slider, setSlider] = React.useState([])
-
-  // These are the breakpoints which changes the position of the
-  // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '10px' });
-
-  // These are the images used in the slide
-//   const cards = [
-//     'https://images.unsplash.com/photo-1612852098516-55d01c75769a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-//     'https://images.unsplash.com/photo-1627875764093-315831ac12f7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-//     'https://images.unsplash.com/photo-1571432248690-7fd6980a1ae2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=900&q=60',
-//   ];
-
+ 
   return (
     <Box
       position={'relative'}
@@ -42,7 +28,6 @@ export default function Carouselchakra({cards}) {
       width={"80%"}
       margin="auto"
       overflow={'hidden'}>
-      {/* CSS files for react-slick */}
       <link
         rel="stylesheet"
         type="text/css"
@@ -54,33 +39,30 @@ export default function Carouselchakra({cards}) {
         type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css"
       />
-      {/* Left Icon */}
       <IconButton
         aria-label="left-arrow"
         colorScheme="messenger"
         borderRadius="full"
         position="absolute"
-        left={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
+        left={{base:'96%',md:"100%"}}
+        top="50%"
+        transform={'translate(-860%, -50%)'}
         zIndex={2}
         onClick={() => slider?.slickPrev()}>
         <BiLeftArrowAlt />
       </IconButton>
-      {/* Right Icon */}
       <IconButton
         aria-label="right-arrow"
         colorScheme="messenger"
         borderRadius="full"
         position="absolute"
-        right={side}
-        top={top}
-        transform={'translate(0%, -50%)'}
-        zIndex={2}
+        right={{base:'96%',md:"10%"}}
+        bottom="20%"
+        transform={'translate(860%, -180%)'}
+        zIndex={222222}
         onClick={() => slider?.slickNext()}>
         <BiRightArrowAlt color='black'  />
       </IconButton>
-      {/* Slider */}
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
           <Box

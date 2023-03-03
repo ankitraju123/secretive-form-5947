@@ -248,7 +248,7 @@ export default function Home()
         </Box>
       </Box>
 
-      <Box>
+      <Box p={5}>
         <Carouseltwo passed={Cards2}/>
       </Box>
       <Box className="pink-back" mb={10}>
