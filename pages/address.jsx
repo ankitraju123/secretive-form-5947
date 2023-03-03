@@ -1,4 +1,5 @@
-import { AddIcon } from "@chakra-ui/icons";
+import {AddIcon} from "@chakra-ui/icons";
+import { useToast } from '@chakra-ui/react'
 import {
   Box,
   Button,
@@ -36,7 +37,8 @@ function Address() {
   const [pincode, setpincodes] = useState("");
   const [house, sethouse] = useState("");
   const [area, setarea] = useState("");
-  var addata = [];
+  const toast=useToast()
+    var addata=[];
   const router = useRouter();
   const handleClick = (id) => {
     router.push(`/payment`);
@@ -54,7 +56,13 @@ function Address() {
         };
         if(address===""&phone===""&pincode===""&house===""&area==="")
         {
-          return  alert('please fill')
+          return   toast({
+            title: `Please Provide Full Details`,
+            status: 'error',
+            isClosable: true,
+              position: 'top',
+            size:"lg"
+          })
         } else
         {
             addata.push(newItem);
@@ -138,8 +146,8 @@ function Address() {
           <DrawerHeader borderBottomWidth="1px">New Address</DrawerHeader>
           <DrawerBody>
             <Stack spacing="24px" m={'auto'}>
-          <Heading size={"sm"} >Contact</Heading>
               <Box display={'grid'} gap={5}>
+          <FormLabel size={"sm"} isRequired={true}>Contact</FormLabel>
                 <Input
                   onChange={(e) => setAddress(e.target.value)}
                   value={address}
@@ -147,7 +155,7 @@ function Address() {
                   ref={firstField}
                   id="username"
                   placeholder="Name"
-                  isRequired
+                  isRequired={true}
                 />
                 <Input
                   onChange={(e) => setphone(e.target.value)}
@@ -156,7 +164,7 @@ function Address() {
                   ref={firstField}
                   id="username"
                   placeholder="Phone"
-                  isRequired
+                  isRequired={true}
                 />
                 <Input
                   onChange={(e) => setemail(e.target.value)}
@@ -165,7 +173,7 @@ function Address() {
                   ref={firstField}
                   id="username"
                   placeholder="Email ID(Optional)"
-                  isRequired
+                  isRequired={true}
                 />
               </Box>
 
@@ -180,7 +188,7 @@ function Address() {
                     ref={firstField}
                     id="username"
                     placeholder="Pincode"
-                    isRequired
+                    isRequired={true}
                   />
                 </InputGroup>
               </Box>
@@ -193,12 +201,12 @@ function Address() {
                   ref={firstField}
                   id="username"
                   placeholder="House/Flate/Office No"
-                  isRequired
+                  isRequired={true}
                 />
                 <FormLabel htmlFor="desc"></FormLabel>
                 <Textarea
                   value={area}
-                  isRequired
+                  isRequired={true}
                   onChange={(e) => setarea(e.target.value)}
                   id="desc"
                   placeholder="Road Name/Area/Colony"
