@@ -46,7 +46,7 @@ export default function Carouselchakra({cards}) {
         position="absolute"
         left={{base:'96%',md:"100%"}}
         top="50%"
-        transform={'translate(-860%, -50%)'}
+        transform={{base:'translate(-860%, -50%)',md:'translate(-2460%, -50%)'}}
         zIndex={2}
         onClick={() => slider?.slickPrev()}>
         <BiLeftArrowAlt />
@@ -57,11 +57,11 @@ export default function Carouselchakra({cards}) {
         borderRadius="full"
         position="absolute"
         right={{base:'96%',md:"10%"}}
-        bottom="20%"
-        transform={'translate(860%, -180%)'}
+        top="45%"
+        transform={{base:'translate(860%, -180%)',md:'translate(210%, 0%)'}}
         zIndex={222222}
         onClick={() => slider?.slickNext()}>
-        <BiRightArrowAlt color='black'  />
+        <BiRightArrowAlt color='white'  />
       </IconButton>
       <Slider {...settings} ref={(slider) => setSlider(slider)}>
         {cards.map((url, index) => (
