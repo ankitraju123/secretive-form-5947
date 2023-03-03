@@ -4,15 +4,9 @@ import {
   Button,
   Flex,
   FormLabel,
-  grid,
   Heading,
   Input,
   InputGroup,
-  InputLeftAddon,
-  InputRightAddon,
-  Radio,
-  RadioGroup,
-  Select,
   Stack,
   Text,
   Textarea,
@@ -42,26 +36,32 @@ function Address() {
   const [pincode, setpincodes] = useState("");
   const [house, sethouse] = useState("");
   const [area, setarea] = useState("");
-
   var addata = [];
   const router = useRouter();
   const handleClick = (id) => {
     router.push(`/payment`);
   };
-  const submitdata = () => {
-    const newItem = {
-      name: address,
-      phone: phone,
-      email: email,
-      pincode: pincode,
-      house: house,
-      area: area,
-      id: Date.now(),
-    };
-    addata.push(newItem);
-    setAdaddress([...addaress, newItem]);
-    localStorage.setItem("address", JSON.stringify(newItem));
-    onClose();
+    const submitdata=() =>
+    {
+        const newItem = {
+          name: address,
+          phone: phone,
+          email: email,
+          pincode: pincode,
+          house: house,
+          area: area,
+          id: Date.now(),
+        };
+        if(address===""&phone===""&pincode===""&house===""&area==="")
+        {
+          return  alert('please fill')
+        } else
+        {
+            addata.push(newItem);
+            setAdaddress([...addaress,newItem]);
+            localStorage.setItem("address",JSON.stringify(addata));
+            onClose();
+        }
   };
 
   return (
@@ -102,18 +102,18 @@ function Address() {
             <Heading size={"md"}>Add New Address</Heading>
           </Box>
           <Box gap="20px" display={{ base: "grid", md: "flex" }}>
-            {addaress.map((ad) => (
-              <Box
-                key={ad.id}
+          
+            { addaress.map((Address)=>( <Box
+                key={Address.id}
                 w={"full"}
                 h="auto"
                 border="1px"
                 padding={"20px"}
               >
-                <Heading size={"md"}>{ad.name}</Heading>
-                <Text size={"md"}>{ad.area}</Text>
-                <Text size={"md"}>{ad.house}</Text>
-                <Text size={"md"}>{ad.phone}</Text>
+                <Heading size={"md"}>{Address.name}</Heading>
+                <Text size={"md"}>{Address.area}</Text>
+                <Text size={"md"}>{Address.house}</Text>
+                <Text size={"md"}>{Address.phone}</Text>
                 <Button
                   onClick={() => handleClick()}
                   bgColor="#e80071"
@@ -121,8 +121,8 @@ function Address() {
                 >
                   Deliver here
                 </Button>
-              </Box>
-            ))}
+              </Box>))}
+            
           </Box>
         </Flex>
       </Box>
