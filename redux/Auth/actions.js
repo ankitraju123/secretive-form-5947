@@ -1,5 +1,5 @@
 import * as types from "./actionType";
-import { auth, googleAuthProvider } from "../../firebase/firebase";
+//import { auth, googleAuthProvider } from "../../firebase/firebase";
 
 export const signupLoading = () => ({
   type: types.SIGNUP_LOADING,
@@ -13,17 +13,6 @@ export const signupError = (err) => ({
   payload: err,
 });
 
-export const googleSignupLoading = () => ({
-  type: types.GOOGLE_SIGNUP_LOADING,
-});
-export const googleSignupSuccess = (user) => ({
-  type: types.GOOGLE_SIGNUP_SUCCESS,
-  payload: user,
-});
-export const googleSignupError = (err) => ({
-  type: types.GOOGLE_SIGNUP_ERROR,
-  payload: err,
-});
 
 export const loginLoading = () => ({
   type: types.LOGIN_LOADING,
@@ -67,29 +56,19 @@ export const signup = (displayName, email, password) => {
   };
 };
 
-export const googleSignup = () => {
-  return function (dispatch) {
-    dispatch(googleSignupLoading());
-    auth
-      .signInWithPopup(googleAuthProvider)
-      .then(({ user }) => {
-        dispatch(googleSignupSuccess(user));
-      })
-      .catch((err) => dispatch(googleSignupError(err.message)));
-  };
-};
 
-export const login = (email, password) => {
-  return function (dispatch) {
-    dispatch(loginLoading());
-    auth
-      .signInWithEmailAndPassword(email, password)
-      .then(({ user }) => {
-        dispatch(loginSuccess(user));
-      })
-      .catch((err) => dispatch(loginError(err.message)));
-  };
-};
+
+//export const login = (email, password) => {
+//  return function (dispatch) {
+//    dispatch(loginLoading());
+//    auth
+//      .signInWithEmailAndPassword(email, password)
+//      .then(({ user }) => {
+//        dispatch(loginSuccess(user));
+//      })
+//      .catch((err) => dispatch(loginError(err.message)));
+//  };
+//};
 
 export const userlogout = () => {
   return function (dispatch) {
