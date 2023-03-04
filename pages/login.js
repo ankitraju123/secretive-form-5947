@@ -5,7 +5,7 @@ import Link from "next/link";
 //import {CloseIcon} from '@chakra-ui/icons';
 //import { useDispatch, useSelector } from "react-redux";
 //import { login } from "../redux/Auth/action";
-
+import {useRouter} from 'next/router';
 const Loginpage = () => {
 //  const [state, setState] = useState({
 //    email: "",

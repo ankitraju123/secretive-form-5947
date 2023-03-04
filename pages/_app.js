@@ -8,7 +8,7 @@ import "../styles/Carouseltwo.css";
 
 import { Provider } from "react-redux";
 
-import { store } from "@/store/store";
+import { store } from "@/redux/store";
 import Navbar from "@/components/Navbar";
 import Navbar2 from "@/components/Navbar2";
 

@@ -1,5 +1,9 @@
 import CartProduct from "@/components/Cartproduct";
-import { deleteCartData, getCartData, totalAmount } from "@/redux/actions";
+import {
+  deleteCartData,
+  getCartData,
+  totalAmount,
+} from "@/redux/products/actions";
 import { Box, Button, Text } from "@chakra-ui/react";
 import Link from "next/link";
 import React from "react";

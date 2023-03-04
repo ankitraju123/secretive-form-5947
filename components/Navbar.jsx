@@ -82,7 +82,7 @@ export default function Navbar() {
                   name={link.name}
                   fontSize={15}
                   bg="none"
-                  _hover={{ bg: "red.400" }}
+                  _hover={{ color: "#D5418E" }}
                   onClick={() => onClose()}
               />
               ))}
@@ -135,7 +135,8 @@ export default function Navbar() {
                to={link.id}
                name={link.name}
                fontSize={15}
-               bg="none"
+                      bg="none"
+                      
                onClick={() => onClose()}
            />
               ))}

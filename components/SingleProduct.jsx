@@ -18,13 +18,13 @@ import { useDispatch } from "react-redux";
 import { Icon } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
-import { addToCart } from "@/redux/actions";
+import { addToCart } from "@/redux/products/actions";
 
 export default function SingleProduct({ data, onclick }) {
   const dispatch = useDispatch();
   const router = useRouter();
   return (
-    <Card size="md" display={{base:'grid',md:"flex"}}>
+    <Card size="md" display={{ base: "grid", md: "flex" }}>
       <CardBody>
         <Image
           src={data.image}
