@@ -26,8 +26,8 @@ body{
     justify-content: space-evenly;
 }
 .top-brands{
-    width: 85%;
-    margin: 3rem auto;
+    width: 95%;
+    margin: 2rem auto;
     
 }
 .top-brands img{
@@ -40,21 +40,20 @@ body{
 .home-subcard{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
     border-radius: 15px;
+    width: 100%;
 }
 .home-subcard img{
-    width: 100%;
+    width: 200%;
     border-radius: 15px 15px 0 0;
 }
-.home-subcard div{
-    padding: 0 20px;
-}
+
 .home-subcard p{
-    font-size: 20px;
+    /*font-size: 20px;*/
     
     color:#5C6571;
 }
 .home-subcard h3{
-    font-size: 25px;
+    /*font-size: 25px;*/
     color: #e80071;
     
 }
@@ -71,7 +70,8 @@ body{
 }
 .pink-back{
     background-color: #fff6f9;
-    height:800px;
+    height:auto;
+    padding: 1rem;
 }
 
 .last-sub{
@@ -81,7 +81,7 @@ body{
     justify-content: space-around;
 }
 .last-card{
-    width: 30%;
+    width: auto;
     margin-bottom: 3%;
     
 }
@@ -111,7 +111,7 @@ body{
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
 .feat-sub-card div{
-    width: 90%;
+    /*width: 90%;*/
     padding: 0 5% 0 5%;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -167,5 +167,6 @@ body{
     justify-content: space-between;
 }
 .discover-card{
-    width: 49%;
+    width: 95%;
+    margin: auto;
 }

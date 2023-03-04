@@ -5,22 +5,11 @@ import {
   IconButton,
   Button,
   Stack,
-  Collapse,
-  Icon,
-  Link,
-  Popover,
-  PopoverTrigger,
-  PopoverContent,
-  useColorModeValue,
-  useBreakpointValue,
-  useDisclosure,
+  Heading,
+  Image,
+ 
 } from '@chakra-ui/react';
-import {
-  HamburgerIcon,
-  CloseIcon,
-  ChevronDownIcon,
-  ChevronRightIcon,
-} from '@chakra-ui/icons';
+
 import { useRouter } from "next/router";
 import Carouselchakra from '@/components/Carouselchakra';
 import Carouseltwo from '@/components/Carouseltwo';
@@ -115,657 +104,668 @@ export default function Home()
 {
   const router=useRouter()
     return (
-      <div>
-      <div>
+      <Box w={'100%'} m={'auto'} p={2}>
+      <Box>
         {/* <CarouselCards/> */}
         <Carouselchakra cards={Cards1}/>
-      </div>
-      <img
-        className="sndbanner"
+      </Box>
+      <Image
         src="https://images-static.nykaa.com/uploads/6fc4c05c-1646-4db9-9e82-ff61d6694dd5.gif?tr=w-1200,cm-pad_resize"
-        alt="banner"
+                alt="banner"
+                w={'100%'} p='0 1.5%'
+                borderRadius={10}
+
       />
 
-      <div className="third-div">
-        <img
+      <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}}>
+        <Image
           src="https://images-static.nykaa.com/uploads/fad4269e-a68e-4eca-9244-da27880090c7.jpg?tr=w-600,cm-pad_resize"
-          alt=""
+                    alt=""
+                    w={'100%'} p='0 1.5%'
+                borderRadius={10}
+
         />
 
-        <img
+        <Image
           src="https://images-static.nykaa.com/uploads/68dfe730-1f4d-43d1-a6a2-ddd5694dc918.jpg?tr=w-600,cm-pad_resize"
-          alt=""
+                borderRadius={10}
+                alt="" 
+                    w={'100%'} p='0 1.5%'
         />
-      </div>
+      </Box>
 
-      <img
-        className="sndbanner"
+      <Image
+        w={'100%'} p='0 1.5%' mt={5}
         src="https://images-static.nykaa.com/uploads/2030f573-1d09-432d-aacb-24672ba9a0e1.jpg?tr=w-1200,cm-pad_resize"
-        alt="banner"
+                alt="banner"
+                borderRadius={10}
       />
 
-      {/* Top Brands */}
 
-      <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
-        <h1>Top brands</h1>
-        <div className="homepage-cards">
-          <div className="home-subcard">
-            <img
+      <Box className="top-brands">
+                <Heading fontSize={{base: 'md',md: '35px'}}>Top brands</Heading>
+                <br />
+        <Box  display={{base:"grid",md:'flex'}} gap={5} flexDirection={{base:'column',md:'row'}}  overflowX={'scroll'}>
+          <Box className="home-subcard" >
+            <Image
               src="https://images-static.nykaa.com/uploads/de60c862-c495-4488-af69-d3abdcd71652.jpg?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>UP To 40% Off</h3>
               <p>Ace Your base With Lakme</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="home-subcard">
-            <img
+          <Box className="home-subcard">
+            <Image
               src="https://images-static.nykaa.com/uploads/81924016-df75-48bf-a2c3-494db075ce47.jpg?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>UP To 40% Off</h3>
               <p>Face Makeup That Fits Me As I Am!</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="home-subcard">
-            <img
+          <Box className="home-subcard">
+            <Image
               src="https://images-static.nykaa.com/uploads/e53f1ac5-0e2a-4e6c-8d30-cc30f3631aca.jpg?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>UP To 25% Off</h3>
               <p>On Entire Range</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="home-subcard">
-            <img
+          <Box className="home-subcard">
+            <Image
               src="https://images-static.nykaa.com/uploads/4adea525-7177-4d9b-91aa-4cb076224957.jpg?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>UP To 40% Off + Free Gifts</h3>
               <p>Worth ₹399 on Orders above 449 </p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="home-subcard">
-            <img
+          <Box className="home-subcard">
+            <Image
               src="https://images-static.nykaa.com/uploads/72ca6afd-b426-4519-8603-eaa9a99ecfb0.jpg?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>4 Exciting Gifts on ₹4500</h3>
               <p>Makeup For A Flawless Base</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="home-subcard">
-            <img
+          <Box className="home-subcard">
+            <Image
               src="https://images-static.nykaa.com/uploads/6e703e63-ac79-466f-aba1-a3ee19efa1b3.png?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Up To 25% Off</h3>
               <p>Kay Beauty Wedding Superstars 2023</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="home-subcard">
-            <img
+          <Box className="home-subcard">
+            <Image
               src="https://images-static.nykaa.com/uploads/dec69649-bf21-4fcb-bf41-1765936f39f7.jpg?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Up To 50% Off + Free Serum</h3>
               <p>Worth ₹799 On ₹999</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="home-subcard">
-            <img
+          <Box className="home-subcard">
+            <Image
               src="https://images-static.nykaa.com/uploads/a960cfc1-0c8f-4a64-81e6-3b5d55514e23.jpg?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>On Rs. 3000: 3 Piece Kit</h3>
               <p>On Rs. 5000: 4 Piece Kit</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="home-subcard">
-            <img
+          <Box className="home-subcard">
+            <Image
               src="https://images-static.nykaa.com/uploads/70efffa9-d871-4fc5-8715-34f00f1480bd.jpg?tr=w-400,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>NEW! Charlotte`s Magic Gifting Universe</h3>
               <p>For EVERYONE, EVERYWHERE!</p>
-            </div>
-          </div>
-        </div>
-      </div>
+            </Box>
+                    </Box>
+                    
+        </Box>
+      </Box>
 
-      <div>
+      <Box p={5}>
         <Carouseltwo passed={Cards2}/>
-      </div>
-      {/* Carousel */}
-
-      <div className="pink-back">
-        <div
-          className="top-brands"
-          onClick={() => router.push("/dynamicpage/allProductsDynamic")}
-        >
-          <h1>Only At Nykaa</h1>
-          <div className="homepage-card last-sub">
-            <div className="home-subcard last-card">
-              <img
+      </Box>
+      <Box className="pink-back" mb={10}>
+                <Box>
+                    <br />
+                    <Heading fontSize={{base: 'md',md: '35px'}}>Only At Nykaa</Heading>
+                    <br />
+          <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}}>
+            <Box className="home-subcard last-card">
+              <Image
                 src="https://images-static.nykaa.com/creatives/4823c068-c45e-4bf4-b030-a5f2f75b1d09/default.jpg?tr=w-400,cm-pad_resize"
-                alt="img"
+                alt="Image"
               />
-              <div>
+              <Box>
                 <h3>Flat 10% Off + Exciting Gifts</h3>
                 <p>On Best Of Global Beauty</p>
-              </div>
-            </div>
+              </Box>
+            </Box>
 
-            <div className="home-subcard last-card">
-              <img
+            <Box className="home-subcard last-card">
+              <Image
                 src="https://images-static.nykaa.com/creatives/8c0d9a97-7c88-4da8-899a-f9546375a175/default.jpg?tr=w-400,cm-pad_resize"
-                alt="img"
+                alt="Image"
               />
-              <div>
+              <Box>
                 <h3>Upto 30% off</h3>
                 <p>Comfy Panties starts at Rs.399</p>
-              </div>
-            </div>
+              </Box>
+            </Box>
 
-            <div className="home-subcard last-card">
-              <img
+            <Box className="home-subcard last-card">
+              <Image
                 src="https://images-static.nykaa.com/creatives/132cd70b-778f-4510-ab01-5ae956f7a442/default.jpg?tr=w-400,cm-pad_resize"
-                alt="img"
+                alt="Image"
               />
-              <div>
+              <Box>
                 <h3>3 Exciting Gifts On ₹3500</h3>
                 <p>The Ultimate Hydration Trio</p>
-              </div>
-            </div>
+              </Box>
+            </Box>
 
-            <div className="home-subcard last-card">
-              <img
+            <Box className="home-subcard last-card">
+              <Image
                 src="https://images-static.nykaa.com/creatives/293fbb88-1a6e-4b3e-aa0d-7e9c5a222625/default.png?tr=w-400,cm-pad_resize"
-                alt="img"
+                alt="Image"
               />
-              <div>
+              <Box>
                 <h3>Upto 50% Off + Serum on 799</h3>
                 <p>Best Of Fragrances</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
-        <h1>Discover Our Favourites</h1>
-        <img
-          className="sdbanner"
+              </Box>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
+            <br />
+            <br />
+      <Box>
+                <Heading fontSize={{base: 'md',md: '35px'}}>Discover Our Favourites</Heading>
+                <br />
+                <br />
+        <Image
           src="https://images-static.nykaa.com/uploads/82eed1ab-64b2-4cb9-818b-9b39cd9284ec.jpg?tr=w-1200,cm-pad_resize"
-          alt="img"
+          alt="Image"
         />
-        <div className="carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
-      </div>
-
-      {/* Featured */}
-
-      <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
-        <h1>Featured Brands</h1>
-        <div className="featured">
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+      </Box>
+            <br />
+            <br />
+      <Box className="top-brands">
+                <Heading fontSize={{base: 'md',md: '35px'}}>Featured Brands</Heading>
+                <br />
+                <Box display={{base: "grid",md: 'flex'}} gap={5} flexDirection={{base: 'column',md: 'row'}} overflowX={'scroll'}>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/533cddc6-1f27-4cb6-881d-2473bc89d5ac/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Flast 10% off + </h3>
               <p>2 Gifts on ₹3000</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/890005b6-74b6-45f2-bafc-fd5c53807a6f/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Flast 10% off + </h3>
               <p>On The Entire Range </p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/17376df9-ac03-42df-a7ad-25b7fa58a34d/default.png?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Min 20% Off</h3>
               <p>Serum of 799 on 799 </p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/9ece2199-1993-4f3d-b85d-8924e7494f60/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Upto 25% Off </h3>
               <p>On Entire Range</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/b1c1a423-1eca-4d0e-ab9f-12c0619a48cc/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Upto 25% Off</h3>
               <p>Free ini On ₹899</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/f1e07044-14a3-4de4-a23e-57307a7d8941/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Upto 35% Off</h3>
               <p>onEntire Range </p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/266995e4-c1a0-45c1-9c10-a43082db3f8c/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Upto 25% Off</h3>
               <p>Get Sunblock On ₹899 </p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/d439ba1f-48a3-493f-ab9d-420ac82220af/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>Min 20% Off</h3>
               <p>Free Eyeliner on 699</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/18888525-a188-4003-af9d-e778eb1e5d63/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3>on $1100 </h3>
               <p>Gifts Worth ₹1050 </p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/b281fd98-075d-415f-b28b-148ba6184324/default.png?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box w={{md:350}} p={3} fontSize={{base:10,md:24}}>
               <h3> 25% Off Combos</h3>
               <p>Haircare Bestsellers </p>
-            </div>
-          </div>
-        </div>
-      </div>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
 
       <br />
       <br />
-      <div className="last-sub">
-        <div className="home-subcard last-card">
-          <img
+      <Box className="last-sub">
+        <Box className="home-subcard last-card">
+          <Image
             src="https://images-static.nykaa.com/creatives/b211ab74-f311-408c-922f-2bed0f6f1bdf/default.jpg?tr=w-400,cm-pad_resize"
-            alt="img"
+            alt="Image"
           />
-          <div>
+          <Box>
             <h3>Up To 40% Off! </h3>
             <p>Just In! Vitamin Rich Goji Berry</p>
-          </div>
-        </div>
-        <div className="home-subcard last-card">
-          <img
+          </Box>
+        </Box>
+        <Box className="home-subcard last-card">
+          <Image
             src="https://images-static.nykaa.com/creatives/61f1866f-af96-452c-95b6-c4b079e99a5a/default.jpg?tr=w-400,cm-pad_resize"
-            alt="img"
+            alt="Image"
           />
-          <div>
+          <Box>
             <h3>Minimum 15% Off</h3>
             <p>On Bestselling Korean Skincare</p>
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Box>
+      </Box>
 
-      <div className="aquad">
-        <div
+      <Box className="aquad">
+        <Box
           className="top-brands"
-          onClick={() => router.push("/dynamicpage/allProductsDynamic")}
-        >
-          <h1>Everyday Essentials</h1>
-          <img
+                >
+                    <br />
+                    <Heading fontSize={{base: 'md',md: '35px'}}>Everyday Essentials</Heading>
+                    <br />
+          <Image
             className="sdbanner"
             src="https://images-static.nykaa.com/uploads/2adda7a5-567a-4db1-b408-06c96be60287.jpg?tr=w-1200,cm-pad_resize"
-            alt="img"
+            alt="Image"
           />
-        </div>
-        <div className="Carousel">
+        </Box>
+        <Box className="Carousel">
           <Carouseltwo passed={Cards4}/>
-        </div>
-      </div>
+        </Box>
+      </Box>
 
-      <div className="extra-brands">
-        <h1>Categories In Focus</h1>
-        <div className="extra-cards">
-          <img
+      <Box className="extra-brands">
+        <Heading fontSize={{base: 'md',md: '35px'}}>Categories In Focus</Heading>
+        <Box className="extra-cards">
+          <Image
             src="https://images-static.nykaa.com/uploads/b6e3595f-34bd-4b39-8873-4900fbce8504.gif?tr=w-600,cm-pad_resize"
-            alt="img"
+            alt="Image"
           />
-          <img
+          <Image
             src="https://images-static.nykaa.com/uploads/b12f48bb-aeca-41e9-82fe-790877b62384.jpg?tr=w-600,cm-pad_resize"
-            alt="img"
+            alt="Image"
           />
-        </div>
-      </div>
+        </Box>
+      </Box>
 
-      <div className="top-brands">
-        <h1>Brands You Can`t Miss</h1>
+      <Box className="top-brands">
+        <Heading fontSize={{base: 'md',md: '35px'}}>Brands You Can`t Miss</Heading>
         <p>Luxe</p>
 
-        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
+        <Box className="Carosel">
             <Carouseltwo passed={Cards5}/>
-        </div>
-        <div className='Carosel' onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
+        </Box>
+        <Box className='Carosel'>
           <Carouseltwo passed={Cards7}/>
 
-        </div>
-        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
+        </Box>
+        <Box className="Carosel">
           <Carouseltwo passed={Cards8}/>
-        </div>
-        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
+        </Box>
+        <Box className="Carosel">
           <Carouseltwo passed={Cards9}/>
-        </div>
-        <p>Skin</p>
-        <div className="featured">
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+        </Box>
+        <br />
+                <Heading fontSize={{base: 'md',md: '35px'}}>Skin</Heading>
+                <br />
+        <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} w='100%'>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/e7bb3d78-6d5e-4470-a4e6-a47abb2b8717/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up To 20% off</h3>
               <p>Free Lotion on ₹1299</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/0287a22c-e104-4277-9f04-e1779889b785/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Dry Oil For</h3>
               <p>Face,Body And Hair</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/e5ab8782-f1b0-4732-a3a8-2f2f2e089fff/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Sheet Masks</h3>
               <p>For A Radiant Glow</p>
-            </div>
-          </div>
+            </Box>
+          </Box>
 
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/59223706-6530-4ec3-8d88-2acd1899a97d/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up To 53% off</h3>
               <p>On Bestsellers & Combos</p>
-            </div>
-          </div>
-        </div>
-
-        <p>More In Beauty</p>
-        <div className="featured">
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+        </Box>
+                <br />
+<br />
+                
+                <Heading fontSize={{base: 'md',md: '35px'}}>More In Beauty</Heading>
+                <br />
+        <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} w='100%'>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/c79a072e-3987-43f9-941a-a450eb31c6f5/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Healthy Hair</h3>
               <p>Real Results</p>
-            </div>
-          </div>
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/2d8933d6-f17f-481c-83c4-d7bfc93e5230/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Upto 20% Off</h3>
               <p>On Entire Range</p>
-            </div>
-          </div>
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/8dea939b-ddba-49b4-a88c-67f6ac31fc79/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up To 30% </h3>
               <p>Buy 2, Get Extra 5% off</p>
-            </div>
-          </div>
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/2dd6699a-67f5-4a64-ae8f-8fac8d0030df/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Trusted Brand</h3>
               <p>Trusted Quality</p>
-            </div>
-          </div>
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/4ccaf8ed-9ee1-4ccf-a477-3554814451c1/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Flat 15% Off</h3>
               <p>On The Entire Range</p>
-            </div>
-          </div>
-        </div>
+            </Box>
+          </Box>
+        </Box>
 
-        <div >
+        <Box >
           
-        </div>
-        <p>House Of Nykaa</p>
-        <div className="featured">
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+                </Box>
+                <br />
+                <br />
+                <Heading fontSize={{base: 'md',md: '35px'}}>House Of Nykaa</Heading>
+                <br />
+        <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} w='100%'>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/ed80b926-0604-4c82-8200-eb4220891283/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up to 50% off</h3>
               <p>As Good as Naked</p>
-            </div>
-          </div>
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/7043f27c-a29f-433f-9f8f-199ca08c88ec/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up to 70% off</h3>
               <p>On Entire Range</p>
-            </div>
-          </div>
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/dea1940b-569d-4038-82ff-87566ec3b85a/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up to 70% off</h3>
               <p>To match your outfit</p>
-            </div>
-          </div>
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/2041158e-ea79-418b-900e-8342e00f9441/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up to 70% off</h3>
               <p>Ethnic motifs to glam up</p>
-            </div>
-          </div>
-          <div className="feat-sub-card" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
-            <img
+            </Box>
+          </Box>
+          <Box className="feat-sub-card">
+            <Image
               src="https://images-static.nykaa.com/creatives/a663a593-7e25-4f86-89e2-22d9f4b18d1d/default.jpg?tr=w-240,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up to 70% off</h3>
               <p>On Entire Range</p>
-            </div>
-          </div>
-        </div>
+            </Box>
+          </Box>
+        </Box>
 
-        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}>
+        <Box className="Carosel">
           <Carouseltwo passed={Cards3}/>
-        </div>
+        </Box>
 
-        <img
+        <Image
           className="sdbanner"
           src="https://images-static.nykaa.com/uploads/f4c3f4d7-a236-4e7a-92f8-e5ba0417c05e.png?tr=w-1200,cm-pad_resize"
           alt=""
         />
+      </Box>
 
-        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
-      </div>
-
-      <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
-        <h1>Game Zone</h1>
+      <Box className="top-brands">
+        <Heading fontSize={{base: 'md',md: '35px'}}>Game Zone</Heading>
         <p>Play & Win</p>
-        <img
-          className="tp-img"
+        <Image
+          className="tp-Image"
           src="https://images-static.nykaa.com/uploads/ea4f8daa-4cb5-484a-90f5-b0d3e2998353.png?tr=w-1200,cm-pad_resize"
           alt=""
         />
-      </div>
+      </Box>
 
-      <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
-        <h1>Gifting At Nykaa</h1>
+      <Box className="top-brands">
+        <Heading fontSize={{base: 'md',md: '35px'}}>Gifting At Nykaa</Heading>
         <p>Give The Present of Beauty</p>
-        <div className="tp-subdiv">
-          <img
+        <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} w='100%'>
+          <Image
             src="https://images-static.nykaa.com/uploads/a92dac26-400d-4158-af51-a7d247658835.jpg?tr=w-600,cm-pad_resize"
-            alt="img"
+            alt="Image"
           />
-          <img
+          <Image
             src="https://images-static.nykaa.com/uploads/fc68d953-2b29-42f9-8df6-5ee176ad8d01.jpg?tr=w-600,cm-pad_resize"
-            alt="img"
+            alt="Image"
           />
-        </div>
-      </div>
+        </Box>
+      </Box>
 
-      <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
-        <h1>Discover More At Nykaa</h1>
+      <Box w={"95%"} m='auto' textAlign={'center'}>
+        <Heading fontSize={{base: 'md',md: '35px'}}>Discover More At Nykaa</Heading>
         <p>Special Offerings</p>
-        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
-      </div>
-
-      <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
-        <div className="discover-more">
-          <div className="home-subcard discover-card">
-            <img
+      </Box>
+<br />
+      <Box w={"90%"} m='auto'>
+        <Box display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}} className="discover-more">
+          <Box className="home-subcard discover-card">
+            <Image
               src="https://images-static.nykaa.com/uploads/25a2e412-b051-4c62-8c30-c573f911d305.jpg?tr=w-600,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up To 70% Off</h3>
               <p>
-                Lingere | Jwellery | Bags | Gadgets | Footwear | Watches | Home
-                & Kitchen Wear
+                Lingere | Jwellery | Bags | Gadgets | Footwear | Watches 
               </p>
-            </div>
-          </div>
-          <div className="home-subcard discover-card">
-            <img
+            </Box>
+          </Box>
+          <Box className="home-subcard discover-card">
+            <Image
               src="https://images-static.nykaa.com/uploads/6bd36536-ccf7-41e2-9d76-537dff3e2325.jpg?tr=w-600,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <h3>Up To 50% Off</h3>
               <p>Stunning Jewels to treat yourself!</p>
-            </div>
-          </div>
-        </div>
-        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
-      </div>
+            </Box>
+          </Box>
+        </Box>
+      </Box>
 
-      <div className="top-brands" onClick={() => router.push("/dynamicpage/allProductsDynamic")}>
-        <div className="discover-more">
-          <div className="home-subcard discover-card">
-            <img
+      <Box className="top-brands">
+        <Box className="discover-more" display={{base:"grid",md:'flex'}} gap={8} flexDirection={{base:'column',md:'row'}}>
+          <Box className="home-subcard discover-card">
+            <Image
               src="https://images-static.nykaa.com/uploads/71c7558d-637c-40ee-b09b-7dfda35cf125.jpg?tr=w-600,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <p>Catch Up On Top Trends,Expert Advice,Fresh Launches & More</p>
               <h3>Watch Now</h3>
-            </div>
-          </div>
-          <div className="home-subcard discover-card">
-            <img
+            </Box>
+          </Box>
+          <Box className="home-subcard discover-card">
+            <Image
               src="https://images-static.nykaa.com/uploads/a3720b61-fd58-40ff-90cd-72eb5b5ee3d4.jpg?tr=w-600,cm-pad_resize"
-              alt="img"
+              alt="Image"
             />
-            <div>
+            <Box>
               <p>Catch Up On Top Trends,Expert Advice,Fresh Launches & More</p>
               <h3>Read More</h3>
-            </div>
-          </div>
-        </div>
-        <div className="Carosel" onClick={()=>router.push("./dynamicpage/allProductsDynamic")}></div>
-      </div>
+            </Box>
+          </Box>
+        </Box>
+        <Box className="Carosel"></Box>
+      </Box>
 
-    </div>
+    </Box>
     )
 }

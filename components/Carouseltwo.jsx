@@ -2,25 +2,24 @@ import React, { useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { IconButton, useBreakpointValue } from '@chakra-ui/react';
+import { Box, IconButton, useBreakpointValue } from '@chakra-ui/react';
 import { BiLeftArrowAlt, BiRightArrowAlt } from 'react-icons/bi';
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <div onClick={onClick}>
+      <Box onClick={onClick}>
           <IconButton
         aria-label="left-arrow"
         colorScheme="messenger"
         borderRadius="full"
-        
-        left="98%"
-        bottom="40%"
+        left={{base:'96%',md:"100%"}}
+        bottom="20%"
         position="absolute"
-        transform={'translate(0%, -50%)'}
-        zIndex={2}>
-        <BiRightArrowAlt color='black'  />
+        transform={'translate(0%, 30%)'}
+        zIndex={10}>
+        <BiRightArrowAlt color='white'   />
       </IconButton>
-      </div>
+      </Box>
         
        
       
@@ -30,20 +29,20 @@ function SampleNextArrow(props) {
   function SamplePrevArrow(props) {
     const { className, style, onClick } = props;
     return (
-      <div onClick={onClick}>
+      <Box onClick={onClick}>
          <IconButton
-        aria-label="right-arrow"
-        colorScheme="messenger"
-        borderRadius="full"
-        top="50%"
-        right=""
-        position="absolute"
-        transform={'translate(0%, -50%)'}
-        zIndex={2}>
+         aria-label="left-arrow"
+         colorScheme="messenger"
+         borderRadius="full"
+         right={{base:'96%',md:"100%"}}
+         bottom="20%"
+         position="absolute"
+         transform={'translate(0%, 40%)'}
+         zIndex={10}>
         <BiLeftArrowAlt />
         
       </IconButton>
-      </div>
+      </Box>
     );
   }
   
@@ -96,14 +95,14 @@ function Carouseltwo({passed}) {
   const top = useBreakpointValue({ base: '90%', md: '50%' });
   const side = useBreakpointValue({ base: '30%', md: '10px' });
   return (
-    <div className="Carouseltwo">
+    <Box className="Carouseltwo">
     
       {/* Right Icon */}
      
       <Slider {...settings}>
         {passed.map((item,i) => (
-          <div className="card" key={i}>
-            <div className="card-top">
+          <Box className="card" key={i}>
+            <Box className="card-top">
               <img
                 src={
                      item.linkImg
@@ -111,11 +110,11 @@ function Carouseltwo({passed}) {
                 alt="img"
                 onError={handleErrorImage}
               />
-            </div>
-          </div>
+            </Box>
+          </Box>
         ))}
       </Slider>
-    </div>
+    </Box>
   );
 }
 

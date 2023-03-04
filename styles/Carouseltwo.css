@@ -1,5 +1,5 @@
 .Carouseltwo {
-    width: 90%;
+    width: 95%;
     margin: 4% auto;
   }
   
@@ -33,12 +33,9 @@
   }
   
   .card-bottom {
-    margin: 10px 20px;
+    margin: 10px 0px;
   }
   
-  .category {
-    position: relative;
-  }
   .category::before {
     content: '';
     background: rgb(255, 61, 61);

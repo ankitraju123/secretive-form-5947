@@ -24,7 +24,7 @@ const Footer = () => {
         width="93%"
         height={"100px"}
       >
-        <Text fontSize={"md"} color="gray.600">
+        <Text fontSize={{base:14,md:"md"}} color="gray.600">
           Please be careful of fraudulent calls & SMSes! Nykaa will never call
           you with offers pertaining to free gifts or prizes or ask for payments
           through links.
