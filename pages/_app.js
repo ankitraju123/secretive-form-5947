@@ -9,12 +9,16 @@ import "../styles/Carouseltwo.css";
 import { Provider } from "react-redux";
 
 import { store } from "@/store/store";
+import Navbar from "@/components/Navbar";
+import Navbar2 from "@/components/Navbar2";
 
 export default function App({ Component, pageProps }) {
   return (
     <>
       <ChakraProvider>
-        <Provider store={store}>
+              <Provider store={store}>
+                  <Navbar />
+                  <Navbar2 />
           <Component {...pageProps} />
         </Provider>
         <Footer />

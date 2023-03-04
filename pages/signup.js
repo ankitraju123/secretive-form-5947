@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import {Box,Input,Button,Heading,Text} from '@chakra-ui/react';
+import Link from 'next/link';
 const Register=() =>
 {
     const [sign,setSign]=useState([]);
@@ -22,8 +23,8 @@ const Register=() =>
         localStorage.setItem("userData",JSON.stringify(sign))
     }
     return (
-      <Box bgColor={'#f3f3f3'} p={10}>
-    <Box w={'26%'} m='10rem auto' bgColor={'white'} p={10} justifyContent='center' alignItems={'center'} textAlign={'center'}>
+      <Box bgColor={'#f3f3f3'} p={5}>
+    <Box w={'26%'} m='auto' bgColor={'white'}  p={5} justifyContent='center' alignItems={'center'} textAlign={'center'}>
     <Heading mb={5}>Register</Heading>
     <hr />
     <Box display={'flex'} m={'2rem 1rem'} fontSize={16} textAlign='center' width={'100%'} >
@@ -48,8 +49,15 @@ u />
         <br />
 
         <Button onClick={sigin} bgColor="#d5418e" color={'white'} w='100%' m={'3rem 0'}>REGISTER</Button>
-    </form>
+                </form>
+                <Text>
+            If you have Account with us{" "}
+            <Link href="/login" style={{ color: "#d5418e" }}>
+              Click Here
+            </Link>
+          </Text>
             </Box>
+            
             </Box>
   )
 }
