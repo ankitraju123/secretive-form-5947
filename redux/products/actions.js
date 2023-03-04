@@ -9,12 +9,14 @@ import {
   INC,
   LOADING,
   TOTAL_AMOUNT,
-} from "./actionTypes";
+} from "./actionType";
 
 export const Getproddata = () => async (dispatch) => {
   dispatch({ type: LOADING });
   try {
-    let res = await axios.get("https://nykaa-mock-api-6or1.onrender.com/product");
+    let res = await axios.get(
+      "https://nykaa-mock-api-6or1.onrender.com/product"
+    );
     let data = res.data;
     dispatch({
       type: GET_DATA,
@@ -44,20 +46,21 @@ export const getCartData = () => async (dispatch) => {
 export const deleteCartData = (data) => (dispatch) => {
   dispatch({ type: LOADING });
   try {
-    let res = axios.delete(`https://nykaa-mock-api-6or1.onrender.com/cart/${data.id}`);
+    let res = axios.delete(
+      `https://nykaa-mock-api-6or1.onrender.com/cart/${data.id}`
+    );
     dispatch({ type: CART_DELETE_DATA, payload: data });
   } catch (err) {
     dispatch({ type: ERROR });
   }
 };
 
-export const increment=(id)=>(dispatch)=>{
-  dispatch({type:INC,
-            payload:id},)
-}
-export const decrement=(id)=>(dispatch)=>{
-  dispatch({type:DEC,payload:id})
-}
-export const totalAmount=()=>(dispatch)=>{
-  dispatch({type:TOTAL_AMOUNT})
-}
+export const increment = (id) => (dispatch) => {
+  dispatch({ type: INC, payload: id });
+};
+export const decrement = (id) => (dispatch) => {
+  dispatch({ type: DEC, payload: id });
+};
+export const totalAmount = () => (dispatch) => {
+  dispatch({ type: TOTAL_AMOUNT });
+};

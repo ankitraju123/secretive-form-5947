@@ -22,8 +22,7 @@ import { useSelector } from "react-redux";
 import { useEffect } from "react";
 
 const Payment = () => {
-  //  const [adss, setadds] = useState({});
-  //  console.log(adss);
+  
   const [payment, setPayment] = useState(1);
   const state = useSelector((store) => store.cart);
   const adss=JSON.parse(localStorage.getItem("address"))||[];
