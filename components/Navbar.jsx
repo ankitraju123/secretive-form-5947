@@ -32,7 +32,7 @@ const Links = [
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [login, setLogin] = useState(true);
+  const [login, setLogin] = useState(false);
   const [Login, SetLogin] = useState({});
 
   //var key;
@@ -47,7 +47,7 @@ export default function Navbar() {
   };
   const logout = async () => {
     //localStorage.setItem('loginkey',false)
-      let userData=await axios.delete(`http://localhost:8080/login/${Login.id}`);
+    //  let userData=await axios.delete(`http://localhost:8080/login/${Login.id}`);
       setLogin(false)
   };
   return (

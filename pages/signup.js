@@ -55,7 +55,7 @@ const Register=() =>
     }
     return (
       <Box bgColor={'#f3f3f3'} p={5}>
-    <Box w={'26%'} m='auto' bgColor={'white'}  p={5} justifyContent='center' alignItems={'center'} textAlign={'center'}>
+    <Box w={{base:'auto',md:"400px"}} m='auto' bgColor={'white'}  p={{base:"5rem 10px",md:5}} justifyContent='center' alignItems={'center'} textAlign={'center'}>
     <Heading mb={5}>Register</Heading>
     <hr />
     <Box display={'flex'} m={'2rem 1rem'} fontSize={16} textAlign='center' width={'100%'} >

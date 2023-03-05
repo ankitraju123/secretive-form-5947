@@ -42,7 +42,7 @@ const Loginpage = () => {
     <Box bgColor={"#f3f3f3"} p={15}>
       <Box mt={"50px"}>
         <Box
-          w={"26%"}
+          w={{base:'250px',md:"400px"}}
           m="auto"
           bgColor={"white"}
           p={10}
