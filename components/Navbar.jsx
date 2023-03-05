@@ -1,4 +1,4 @@
-import { ReactNode, useState } from "react";
+import { ReactNode, useEffect, useState } from "react";
 import {
   Box,
   Flex,
@@ -20,26 +20,36 @@ import {
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import NavLink from "./NavLink";
-//const Links = [
-//  "Categories",
-//  "Brands",
-//  "Luxe",
-//  "Nykaa Fashion",
-//  "Beauty Advice",
-//];
-const Links = [
-    { name: "Categories", id: "/productpage/products" },
-    { name: "Brands", id: "/productpage/products" },
-    { name: "Luxe", id: "/productpage/products" },
-    { name: "Nykaa Fashion", id: "/productpage/products" },
-    { name: "Beauty Advice", id: "/productpage/products" },
-];
+import axios from "axios";
 
+const Links = [
+  { name: "Categories", id: "/productpage/products" },
+  { name: "Brands", id: "/productpage/products" },
+  { name: "Luxe", id: "/productpage/products" },
+  { name: "Nykaa Fashion", id: "/productpage/products" },
+  { name: "Beauty Advice", id: "/productpage/products" },
+];
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const [login, setLogin] = useState(false);
+  const [login, setLogin] = useState(true);
+  const [Login, SetLogin] = useState({});
 
+  //var key;
+  useEffect(() => {
+    //key=localStorage.getItem('loginkey')
+    loginDetail();
+  }, []);
+
+  const loginDetail = async () => {
+    let userData = await axios.get(`http://localhost:8080/login`);
+    SetLogin(userData.data);
+  };
+  const logout = async () => {
+    //localStorage.setItem('loginkey',false)
+      let userData=await axios.delete(`http://localhost:8080/login/${Login.id}`);
+      setLogin(false)
+  };
   return (
     <>
       <Box
@@ -66,9 +76,9 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-                      <Link href={'/'}>
-                      <Image src="logo.jpg" alt="logo" w={55} borderRadius={50} />
-                      </Link>
+            <Link href={"/"}>
+              <Image src="logo.jpg" alt="logo" w={55} borderRadius={50} />
+            </Link>
             <HStack
               as={"nav"}
               spacing={4}
@@ -76,7 +86,7 @@ export default function Navbar() {
               fontWeight={600}
             >
               {Links.map((link) => (
-                  <NavLink
+                <NavLink
                   key={link}
                   to={link.id}
                   name={link.name}
@@ -84,7 +94,7 @@ export default function Navbar() {
                   bg="none"
                   _hover={{ color: "#D5418E" }}
                   onClick={() => onClose()}
-              />
+                />
               ))}
             </HStack>
           </HStack>
@@ -98,18 +108,10 @@ export default function Navbar() {
                   cursor={"pointer"}
                   minW={0}
                 >
-                  <Avatar
-                    size={"sm"}
-                    src={
-                      "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9"
-                    }
-                  />
+                  <Button>{Login.name}</Button>
                 </MenuButton>
                 <MenuList>
-                  <MenuItem>Link 1</MenuItem>
-                  <MenuItem>Link 2</MenuItem>
-                  <MenuDivider />
-                  <MenuItem>Link 3</MenuItem>
+                  <Button onClick={logout}>Logout</Button>
                 </MenuList>
               </Menu>
             ) : (
@@ -130,15 +132,14 @@ export default function Navbar() {
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-               <NavLink
-               key={link}
-               to={link.id}
-               name={link.name}
-               fontSize={15}
-                      bg="none"
-                      
-               onClick={() => onClose()}
-           />
+                <NavLink
+                  key={link}
+                  to={link.id}
+                  name={link.name}
+                  fontSize={15}
+                  bg="none"
+                  onClick={() => onClose()}
+                />
               ))}
             </Stack>
           </Box>

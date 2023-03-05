@@ -2,36 +2,56 @@ import React,{useState} from 'react'
 import {Box,Input,Button,Heading,Text} from '@chakra-ui/react';
 import Link from 'next/link';
 import { useToast } from "@chakra-ui/react";
-
+import axios from 'axios';
 const Register=() =>
 {
   const toast = useToast()
 
-    const [sign,setSign]=useState([]);
+    //const [sign,setSign]=useState({});
     const [input,setInput]=useState({
         email: "",
         password: "",
-        phone: 0,
+        confirmpassword: 0,
         name: ""
     });
+
+
     const handleInputChange=(e) =>
     {
-
         const {name,value}=e.target;
         setInput({...input,[name]: value})
     }
-    const sigin=(e) =>
+    const sigin=async(e) =>
     {
         e.preventDefault();
-        setSign([...sign,input])
-        localStorage.setItem("userData",JSON.stringify(sign))
-        toast({
-            title: 'Register Successfully',
-            position:"top-center",
-            status: 'success',
-            duration: 3000,
-            isClosable: true,
-          })
+        //setSign([...input,input])
+        let compare=await axios.get(`http://localhost:8080/user?email=${input.email}`)
+        console.log(compare.length)
+        if(compare.data.length>0)
+        {
+            alert("email hai bhai phle hi")
+            return
+        } else
+        {       
+            if(input.password!==input.confirmpassword)
+            {
+                alert('check password')
+                return
+            } else
+            {          
+                let data=await axios.post('http://localhost:8080/user',input)
+                toast({
+                    title: 'Register Successfully',
+                    position:"top-center",
+                    status: 'success',
+                    duration: 3000,
+                    isClosable: true,
+                  })
+            }
+        }
+        console.log(compare,compare.length)
+
+        //console.log(await data.json())
     }
     return (
       <Box bgColor={'#f3f3f3'} p={5}>
@@ -42,18 +62,15 @@ const Register=() =>
         <Text >Register to Earn</Text>&nbsp;<Text color={'#d5418e'}>2000  Reward Points!</Text>
     </Box>
     <form onSubmit={sigin}>
-        <Input type='text' name='name' placeholder='Name' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired={true} />
+        <Input type='text' name='name' placeholder='Name' required border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired/>
         &nbsp;
-        <Input type='number' name='phone' placeholder='Number' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired
-u />
-        &nbsp;
-
-        <Input type='email' name='email' placeholder='Email Address' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired
-u />
+        <Input type='email' name='email' placeholder='Email Address' required border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired />
         &nbsp;
 
-        <Input type='password' name='password' placeholder='Password' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired
-u />
+        <Input type='password' name='confirmpassword' required placeholder='Confirm password' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired />
+        &nbsp;
+
+        <Input type='password' name='password' required placeholder='Password' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired/>
         &nbsp;
         &nbsp;
         <br />

@@ -6,38 +6,31 @@ import Link from "next/link";
 import { useDispatch, useSelector } from "react-redux";
 import { login } from "../redux/Auth/actions";
 import {useRouter} from 'next/router';
+import axios from "axios";
 const Loginpage = () => {
- const data=JSON.parse(localStorage.getItem('userData'))
   const router = useRouter();
   const toast = useToast()
   const [state, setState] = useState({
     email: "",
     password: "",
   });
-  const { email, password } = state;
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (data.email!=email || data.password!=password) {
-      return   toast({
-        title: 'Login',
-        position:"top-center",
-        description: "Wrong Crediantial",
-        status: 'error',
-        duration: 3000,
-          isClosable: true,
-        
-      });
+    const {email,password}=state;
+  const handleSubmit = async(e) => {
+      e.preventDefault();
+     let user=await axios.get(`http://localhost:8080/user?email=${state.email}&password=${state.password}`)
+      if(user.data.length>0)
+      {
+          let data=await axios.post('http://localhost:8080/login',user.data[0])
+          localStorage.setItem('loginkey',true)
+          alert('Login Successfully')
+          router.push('/')
+          return
+    } else if(user.data.length===0)
+    {
+     alert('kuch bi') 
     }
-    //  dispatch(login(email,password))
-    toast({
-        title: 'Login',
-        position:"top-center",
-        description: "Wrong Crediantial",
-        status: 'success',
-        duration: 3000,
-        isClosable: true,
-      })
-      router.push("/")
+    console.log(user.data)
+   
   };
 
   const handleChange = (e) => {
