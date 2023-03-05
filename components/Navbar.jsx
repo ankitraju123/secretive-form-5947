@@ -1,45 +1,58 @@
-import { ReactNode, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   IconButton,
   Button,
   Menu,
   MenuButton,
   MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
-  useColorModeValue,
   Stack,
-  Text,
-  Image,
+  Image,Text
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import NavLink from "./NavLink";
-//const Links = [
-//  "Categories",
-//  "Brands",
-//  "Luxe",
-//  "Nykaa Fashion",
-//  "Beauty Advice",
-//];
+import {SlBasket} from "react-icons/si"
 const Links = [
-    { name: "Categories", id: "/productpage/products" },
-    { name: "Brands", id: "/productpage/products" },
-    { name: "Luxe", id: "/productpage/products" },
-    { name: "Nykaa Fashion", id: "/productpage/products" },
-    { name: "Beauty Advice", id: "/productpage/products" },
+  { name: "Categories", id: "/productpage/products" },
+  { name: "Brands", id: "/productpage/products" },
+  { name: "Luxe", id: "/productpage/products" },
+  { name: "Nykaa Fashion", id: "/productpage/products" },
+  {name: "Beauty Advice",id: "/productpage/products"},
 ];
-
 
 export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [login, setLogin] = useState(false);
+  const [Login, SetLogin] = useState({});
 
+  useEffect(() => {
+    loginDetail();
+  }, [login, Login]);
+
+  const loginDetail = async () => {
+    let res = await fetch(`https://nykaa-com.onrender.com/login`);
+    let data = await res.json();
+    if (data.length > 0) {
+      SetLogin(data[0]);
+      setLogin(true);
+    }
+  };
+  const logout = () => {
+    fetch(`https://nykaa-com.onrender.com/login/${Login.id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+    setLogin(false);
+  };
   return (
     <>
       <Box
@@ -66,9 +79,9 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
           <HStack spacing={8} alignItems={"center"}>
-                      <Link href={'/'}>
-                      <Image src="logo.jpg" alt="logo" w={55} borderRadius={50} />
-                      </Link>
+            <Link href={"/"}>
+              <Image src="logo.jpg" alt="logo" w={55} borderRadius={50} />
+            </Link>
             <HStack
               as={"nav"}
               spacing={4}
@@ -76,7 +89,7 @@ export default function Navbar() {
               fontWeight={600}
             >
               {Links.map((link) => (
-                  <NavLink
+                <NavLink
                   key={link}
                   to={link.id}
                   name={link.name}
@@ -84,11 +97,11 @@ export default function Navbar() {
                   bg="none"
                   _hover={{ color: "#D5418E" }}
                   onClick={() => onClose()}
-              />
+                />
               ))}
             </HStack>
           </HStack>
-          <Flex alignItems={"center"}>
+          <Flex alignItems={"center"} >
             {login ? (
               <Menu>
                 <MenuButton
@@ -98,18 +111,10 @@ export default function Navbar() {
                   cursor={"pointer"}
                   minW={0}
                 >
-                  <Avatar
-                    size={"sm"}
-                    src={
-                      "https://images.unsplash.com/photo-1493666438817-866a91353ca9?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=b616b2c5b373a80ffc9636ba24f7a4a9"
-                    }
-                  />
+                  <Button>{Login && Login.name}</Button>
                 </MenuButton>
                 <MenuList>
-                  <MenuItem>Link 1</MenuItem>
-                  <MenuItem>Link 2</MenuItem>
-                  <MenuDivider />
-                  <MenuItem>Link 3</MenuItem>
+                  <Button onClick={logout}>Logout</Button>
                 </MenuList>
               </Menu>
             ) : (
@@ -123,22 +128,22 @@ export default function Navbar() {
                 </Button>
               </Link>
             )}
-          </Flex>
+                  <Link href={'/cartpage'}><Text fontWeight={600} mr='1rem'>Cart</Text></Link>
+                  </Flex>
         </Flex>
 
         {isOpen ? (
           <Box pb={4} display={{ md: "none" }}>
             <Stack as={"nav"} spacing={4}>
               {Links.map((link) => (
-               <NavLink
-               key={link}
-               to={link.id}
-               name={link.name}
-               fontSize={15}
-                      bg="none"
-                      
-               onClick={() => onClose()}
-           />
+                <NavLink
+                  key={link}
+                  to={link.id}
+                  name={link.name}
+                  fontSize={15}
+                  bg="none"
+                  onClick={() => onClose()}
+                />
               ))}
             </Stack>
           </Box>

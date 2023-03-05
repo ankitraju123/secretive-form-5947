@@ -19,10 +19,11 @@ import { Icon } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 import { addToCart } from "@/redux/products/actions";
-
+import {useToast} from "@chakra-ui/react"
 export default function SingleProduct({ data, onclick }) {
   const dispatch = useDispatch();
-  const router = useRouter();
+    const router=useRouter();
+    const toast=useToast()
   return (
     <Card size="md" display={{ base: "grid", md: "flex" }}>
       <CardBody>
@@ -90,7 +91,14 @@ export default function SingleProduct({ data, onclick }) {
                 mr={0}
                 color="white"
                 onClick={() => {
-                  dispatch(addToCart(data));
+                    dispatch(addToCart(data));
+                    toast({
+                        title: 'Register Successfully',
+                        position:"top-center",
+                        status: 'success',
+                        duration: 3000,
+                        isClosable: true,
+                      })
                 }}
               >
                 Add To Bag

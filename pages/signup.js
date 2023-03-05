@@ -2,58 +2,66 @@ import React,{useState} from 'react'
 import {Box,Input,Button,Heading,Text} from '@chakra-ui/react';
 import Link from 'next/link';
 import { useToast } from "@chakra-ui/react";
-
+import axios from 'axios';
 const Register=() =>
 {
   const toast = useToast()
-
-    const [sign,setSign]=useState([]);
     const [input,setInput]=useState({
         email: "",
         password: "",
-        phone: 0,
+        confirmpassword: 0,
         name: ""
     });
     const handleInputChange=(e) =>
     {
-
         const {name,value}=e.target;
         setInput({...input,[name]: value})
     }
-    const sigin=(e) =>
+    const sigin=async(e) =>
     {
         e.preventDefault();
-        setSign([...sign,input])
-        localStorage.setItem("userData",JSON.stringify(sign))
-        toast({
-            title: 'Register Successfully',
-            position:"top-center",
-            status: 'success',
-            duration: 3000,
-            isClosable: true,
-          })
+        let compare=await axios.get(`https://nykaa-com.onrender.com/user?email=${input.email}`)
+        if(compare.data.length>0)
+        {
+            alert("Email is Already Registered with us")
+            return
+        } else
+        {       
+            if(input.password!==input.confirmpassword)
+            {
+                alert('Wrong Password')
+                return
+            } else
+            {          
+                let data=await axios.post('https://nykaa-com.onrender.com/user',input)
+                toast({
+                    title: 'Register Successfully',
+                    position:"top-center",
+                    status: 'success',
+                    duration: 3000,
+                    isClosable: true,
+                  })
+            }
+        }
     }
     return (
       <Box bgColor={'#f3f3f3'} p={5}>
-    <Box w={'26%'} m='auto' bgColor={'white'}  p={5} justifyContent='center' alignItems={'center'} textAlign={'center'}>
+    <Box w={{base:'auto',md:"400px"}} m='auto' bgColor={'white'}  p={{base:"5rem 10px",md:5}} justifyContent='center' alignItems={'center'} textAlign={'center'}>
     <Heading mb={5}>Register</Heading>
     <hr />
     <Box display={'flex'} m={'2rem 1rem'} fontSize={16} textAlign='center' width={'100%'} >
         <Text >Register to Earn</Text>&nbsp;<Text color={'#d5418e'}>2000  Reward Points!</Text>
     </Box>
     <form onSubmit={sigin}>
-        <Input type='text' name='name' placeholder='Name' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired={true} />
+        <Input type='text' name='name' placeholder='Name' required border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired/>
         &nbsp;
-        <Input type='number' name='phone' placeholder='Number' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired
-u />
-        &nbsp;
-
-        <Input type='email' name='email' placeholder='Email Address' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired
-u />
+        <Input type='email' name='email' placeholder='Email Address' required border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired />
         &nbsp;
 
-        <Input type='password' name='password' placeholder='Password' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired
-u />
+        <Input type='password' name='confirmpassword' required placeholder='Confirm password' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired />
+        &nbsp;
+
+        <Input type='password' name='password' required placeholder='Password' border={'none'} bgColor={'#f3f3f3'} borderBottom={'1px solid #d5418e'} onChange={handleInputChange} isRequired/>
         &nbsp;
         &nbsp;
         <br />
