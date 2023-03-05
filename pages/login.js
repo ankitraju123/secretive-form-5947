@@ -17,11 +17,10 @@ const Loginpage = () => {
     const {email,password}=state;
   const handleSubmit = async(e) => {
       e.preventDefault();
-     let user=await axios.get(`http://localhost:8080/user?email=${state.email}&password=${state.password}`)
+     let user=await axios.get(`https://nykaa-com.onrender.com/user?email=${state.email}&password=${state.password}`)
       if(user.data.length>0)
       {
-          let data=await axios.post('http://localhost:8080/login',user.data[0])
-          localStorage.setItem('loginkey',true)
+          let data=await axios.post('https://nykaa-com.onrender.com/login',user.data[0])
           alert('Login Successfully')
           router.push('/')
           return
@@ -29,7 +28,6 @@ const Loginpage = () => {
     {
      alert('kuch bi') 
     }
-    console.log(user.data)
    
   };
 

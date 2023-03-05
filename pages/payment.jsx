@@ -19,16 +19,10 @@ import {
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import { useSelector } from "react-redux";
-import { useEffect } from "react";
 
 const Payment = () => {
-  
   const [payment, setPayment] = useState(1);
   const state = useSelector((store) => store.cart);
-  const adss=JSON.parse(localStorage.getItem("address"))||[];
-  console.log(adss);
-    
-  //  useEffect(() => setadds(JSON.parse(localStorage.getItem("address"))), []);
   let sum = 0;
   state.map((to) => (sum = Number(to.price) + sum));
   console.log(sum);
@@ -257,14 +251,6 @@ const Payment = () => {
                     </AccordionButton>
                   </h2>
                   <AccordionPanel pb={4}>
-                    {/*{adss.map((ad) => (*/}
-                      {/*<Box >
-                        <Heading size={"md"}>{ad.name}</Heading>
-                        <Text>{ad.house}</Text>
-                        <Text>{ad.area}</Text>
-                        <Text>{ad.pincode}</Text>
-                      </Box>*/}
-                    {/*))}*/}
                   </AccordionPanel>
                 </AccordionItem>
 

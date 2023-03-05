@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import React, { useEffect, useState } from "react";
 import {
   Box,
@@ -7,7 +8,6 @@ import {
   Heading,
   Flex,
   Button,
-  Text,
   Card,
     Select,
   SimpleGrid,Stack,Container

@@ -6,16 +6,12 @@ import axios from 'axios';
 const Register=() =>
 {
   const toast = useToast()
-
-    //const [sign,setSign]=useState({});
     const [input,setInput]=useState({
         email: "",
         password: "",
         confirmpassword: 0,
         name: ""
     });
-
-
     const handleInputChange=(e) =>
     {
         const {name,value}=e.target;
@@ -24,22 +20,20 @@ const Register=() =>
     const sigin=async(e) =>
     {
         e.preventDefault();
-        //setSign([...input,input])
-        let compare=await axios.get(`http://localhost:8080/user?email=${input.email}`)
-        console.log(compare.length)
+        let compare=await axios.get(`https://nykaa-com.onrender.com/user?email=${input.email}`)
         if(compare.data.length>0)
         {
-            alert("email hai bhai phle hi")
+            alert("Email is Already Registered with us")
             return
         } else
         {       
             if(input.password!==input.confirmpassword)
             {
-                alert('check password')
+                alert('Wrong Password')
                 return
             } else
             {          
-                let data=await axios.post('http://localhost:8080/user',input)
+                let data=await axios.post('https://nykaa-com.onrender.com/user',input)
                 toast({
                     title: 'Register Successfully',
                     position:"top-center",
@@ -49,9 +43,6 @@ const Register=() =>
                   })
             }
         }
-        console.log(compare,compare.length)
-
-        //console.log(await data.json())
     }
     return (
       <Box bgColor={'#f3f3f3'} p={5}>

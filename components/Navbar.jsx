@@ -1,33 +1,27 @@
-import { ReactNode, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Box,
   Flex,
-  Avatar,
   HStack,
   IconButton,
   Button,
   Menu,
   MenuButton,
   MenuList,
-  MenuItem,
-  MenuDivider,
   useDisclosure,
-  useColorModeValue,
   Stack,
-  Text,
-  Image,
+  Image,Text
 } from "@chakra-ui/react";
 import { HamburgerIcon, CloseIcon } from "@chakra-ui/icons";
 import Link from "next/link";
 import NavLink from "./NavLink";
-import axios from "axios";
-
+import {SlBasket} from "react-icons/si"
 const Links = [
   { name: "Categories", id: "/productpage/products" },
   { name: "Brands", id: "/productpage/products" },
   { name: "Luxe", id: "/productpage/products" },
   { name: "Nykaa Fashion", id: "/productpage/products" },
-  { name: "Beauty Advice", id: "/productpage/products" },
+  {name: "Beauty Advice",id: "/productpage/products"},
 ];
 
 export default function Navbar() {
@@ -35,20 +29,29 @@ export default function Navbar() {
   const [login, setLogin] = useState(false);
   const [Login, SetLogin] = useState({});
 
-  //var key;
   useEffect(() => {
-    //key=localStorage.getItem('loginkey')
     loginDetail();
-  }, []);
+  }, [login, Login]);
 
   const loginDetail = async () => {
-    let userData = await axios.get(`http://localhost:8080/login`);
-    SetLogin(userData.data);
+    let res = await fetch(`https://nykaa-com.onrender.com/login`);
+    let data = await res.json();
+    if (data.length > 0) {
+      SetLogin(data[0]);
+      setLogin(true);
+    }
   };
-  const logout = async () => {
-    //localStorage.setItem('loginkey',false)
-    //  let userData=await axios.delete(`http://localhost:8080/login/${Login.id}`);
-      setLogin(false)
+  const logout = () => {
+    fetch(`https://nykaa-com.onrender.com/login/${Login.id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-type": "application/json",
+      },
+    })
+      .then((res) => res.json())
+      .then((res) => console.log(res))
+      .catch((err) => console.log(err));
+    setLogin(false);
   };
   return (
     <>
@@ -98,7 +101,7 @@ export default function Navbar() {
               ))}
             </HStack>
           </HStack>
-          <Flex alignItems={"center"}>
+          <Flex alignItems={"center"} >
             {login ? (
               <Menu>
                 <MenuButton
@@ -108,7 +111,7 @@ export default function Navbar() {
                   cursor={"pointer"}
                   minW={0}
                 >
-                  <Button>{Login.name}</Button>
+                  <Button>{Login && Login.name}</Button>
                 </MenuButton>
                 <MenuList>
                   <Button onClick={logout}>Logout</Button>
@@ -125,7 +128,8 @@ export default function Navbar() {
                 </Button>
               </Link>
             )}
-          </Flex>
+                  <Link href={'/cartpage'}><Text fontWeight={600} mr='1rem'>Cart</Text></Link>
+                  </Flex>
         </Flex>
 
         {isOpen ? (

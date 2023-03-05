@@ -17,11 +17,10 @@ const Cartpage = () => {
   const state = useSelector((store) => store.cart);
   const dispatch = useDispatch();
   const [total, setTotal] = useState(0);
-  console.log(state);
+  
   const getTotal = () => {
     let sum = 0;
     state.map((ele) => (sum = Number(ele.price) + sum));
-    console.log(sum);
     setTotal(sum);
   };
 
@@ -29,7 +28,7 @@ const Cartpage = () => {
     dispatch(getCartData());
     dispatch(totalAmount());
     getTotal();
-  }, [dispatch]);
+  }, [dispatch,getTotal]);
   return (
     <div>
       {state.map((e, i) => {
