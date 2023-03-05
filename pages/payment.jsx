@@ -37,7 +37,7 @@ const Payment = () => {
     toast({
       title: "Payment  Successful.",
       description: "Your Order is Confirmed",
-      position: "top",
+      position: "bottom",
       status: "success",
       duration: 3000,
       isClosable: true,

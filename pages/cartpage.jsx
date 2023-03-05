@@ -29,7 +29,7 @@ const Cartpage = () => {
     dispatch(getCartData());
     dispatch(totalAmount());
     getTotal();
-  }, []);
+  }, [dispatch]);
   return (
     <div>
       {state.map((e, i) => {
@@ -38,7 +38,8 @@ const Cartpage = () => {
             <CartProduct
               data={e}
               onclick={() => {
-                dispatch(deleteCartData(e));
+                  dispatch(deleteCartData(e));
+                  window.location.reload()
               }}
             />
           </div>
@@ -49,7 +50,7 @@ const Cartpage = () => {
           Total <span>{total}</span>
         </Text>
 
-        <Button onClick={() => router.push("/payment")}>Checkout</Button>
+        <Button onClick={() => router.push("/address")}>Checkout</Button>
       </Box>
     </div>
   );
