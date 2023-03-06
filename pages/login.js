@@ -85,6 +85,13 @@ const Loginpage = () => {
             <Link href="/signup" style={{ color: "#d5418e" }}>
               Click Here
             </Link>
+                  </Text>
+                  <br />
+                  <Text>
+            Login as Admin {" "}
+            <Link href="https://dashboard-delta-flame.vercel.app/login" style={{ color: "#d5418e" }} target='_blank'>
+              Click Here
+            </Link>
           </Text>
         </Box>
       </Box>
