@@ -101,7 +101,7 @@ export default function Navbar() {
               ))}
             </HStack>
           </HStack>
-          <Flex alignItems={"center"} >
+          <Flex alignItems={"center"} w={'20%'} gap={8} >
             {login ? (
               <Menu>
                 <MenuButton
@@ -128,7 +128,7 @@ export default function Navbar() {
                 </Button>
               </Link>
             )}
-                  <Link href={'/cartpage'} ><Text fontWeight={600} mr='1rem' display={{base:'none'}}>Cart</Text></Link>
+                  <Link href={'/cartpage'} ><Text fontWeight={600} mr='1rem' display={{base:'none',md:'flex'}}>Cart</Text></Link>
                   </Flex>
         </Flex>
 

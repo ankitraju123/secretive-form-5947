@@ -3,19 +3,12 @@ import {
   Card,
   CardBody,
   Image,
-  Stack,
-  Heading,
   Text,
-  Divider,
-  CardFooter,
-  ButtonGroup,
   Button,
   Box,
   Flex,
-  HStack,
 } from "@chakra-ui/react";
 import { useDispatch } from "react-redux";
-import { Icon } from "@chakra-ui/react";
 import { StarIcon } from "@chakra-ui/icons";
 import { useRouter } from "next/router";
 import { addToCart } from "@/redux/products/actions";

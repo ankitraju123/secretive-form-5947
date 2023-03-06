@@ -1,10 +1,5 @@
 import {
   Box,
-  Flex,
-  Text,
-  IconButton,
-  Button,
-  Stack,
   Heading,
   Image,
 } from "@chakra-ui/react";

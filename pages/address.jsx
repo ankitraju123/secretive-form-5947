@@ -74,7 +74,7 @@ function Address() {
 
   return (
     <>
-      <Box w={"80%"} margin="auto">
+      <Box w={"80%"} margin={{base:"4rem auto",md:'1px auto'}}>
         <Flex justifyContent={"space-between"}>
           <Box>
             <Heading>Choose Address</Heading>
@@ -147,33 +147,33 @@ function Address() {
           <DrawerBody>
             <Stack spacing="24px" m={'auto'}>
               <Box display={'grid'} gap={5}>
-          <FormLabel size={"sm"} isRequired={true}>Contact</FormLabel>
-                <Input
+          <FormLabel size={"sm"} >Contact</FormLabel>
+                <Input required
                   onChange={(e) => setAddress(e.target.value)}
                   value={address}
                   type="text"
                   ref={firstField}
                   id="username"
                   placeholder="Name"
-                  isRequired={true}
+                  
                 />
-                <Input
+                <Input required
                   onChange={(e) => setphone(e.target.value)}
                   value={phone}
                   type="number"
                   ref={firstField}
                   id="username"
                   placeholder="Phone"
-                  isRequired={true}
+                  
                 />
-                <Input
+                <Input required
                   onChange={(e) => setemail(e.target.value)}
                   value={email}
                   type="email"
                   ref={firstField}
                   id="username"
                   placeholder="Email ID(Optional)"
-                  isRequired={true}
+                  
                 />
               </Box>
 
@@ -181,32 +181,32 @@ function Address() {
 
               <Box>
                 <InputGroup>
-                  <Input
+                  <Input required
                     onChange={(e) => setpincodes(e.target.value)}
                     value={pincode}
                     type="number"
                     ref={firstField}
                     id="username"
                     placeholder="Pincode"
-                    isRequired={true}
+                    
                   />
                 </InputGroup>
               </Box>
 
               <Box>
-                <Input
+                <Input required
                   onChange={(e) => sethouse(e.target.value)}
                   value={house}
                   type="text"
                   ref={firstField}
                   id="username"
                   placeholder="House/Flate/Office No"
-                  isRequired={true}
+                  
                 />
                 <FormLabel htmlFor="desc"></FormLabel>
                 <Textarea
                   value={area}
-                  isRequired={true}
+                  
                   onChange={(e) => setarea(e.target.value)}
                   id="desc"
                   placeholder="Road Name/Area/Colony"

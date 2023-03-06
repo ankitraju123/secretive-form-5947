@@ -1,10 +1,7 @@
-import React, { useEffect, useState } from "react";
-import { Spinner, useToast } from "@chakra-ui/react";
+import React, {  useState } from "react";
+import {  useToast } from "@chakra-ui/react";
 import {Box,Heading,Input,Button,Text} from "@chakra-ui/react";
 import Link from "next/link";
-//import {CloseIcon} from '@chakra-ui/icons';
-import { useDispatch, useSelector } from "react-redux";
-import { login } from "../redux/Auth/actions";
 import {useRouter} from 'next/router';
 import axios from "axios";
 const Loginpage = () => {
@@ -26,7 +23,7 @@ const Loginpage = () => {
           return
     } else if(user.data.length===0)
     {
-     alert('kuch bi') 
+     alert('Invalid Email or Password') 
     }
    
   };

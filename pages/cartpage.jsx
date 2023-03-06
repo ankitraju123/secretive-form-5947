@@ -5,7 +5,6 @@ import {
   totalAmount,
 } from "@/redux/products/actions";
 import { Box, Button, Text } from "@chakra-ui/react";
-import Link from "next/link";
 import React from "react";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
@@ -30,7 +29,7 @@ const Cartpage = () => {
     getTotal();
   }, [dispatch,getTotal]);
   return (
-    <Box mt={20}>
+    <Box mt={25}>
       {state.map((e, i) => {
         return (
           <Box key={i}>
