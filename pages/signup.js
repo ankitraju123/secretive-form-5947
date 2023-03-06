@@ -40,7 +40,8 @@ const Register=() =>
                     status: 'success',
                     duration: 3000,
                     isClosable: true,
-                  })
+                })
+                alert('Register Successfully')
             }
         }
     }
