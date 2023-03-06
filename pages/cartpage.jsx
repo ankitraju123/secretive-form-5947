@@ -30,10 +30,10 @@ const Cartpage = () => {
     getTotal();
   }, [dispatch,getTotal]);
   return (
-    <div>
+    <Box mt={20}>
       {state.map((e, i) => {
         return (
-          <div key={i}>
+          <Box key={i}>
             <CartProduct
               data={e}
               onclick={() => {
@@ -41,17 +41,17 @@ const Cartpage = () => {
                   window.location.reload()
               }}
             />
-          </div>
+          </Box>
         );
       })}
-      <Box margin={"auto"} width="50%" textAlign={"center"}>
+      <Box margin={"auto"} width="90%" gap={9} p={5} textAlign={"left"} justifyContent={'right'} alignItems='center' display='flex' >
         <Text fontSize={30} color="brown">
           Total <span>{total}</span>
         </Text>
 
-        <Button onClick={() => router.push("/address")}>Checkout</Button>
+        <Button onClick={() => router.push("/address")} bg='#D5418E' color={'white'}>Checkout</Button>
       </Box>
-    </div>
+    </Box>
   );
 };
 

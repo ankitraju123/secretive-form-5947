@@ -114,7 +114,7 @@ export default function Navbar() {
                   <Button>{Login && Login.name}</Button>
                 </MenuButton>
                 <MenuList>
-                  <Button onClick={logout}>Logout</Button>
+                  <Button onClick={logout} w='full' p={1} bg='none'>Logout</Button>
                 </MenuList>
               </Menu>
             ) : (
@@ -128,7 +128,7 @@ export default function Navbar() {
                 </Button>
               </Link>
             )}
-                  <Link href={'/cartpage'}><Text fontWeight={600} mr='1rem'>Cart</Text></Link>
+                  <Link href={'/cartpage'} ><Text fontWeight={600} mr='1rem' display={{base:'none'}}>Cart</Text></Link>
                   </Flex>
         </Flex>
 
@@ -145,6 +145,7 @@ export default function Navbar() {
                   onClick={() => onClose()}
                 />
               ))}
+                          <Link href="/cartpage"><Text fontWeight={600} p={2}>Cart</Text></Link>
             </Stack>
           </Box>
         ) : null}
