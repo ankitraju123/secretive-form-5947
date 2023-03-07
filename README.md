@@ -26,7 +26,7 @@
 
 
 
-<h3 align="center"><a href="https://secretive-form-5947-brar21-varinderbrar.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
+<h3 align="center"><a href="https://secretive-form-5947-umber.vercel.app/"><strong>Want to see live preview »</strong></a></h3>
 <br />
 <p align="center">
   <br />&#10023;
@@ -117,29 +117,6 @@ This project was built using Nextjs, Chakra UI, HTML, CSS, JavaScript, Rest API,
 
 
 <br />
-
-## Contact Us
-
-If you want to contact us, you can reach me through below handles. <br />
-[![linkedin](https://img.shields.io/badge/Ankit_Chauhan-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ankit-chauhan-8a1b13232/)
-[![GitHub](https://img.shields.io/badge/Ankit_Chauhan-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/ankitraju123)
-
-[![linkedin](https://img.shields.io/badge/Giri_Reddy-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/giri-reddy-geralt/)
-[![GitHub](https://img.shields.io/badge/Giri_Reddy-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/geraltyen)
-
-[![linkedin](https://img.shields.io/badge/Pujarini_Sahu-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/pujarini-sahoo/)
-[![GitHub](https://img.shields.io/badge/Pujarini_Sahu-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/puja2795)
-
-[![linkedin](https://img.shields.io/badge/varinder-brar-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/varinder-brar/)
-[![GitHub](https://img.shields.io/badge/varinder-brar-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/Brar21)
-
-[![linkedin](https://img.shields.io/badge/Muhammed-Sadique-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/muhammed-sadique-064385230/)
-[![GitHub](https://img.shields.io/badge/Muhammed-Sadique-0077B5?style=for-the-badge&logo=Github&logoColor=white)](https://github.com/mhdsadique)
-
-
-
-
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
