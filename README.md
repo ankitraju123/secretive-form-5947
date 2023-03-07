@@ -69,7 +69,7 @@ We made this project within the 5 days
 ## Glimpses of Nykaa-Clone :
 <table>
   <tr>
-    <td><img src="https://i.ibb.co/CQk0R2T/nykaa.png"  alt="home" /></td>
+    <td><img src="https://raw.githubusercontent.com/ankitraju123/secretive-form-5947/master/public/Homepage.png"  alt="home" /></td>
   </tr>
   <br/>
   <tr>
@@ -87,6 +87,24 @@ We made this project within the 5 days
    <tr>
     <td><img src="https://i.ibb.co/WK7FsMF/nykaa7.png"   alt="" /></td>
   </tr>
+  ## Payment Page
+  
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/ankitraju123/secretive-form-5947/master/public/Paymentpage.png"   alt="" /></td>
+  </tr>
+  
+  ## Admin Login Page
+  
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/ankitraju123/secretive-form-5947/master/public/Adminlogin.png"   alt="" /></td>
+  </tr>
+  
+  ## Admin Dashboard Page
+  
+  <tr>
+    <td><img src="https://raw.githubusercontent.com/ankitraju123/secretive-form-5947/master/public/ADmindashboard.png"   alt="" /></td>
+  </tr>
+  
   <br/>
 
 </table>
