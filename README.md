@@ -49,6 +49,7 @@ We made this project within the 5 days
 - Cart Management Page
 - Login / Logout Page
 - Payment Page
+- Admin Dashboard 
 
 
 ## 🚀 Features
@@ -58,8 +59,12 @@ We made this project within the 5 days
 - Cart Add and Remove Items 
 - Cart Update Quantities 
 - Payment Page
+- Add Products, Update and Delete on Admin Pannel
 <br />
 
+## Admin Account Credentials
+ ***Email- varinder@gmail.com***
+ ***password- 123***
 
 ## Glimpses of Nykaa-Clone :
 <table>
